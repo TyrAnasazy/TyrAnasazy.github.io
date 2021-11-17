@@ -7,6 +7,15 @@
 
 }
 
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/nunito-v16-latin-regular.woff2') format('woff2'),
+         url('fonts/nunito-v16-latin-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .icon-basic-accelerator:before {
 	content: "a"
 }
@@ -697,7 +706,7 @@ body {
 	font-family: "patua_oneregular";
 	font-weight: 400;
 	line-height: 1.7;
-	color: #black
+	color: #black;
 }
 
 .heading-primary {
@@ -782,8 +791,11 @@ body {
 }
 
 .paragraph {
-	font-size: 1.6rem;
-	font-family: roboto;
+    padding-bottom: 10px;
+    letter-spacing: normal;
+	font-family: 'Nunito' !important;
+    font-size: 20px !important;
+    line-height: 31px !important;
 }
 
 .paragraph:not(:last-child) {
@@ -2132,3 +2144,8 @@ only screen and (min-width: 125em) {
   -webkit-border-bottom-right-radius: 0px;
   -moz-border-bottom-right-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+ .wsite-content-title{
+	font-weight: bold;
+    letter-spacing: 2px; 
+ }
