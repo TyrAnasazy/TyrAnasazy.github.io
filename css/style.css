@@ -15,6 +15,14 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'Delius';
+    src: url('fonts/Delius-regular.woff2') format('woff2'),
+         url('fonts/Delius-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 .icon-basic-accelerator:before {
 	content: "a"
@@ -703,7 +711,7 @@ body {
 }
 
 body {
-	font-family: "patua_oneregular";
+	font-family: "Delius";
 	font-weight: 400;
 	line-height: 1.7;
 	color: #black;
