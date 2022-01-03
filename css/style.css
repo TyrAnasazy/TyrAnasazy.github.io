@@ -711,7 +711,7 @@ body {
 }
 
 body {
-	font-family: "Delius";
+	font-family: "patua_oneregular";
 	font-weight: 400;
 	line-height: 1.7;
 	color: #black;
@@ -799,9 +799,9 @@ body {
 }
 
 .paragraph {
+	font-family: "Delius";
     padding-bottom: 10px;
     letter-spacing: normal;
-	font-family: 'Nunito' !important;
     font-size: 20px !important;
     line-height: 31px !important;
 }
