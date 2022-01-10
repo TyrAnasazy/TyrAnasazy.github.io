@@ -17,8 +17,8 @@
 }
 @font-face {
     font-family: 'Delius';
-    src: url('./fonts/Delius-regular.woff2') format('woff2'),
-         url('./fonts/Delius-regular.woff') format('woff');
+    src: url('./fonts/Delius-Regular.woff2') format('woff2'),
+         url('./fonts/Delius-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
