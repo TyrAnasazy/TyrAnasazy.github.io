@@ -737,11 +737,17 @@ body {
 	visibility: visible;
 	display:block;
 }
+.MobileTextJustify{
+	text-align: center;
+}
 }
 @media screen and (min-width: 600px) {
 .MobileVisible{
 	visibility: hidden;
 	display:none;
+}
+.MobileTextJustify{
+	text-align: justify;
 }
 }
 .heading-primary--main {
