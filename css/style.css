@@ -1129,6 +1129,11 @@ body {
 	border-bottom: 1px solid #eee
 }
 
+a {
+	color: #933838;
+	
+}
+
 .card__cta {
 	position: absolute;
 	top: 50%;
