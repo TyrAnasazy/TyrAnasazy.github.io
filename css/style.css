@@ -744,14 +744,32 @@ body {
 	visibility: visible;
 	display:block;
 }
+.MobileVisiblePadding{
+	visibility: visible;
+	display:block;
+	padding:60px 0 0 0;
+}
+.MobileInVisible{
+	visibility: hidden;
+	display:none;
+}
 .MobileTextJustify{
 	text-align: center;
 }
 }
 @media screen and (min-width: 600px) {
+.MobileInVisible{
+	visibility: visible;
+	display: block;
+}
 .MobileVisible{
 	visibility: hidden;
 	display:none;
+}
+.MobileVisiblePadding{
+	visibility: visible;
+	display:block;
+	padding:60px;
 }
 .MobileTextJustify{
 	text-align: justify;
@@ -1754,21 +1772,14 @@ only screen and (hover: none) {
 	margin: 0 auto
 }
 
-.row:not(:last-child) {
-	margin-bottom: 2rem
+
+
+@media only screen and (max-width: 56.25em) {
+
 }
 
 @media only screen and (max-width: 56.25em) {
-	.row:not(:last-child) {
-		margin-bottom: 6rem
-	}
-}
 
-@media only screen and (max-width: 56.25em) {
-	.row {
-		max-width: 50rem;
-		padding: 0 3rem
-	}
 }
 
 .row::after {
