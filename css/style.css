@@ -723,7 +723,7 @@ html,body{
 }
 
 body {
-	font-family: "Roboto Slab";
+	font-family: "Delius";
 	font-weight: 400 !important;
 	line-height: 1.7;
 	color: #black;
@@ -731,12 +731,12 @@ body {
 }
 
 .heading-primary {
-	font-family: "Roboto Slab";
+	font-family: "Delius";
 	font-weight: 400 !important;
 	line-height: 1.7;
 }
 .heading-Secund {
-	font-family: "Roboto Slab";
+	font-family: "Delius";
 	font-weight: 400 !important;
 }
 @media screen and (max-width: 600px) {
@@ -849,7 +849,7 @@ body {
 }
 
 .paragraph {
-	font-family: "Roboto Slab";
+	font-family: "Delius";
     padding-bottom: 10px;
     letter-spacing: normal;
     font-size: 20px !important;
