@@ -765,7 +765,6 @@ body {
 }
 .FontSize{
 	 font-size: 2.8vh;
-	 text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .FontSize6{
@@ -810,7 +809,6 @@ body {
 }
 .FontSize{
 	 font-size: 3.2vh;
-	 text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .FontSize6{
