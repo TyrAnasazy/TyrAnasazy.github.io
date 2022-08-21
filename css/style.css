@@ -756,6 +756,23 @@ body {
 .MobileTextJustify{
 	text-align: center;
 }
+.Titulo{
+		 font-size: 6vh;
+	 text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	 padding-top:4vh;
+}
+.FontSize{
+	 font-size: 2.8vh;
+	 text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.paragraph {
+	font-family: "Delius";
+    padding-bottom: 10px;
+    letter-spacing: normal;
+    font-size: 2vh !important;
+    line-height: 31px !important;
+}
 }
 @media screen and (min-width: 600px) {
 .MobileInVisible{
@@ -774,6 +791,24 @@ body {
 }
 .MobileTextJustify{
 	text-align: justify;
+}
+
+.Titulo{
+	 font-size: 12vh;
+	 text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	 padding-top:4vh;
+}
+.FontSize{
+	 font-size: 4vh;
+	 text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.paragraph {
+	font-family: "Delius";
+    padding-bottom: 10px;
+    letter-spacing: normal;
+    font-size: 3vh !important;
+    line-height: 31px !important;
 }
 }
 .heading-primary--main {
@@ -849,13 +884,6 @@ body {
 	text-transform: uppercase
 }
 
-.paragraph {
-	font-family: "Delius";
-    padding-bottom: 10px;
-    letter-spacing: normal;
-    font-size: 20px !important;
-    line-height: 31px !important;
-}
 
 .paragraph:not(:last-child) {
 	margin-bottom: 3rem
@@ -1769,8 +1797,7 @@ only screen and (hover: none) {
 }
 
 .row {
-	max-width: 114rem;
-	margin: 0 auto
+
 }
 
 
@@ -1794,7 +1821,7 @@ only screen and (hover: none) {
 }
 
 .row [class^="col-"]:not(:last-child) {
-	margin-right: 6rem
+	
 }
 
 @media only screen and (max-width: 56.25em) {
