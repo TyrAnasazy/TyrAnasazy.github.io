@@ -1,0 +1,18 @@
+@media screen and (max-width: 600px) {
+	.MobileWidth{
+		width:100%
+	}
+	
+	.MobileMargin{
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.MobileWidth{
+		width:115%
+	}
+	
+	.MobileMargin{
+		margin-top: 6%;
+	}
+}
