@@ -57,3 +57,11 @@ html *{
        url('./fonts/maven-pro-v32-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('./fonts/maven-pro-v32-latin-regular.svg#MavenPro') format('svg'); /* Legacy iOS */
 }
+@font-face {
+    font-family: 'Delius';
+    src: url('./fonts/Delius-Regular.woff2') format('woff2'),
+         url('./fonts/Delius-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
