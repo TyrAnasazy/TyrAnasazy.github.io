@@ -14,6 +14,18 @@
 	}
 	.MobilePaddingCandle{
 	}
+
+.HeaderPadding{
+}
+.ImageBottomMargin{
+	margin-bottom:64px;
+}
+.ImageBottomVisibility{
+	display:none;
+}
+.ImageBottomVisibilityReverse{
+	display:block;
+}
 }
 
 @media screen and (min-width: 600px) {
@@ -36,6 +48,19 @@
 		padding-left:50px;
 		margin-top: 1%;
 	}
+
+.HeaderPadding{
+	padding:128px 150px;
+}
+
+.ImageBottomMargin{
+}
+.ImageBottomVisibility{
+	display:block;
+}
+.ImageBottomVisibilityReverse{
+	display:none;
+}
 }
 
 .w3-content{
