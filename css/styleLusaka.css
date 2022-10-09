@@ -110,3 +110,9 @@ p{
     font-style: normal;
 
 }
+@font-face {
+font-family: 'Droid Serif Regular';
+font-style: normal;
+font-weight: normal;
+src: url('./fonts/DroidSerif-Regular.woff') format('woff');
+}
