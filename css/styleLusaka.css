@@ -40,10 +40,19 @@
 .w3-content{
 	max-width: 1200px;
 }
+.SizePequeno{
+	font-size:15px;
+}
 
 html *{
 	font-family: Maven Pro !important;
 }
+
+p{
+	font-size:17px;
+}
+
+
 /* maven-pro-regular - latin */
 @font-face {
   font-family: 'Maven Pro';
