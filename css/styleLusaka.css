@@ -22,7 +22,7 @@
 	}
 	
 	.MobileMargin{
-		margin-top: 2%;
+		margin-top: -1%;
 	}
 	
 	.MobileWidthCandle{
@@ -30,7 +30,7 @@
 	}
 	
 	.MobileMarginCandle{
-		margin-top: 5%;
+		/*margin-top: 5%;*/
 	}
 	.MobilePaddingCandle{		
 		padding-left:50px;
@@ -46,6 +46,10 @@
 
 html *{
 	font-family: Maven Pro !important;
+}
+
+.LineTopics{
+	line-height: 1.0;
 }
 
 p{
