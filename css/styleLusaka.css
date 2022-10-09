@@ -18,7 +18,7 @@
 .HeaderPadding{
 }
 .ImageBottomMargin{
-	margin-bottom:64px;
+	margin-bottom:50px;
 }
 .ImageBottomVisibility{
 	display:none;
@@ -26,6 +26,9 @@
 .ImageBottomVisibilityReverse{
 	display:block;
 }
+	.MobileCenter{		
+		text-align:center;
+	}
 }
 
 @media screen and (min-width: 600px) {
@@ -81,7 +84,10 @@ html *{
 p{
 	font-size:17px;
 }
-
+.w3-padding-64{
+	padding-top: 50px!important;
+    padding-bottom: 50px!important;
+}
 
 /* maven-pro-regular - latin */
 @font-face {
