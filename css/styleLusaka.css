@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 600px) {
 	.MobileWidth{
 		width:100%
@@ -18,7 +19,7 @@
 .HeaderPadding{
 }
 .ImageBottomMargin{
-	margin-bottom:50px;
+	margin-bottom:15px;
 }
 .ImageBottomVisibility{
 	display:none;
@@ -33,11 +34,10 @@
 
 @media screen and (min-width: 600px) {
 	.MobileWidth{
-		width:115%
+		width:120%
 	}
 	
 	.MobileMargin{
-		margin-top: -1%;
 	}
 	
 	.MobileWidthCandle{
@@ -53,7 +53,10 @@
 	}
 
 .HeaderPadding{
-	padding:128px 150px;
+	padding-top: 44px;
+    padding-right: 3px;
+    padding-bottom: 117px;
+    padding-left: 3px;
 }
 
 .ImageBottomMargin{
@@ -70,11 +73,15 @@
 	max-width: 1200px;
 }
 .SizePequeno{
-	font-size:15px;
+	font-size:16px;
 }
 
 html *{
 	font-family: Maven Pro !important;
+}
+
+h1 {
+    font-size: 32px;
 }
 
 .LineTopics{
@@ -82,7 +89,7 @@ html *{
 }
 
 p{
-	font-size:17px;
+	font-size:18px;
 }
 .w3-padding-64{
 	padding-top: 50px!important;
@@ -115,4 +122,20 @@ font-family: 'Droid Serif Regular';
 font-style: normal;
 font-weight: normal;
 src: url('./fonts/DroidSerif-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bray Notes';
+    src:url('./fonts/BrayNotes-Regular.woff2') format('woff2'),
+        url('./fonts/BrayNotes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Milky';
+    src:url('./fonts/Milky Matcha Personal Use.woff2') format('woff2'),
+        url('./Milky Matcha Personal Use.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
