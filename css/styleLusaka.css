@@ -71,10 +71,16 @@ h1 {
     background-size: 100%;
     height: 87vw;
 	}
+.SizePequeno{
+	font-size:12px;
+}
 }
 
 @media screen and (min-width: 600px) {
 	
+.SizePequeno{
+	font-size:16px;
+}
 	.header{
 background-image: url(../img/Header.jpg);
     background-repeat: no-repeat;
@@ -159,9 +165,6 @@ h1 {
 
 .w3-content{
 	max-width: 1200px;
-}
-.SizePequeno{
-	font-size:16px;
 }
 
 html *{
