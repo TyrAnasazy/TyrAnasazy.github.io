@@ -40,6 +40,7 @@
 	
 	.MobileTitlePink{
 		color:#d4a3c4 ! important;
+		font-size:20px;
 	}
 	
 p{
@@ -52,6 +53,17 @@ h1 {
 }
 .BordauxText{
 	font-size:15px;
+}
+.BordauxPadding{
+	
+}
+.FerramentasTitle{
+	
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 24px;
+    font-family: 'Droid Serif Regular' !important;
+    
 }
 }
 
@@ -75,11 +87,23 @@ h1 {
 		margin-top: 1%;
 	}
 	
+.FerramentasTitle{
+	
+    font-size: 22px;
+    line-height: 35px;
+    margin-top: 24px;
+    font-family: 'Droid Serif Regular' !important;
+    
+}
+	
 	.MobileTitlePink{
 		color: white ! important;
 	}
 .BordauxText{
 	font-size:17px;
+}
+.BordauxPadding{
+	    padding-left: 18px; 
 }
 	
 .HeaderPadding{
