@@ -19,17 +19,40 @@
 .HeaderPadding{
 }
 .ImageBottomMargin{
-	margin-bottom:15px;
+	margin-bottom:28px;
 }
 .ImageBottomVisibility{
 	display:none;
 }
 .ImageBottomVisibilityReverse{
 	display:block;
+	padding-top:20px;
 }
 	.MobileCenter{		
 		text-align:center;
 	}
+	
+	.PinkTitle{
+    font-size: 22px;
+    line-height: 35px;
+    font-family: 'Droid Serif Regular' !important;
+	}
+	
+	.MobileTitlePink{
+		color:#d4a3c4 ! important;
+	}
+	
+p{
+	font-size:15px;
+}
+
+
+h1 {
+    font-size: 29px;
+}
+.BordauxText{
+	font-size:15px;
+}
 }
 
 @media screen and (min-width: 600px) {
@@ -51,7 +74,14 @@
 		padding-left:50px;
 		margin-top: 1%;
 	}
-
+	
+	.MobileTitlePink{
+		color: white ! important;
+	}
+.BordauxText{
+	font-size:17px;
+}
+	
 .HeaderPadding{
 	padding-top: 44px;
     padding-right: 3px;
@@ -67,6 +97,27 @@
 .ImageBottomVisibilityReverse{
 	display:none;
 }
+.PinkTitle{
+	background-color: #d4a3c4;
+    box-shadow: 0.4em 0 0 #d4a3c4, -0.4em 0 0 #d4a3c4;
+    color: black !important;
+    font-size: 22px;
+    line-height: 35px;
+    margin-left: -33px;
+    margin-top: 24px;
+	Width: fit-content;
+    font-family: 'Droid Serif Regular' !important;
+    
+}
+
+p{
+	font-size:18px;
+}
+
+
+h1 {
+    font-size: 32px;
+}
 }
 
 .w3-content{
@@ -80,17 +131,10 @@ html *{
 	font-family: Maven Pro !important;
 }
 
-h1 {
-    font-size: 32px;
-}
-
 .LineTopics{
 	line-height: 1.0;
 }
 
-p{
-	font-size:18px;
-}
 .w3-padding-64{
 	padding-top: 50px!important;
     padding-bottom: 50px!important;
