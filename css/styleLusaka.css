@@ -11,6 +11,10 @@
 		width:100%
 	}
 	
+	.MobileWidthLogo{
+		width:25%
+	}
+	
 	.MobileMarginCandle{
 	}
 	.MobilePaddingCandle{
@@ -97,6 +101,10 @@ background-image: url(../img/Header.jpg);
 	
 	.MobileWidthCandle{
 		width:94%
+	}
+	
+	.MobileWidthLogo{
+		width:6%
 	}
 	
 	.MobileMarginCandle{
