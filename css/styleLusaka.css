@@ -4,6 +4,10 @@
 		width:100%
 	}
 	
+	.MobileWidthDogs{
+		width:100%
+	}
+	
 	.MobileMargin{
 	}
 	
@@ -108,6 +112,9 @@ background-position: 51% 60.7%;
 	}
 	.MobileWidth{
 		width:27vw
+	}
+	.MobileWidthDogs{
+		width:16vw
 	}
 	
 	.MobileMargin{
