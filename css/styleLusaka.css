@@ -7,10 +7,7 @@
 	.MobileWidthDogs{
 		width:100%
 	}
-	
-	.MobileMargin{
-	}
-	
+		
 	.MobileWidthCandle{
 		width:100%
 	}
@@ -36,6 +33,9 @@
 	display:block;
 	padding-top:20px;
 }
+.MobileMargin{
+	margin-top:-1px;
+}
 	.MobileCenter{		
 		text-align:center;
 	}
@@ -52,6 +52,9 @@
 	}
 	
 p{
+	font-size:15px;
+}
+span{
 	font-size:15px;
 }
 
@@ -74,14 +77,14 @@ h1 {
     
 }	
 	.header{
-		    background-image: url(../img/Shortv4.jpg);
+		    background-image: url(../img/Header_mobile.png);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 148vw;
     background-position: 53% 130.7%;
 	}	
 	.headerDog{
-		    background-image: url(../img/DogHeader.jpg);
+		    background-image: url(../img/NewHeaderDogsShort.png);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 148vw;
@@ -98,20 +101,21 @@ h1 {
 	font-size:16px;
 }
 	.header{
-background-image: url(../img/Header.jpg);
+background-image: url(../img/Header_pessoas_pc.png);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 23vw;
 	}
 	.headerDog{
-background-image: url(../img/DogHeader.jpg);
+background-image: url(../img/Header__animals_pc.png);
 background-position: 51% 60.7%;
     background-repeat: no-repeat;
     background-size: 100%;
     height: 23vw;
 	}
 	.MobileWidth{
-		width:27vw
+		width:27vw;
+		margin-top: 70px;
 	}
 	.MobileWidthDogs{
 		width:16vw
@@ -189,6 +193,9 @@ background-position: 51% 60.7%;
 }
 
 p{
+	font-size:18px;
+}
+span{
 	font-size:18px;
 }
 
