@@ -93,6 +93,9 @@ h1 {
 .SizePequeno{
 	font-size:12px;
 }
+	
+	.MobilePaddingDogs{
+	}
 }
 
 @media screen and (min-width: 600px) {
@@ -122,6 +125,7 @@ background-position: 51% 60.7%;
 	}
 	
 	.MobileMargin{
+	margin-top:-1px;
 	}
 	
 	.MobileWidthCandle{
@@ -130,6 +134,10 @@ background-position: 51% 60.7%;
 	
 	.MobileWidthLogo{
 		width:6%
+	}
+	
+	.MobilePaddingDogs{
+		padding: 0 20px 0 20px;
 	}
 	
 	.MobileMarginCandle{
