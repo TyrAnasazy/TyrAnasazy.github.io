@@ -101,9 +101,9 @@ h1 {
 	font-size:16px;
 }
 	.header{
-background-image: url(../img/Header_hiTeste.png);
+background-image: url(../img/Header_hiResize.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    /*background-size: contain;*/
     height: 23vw;
 	}
 	.headerDog{
