@@ -103,7 +103,7 @@ h1 {
 	.header{
 background-image: url(../img/Header_hiTeste.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     height: 23vw;
 	}
 	.headerDog{
