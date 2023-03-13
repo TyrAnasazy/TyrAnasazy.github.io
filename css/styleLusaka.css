@@ -96,9 +96,21 @@ h1 {
 	
 	.MobilePaddingDogs{
 	}
+	.HeaderM{
+		display:inline-block;
+	}
+	.HeaderP{
+		display:none;
+	}
 }
 
 @media screen and (min-width: 600px) {
+	.HeaderM{
+		display:none;
+	}
+	.HeaderP{
+		display:inline-block;
+	}
 	
 .SizePequeno{
 	font-size:16px;
