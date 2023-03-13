@@ -232,6 +232,10 @@ html *{
 	font-family: Maven Pro !important;
 }
 
+.img-responsive{
+	display:initial;
+}
+
 .LineTopics{
 	line-height: 1.0;
 }
@@ -239,6 +243,18 @@ html *{
 .w3-padding-64{
 	padding-top: 50px!important;
     padding-bottom: 50px!important;
+}
+
+.accordion-toggle:before {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: left;        /* adjust as needed */
+    color: white;         /* adjust as needed */
+}
+.accordion-toggle.collapsed:before {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
 
 /* maven-pro-regular - latin */
