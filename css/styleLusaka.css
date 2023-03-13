@@ -249,7 +249,6 @@ html *{
     /* symbol for "opening" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
     content: "\e114";    /* adjust as needed, taken from bootstrap.css */
-    float: left;        /* adjust as needed */
     color: white;         /* adjust as needed */
 }
 .accordion-toggle.collapsed:before {
