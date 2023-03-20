@@ -231,7 +231,10 @@ h1 {
 html *{
 	font-family: Maven Pro !important;
 }
-
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: none !important;
+}
 .img-responsive{
 	display:initial;
 }
@@ -243,17 +246,6 @@ html *{
 .w3-padding-64{
 	padding-top: 50px!important;
     padding-bottom: 50px!important;
-}
-
-.accordion-toggle:before {
-    /* symbol for "opening" panels */
-    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
-    color: white;         /* adjust as needed */
-}
-.accordion-toggle.collapsed:before {
-    /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
 
 /* maven-pro-regular - latin */
