@@ -4,6 +4,18 @@
 		width:100%
 	}
 	
+	.FontSizeTop{
+		font-size: 2.5vw;
+	}
+	
+	.FontSizeTop2{
+		font-size: 4.9vw;
+	}
+	
+	.FontSizeTop3{
+		font-size: 9vw !important;
+	}
+	
 	.MobileWidthDogs{
 		width:100%
 	}
