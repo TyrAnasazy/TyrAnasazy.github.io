@@ -236,6 +236,22 @@ h1 {
 }
 }
 
+
+.collapsed.Fechado{
+	display: block;
+}
+
+.Fechado{
+	display: none;
+}
+
+.collapsed.Aberto{
+	display: none;
+}
+
+.Aberto{
+	display: block;
+}
 .w3-content{
 	max-width: 1200px;
 }
