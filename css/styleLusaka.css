@@ -237,6 +237,10 @@ h1 {
 }
 }
 
+.row{
+	    margin-left: auto !important;
+    margin-right: auto !important;
+}
 
 .collapsed.Fechado{
 	display: block;
