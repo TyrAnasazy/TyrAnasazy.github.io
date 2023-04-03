@@ -37,15 +37,15 @@
 	.MobilePaddingCandle{
 	}
 	.WhiteRoseTransform{
-		transform:rotate(90deg);
-		margin-top: 70px;
+		transform:rotate(-90deg);
+		margin-top: -30px;
 	}
 	.WhiteRose{
 		width: 76%;
 	}
 	
 	.LeituraFeminina{
-		    margin-top: -84px !important;
+		    margin-top: -10px !important;
 	}
 
 .HeaderPadding{
