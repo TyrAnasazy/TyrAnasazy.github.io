@@ -4,6 +4,9 @@
 		width:100%
 	}
 	
+	.MobileTopMargin {
+		Margin-top:24px;
+	}
 	.FontSizeTop{
 		font-size: 2.5vw;
 	}
@@ -32,6 +35,17 @@
 	.MobileMarginCandle{
 	}
 	.MobilePaddingCandle{
+	}
+	.WhiteRoseTransform{
+		transform:rotate(90deg);
+		margin-top: 70px;
+	}
+	.WhiteRose{
+		width: 76%;
+	}
+	
+	.LeituraFeminina{
+		    margin-top: -84px !important;
 	}
 
 .HeaderPadding{
@@ -118,6 +132,11 @@ h1 {
 }
 
 @media screen and (min-width: 600px) {
+	
+	.WhiteRose{
+		width: 95% !important;
+		padding-top: 5px;
+	}
 	.HeaderM{
 		display:none;
 	}
