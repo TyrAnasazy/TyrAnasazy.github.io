@@ -283,6 +283,12 @@ h1 {
 html *{
 	font-family: Maven Pro !important;
 }
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
 a:focus, a:hover {
     color: #23527c;
     text-decoration: none !important;
