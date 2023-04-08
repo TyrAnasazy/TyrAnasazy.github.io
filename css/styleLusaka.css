@@ -4,6 +4,10 @@
 		width:100%
 	}
 	
+	.JustifyPC{
+		text-align: center!important;
+	}
+	
 	.MobileTopMargin {
 		Margin-top:24px;
 	}
@@ -139,6 +143,9 @@ h1 {
 }
 
 @media screen and (min-width: 600px) {
+		.JustifyPC{
+		text-align: justify!important;
+	}
 	.Feather{
 		width:31%;
 		transform: rotate(13deg);		
