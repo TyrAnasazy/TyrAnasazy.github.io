@@ -43,6 +43,12 @@
 	.WhiteRose{
 		width: 76%;
 	}
+	.Feather{
+	}
+	.FeatherDiv{
+		margin-top: -5px;
+		padding-bottom:32px;
+	}
 	
 	.LeituraFeminina{
 		    margin-top: -10px !important;
@@ -132,7 +138,13 @@ h1 {
 }
 
 @media screen and (min-width: 600px) {
-	
+		.Feather{
+		width:62%;
+	}
+	.FeatherDiv{
+		margin-right: -127px;
+		margin-top: -5px;
+	}
 	.WhiteRose{
 		width: 95% !important;
 		padding-top: 5px;
