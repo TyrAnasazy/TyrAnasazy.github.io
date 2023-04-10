@@ -5,7 +5,7 @@
 	}
 	
 	.JustifyPC{
-		text-align: center!important;
+		text-align: justify!important;
 	}
 	
 	.MobileTopMargin {
@@ -186,8 +186,9 @@ background-image: url(../img/Header__animals_pc.png);
     height: 24vw;
 	}
 	.MobileWidth{
-		width:27vw;
-		margin-top: 50px;
+		width:26vw;
+		margin-top: 28px;
+		margin-left:-110px;
 	}
 	.MobileWidthDogs{
 		width:16vw
