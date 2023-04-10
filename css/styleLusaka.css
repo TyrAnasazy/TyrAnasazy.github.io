@@ -1,4 +1,80 @@
 
+@media screen and (max-width: 1200px) {
+		
+	.PinkTitle{
+    font-size: 22px;
+    line-height: 35px;
+    font-family: 'Droid Serif Regular' !important;
+	}
+		.MobileCenter{		
+		text-align:center;
+	}
+
+	
+	.MobileTitlePink{
+		color:#d4a3c4 ! important;
+		font-size:20px;
+	}
+			
+	.MobileWidthCandle{
+		width:30em;
+		margin-left:auto;
+		margin-right:auto;		
+		}
+.ImageBottomVisibility{
+	display:none;
+}
+.ImageBottomVisibilityReverse{
+	display:block;
+	padding-top:20px;
+		width:30em;
+		margin-left:auto;
+		margin-right:auto;	
+}
+	.WhiteRoseTransform{
+		transform:rotate(-90deg);
+		margin-top: -30px;
+	}
+	.WhiteRose{
+	}
+	}
+	
+@media screen and (min-width: 1200px) {
+	
+.PinkTitle{
+	background-color: #d4a3c4;
+    box-shadow: 0.4em 0 0 #d4a3c4, -0.4em 0 0 #d4a3c4;
+    color: black !important;
+    font-size: 22px;
+    line-height: 35px;
+    margin-left: -33px;
+    margin-top: 10px;
+	Width: fit-content;
+    font-family: 'Droid Serif Regular' !important;
+    
+}
+	
+	.MobileWidthCandle{
+		width:30em;
+	}
+	
+	
+	.MobileTitlePink{
+		color: white ! important;
+	}
+.ImageBottomVisibility{
+	display:block;
+}
+.ImageBottomVisibilityReverse{
+	display:none;
+}
+
+	.WhiteRose{
+		width: 27em !important;
+		padding-top: 5px;
+		margin-top:50px;
+	}
+	}
 @media screen and (max-width: 600px) {
 	.MobileWidth{
 		width:100%
@@ -27,10 +103,7 @@
 	.MobileWidthDogs{
 		width:100%
 	}
-		
-	.MobileWidthCandle{
-		width:100%
-	}
+
 	
 	.MobileWidthLogo{
 		width:25%
@@ -39,13 +112,6 @@
 	.MobileMarginCandle{
 	}
 	.MobilePaddingCandle{
-	}
-	.WhiteRoseTransform{
-		transform:rotate(-90deg);
-		margin-top: -30px;
-	}
-	.WhiteRose{
-		width: 76%;
 	}
 	.Feather{
 		transform: rotate(13deg);	
@@ -64,30 +130,10 @@
 .ImageBottomMargin{
 	margin-bottom:10px;
 }
-.ImageBottomVisibility{
-	display:none;
-}
-.ImageBottomVisibilityReverse{
-	display:block;
-	padding-top:20px;
-}
 .MobileMargin{
 	margin-top:-1px;
 }
-	.MobileCenter{		
-		text-align:center;
-	}
-	
-	.PinkTitle{
-    font-size: 22px;
-    line-height: 35px;
-    font-family: 'Droid Serif Regular' !important;
-	}
-	
-	.MobileTitlePink{
-		color:#d4a3c4 ! important;
-		font-size:20px;
-	}
+
 	
 p{
 	font-size:15px;
@@ -159,10 +205,6 @@ h1 {
 		    margin-left: -110px;
 		margin-top: -5px;
 	}
-	.WhiteRose{
-		width: 95% !important;
-		padding-top: 5px;
-	}
 	.HeaderM{
 		display:none;
 	}
@@ -186,9 +228,8 @@ background-image: url(../img/Header__animals_pc.png);
     height: 24vw;
 	}
 	.MobileWidth{
-		width:26vw;
+		width:36em;
 		margin-top: 28px;
-		margin-left:-110px;
 	}
 	.MobileWidthDogs{
 		width:16vw
@@ -197,11 +238,6 @@ background-image: url(../img/Header__animals_pc.png);
 	.MobileMargin{
 	margin-top:-1px;
 	}
-	
-	.MobileWidthCandle{
-		width:102%
-	}
-	
 	.MobileWidthLogo{
 		width:6%
 	}
@@ -226,10 +262,7 @@ background-image: url(../img/Header__animals_pc.png);
     font-family: 'Droid Serif Regular' !important;
     
 }
-	
-	.MobileTitlePink{
-		color: white ! important;
-	}
+
 	.DogText{
 		text-align: justify;
 		line-height:1.25;
@@ -251,25 +284,6 @@ background-image: url(../img/Header__animals_pc.png);
 
 .ImageBottomMargin{
 }
-.ImageBottomVisibility{
-	display:block;
-}
-.ImageBottomVisibilityReverse{
-	display:none;
-}
-.PinkTitle{
-	background-color: #d4a3c4;
-    box-shadow: 0.4em 0 0 #d4a3c4, -0.4em 0 0 #d4a3c4;
-    color: black !important;
-    font-size: 22px;
-    line-height: 35px;
-    margin-left: -33px;
-    margin-top: 10px;
-	Width: fit-content;
-    font-family: 'Droid Serif Regular' !important;
-    
-}
-
 p{
 	font-size:18px;
 }
