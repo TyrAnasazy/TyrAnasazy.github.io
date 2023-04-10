@@ -2,6 +2,7 @@
 @media screen and (max-width: 1200px) and (min-width: 600px) {
 		
 	.PinkTitle{
+		margin-top:32px;
     font-size: 22px;
     line-height: 35px;
     font-family: 'Droid Serif Regular' !important;
@@ -76,6 +77,20 @@
 @media screen and (max-width: 600px) {
 	.MobileWidth{
 		width:100%
+	}
+	.PinkTitle{
+    font-size: 22px;
+    line-height: 35px;
+    font-family: 'Droid Serif Regular' !important;
+	}
+		.MobileCenter{		
+		text-align:center;
+	}
+
+	
+	.MobileTitlePink{
+		color:#d4a3c4 ! important;
+		font-size:20px;
 	}
 	.ImageBottomVisibility{
 	display:none;
