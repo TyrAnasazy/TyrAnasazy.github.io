@@ -41,6 +41,15 @@
 	}
 	
 @media screen and (min-width: 1200px) {
+		.FontSizeTop{
+		font-size: 20px;
+	}
+		.FontSizeTop2{
+		font-size: 32px;
+	}
+		.FontSizeTop3{
+		font-size: 56px;
+	}
 		.QuestPratc{
 		padding-bottom:32px;
 	}
