@@ -41,7 +41,9 @@
 	}
 	
 @media screen and (min-width: 1200px) {
-	
+		.QuestPratc{
+		padding-bottom:32px;
+	}
 .PinkTitle{
 	background-color: #d4a3c4;
     box-shadow: 0.4em 0 0 #d4a3c4, -0.4em 0 0 #d4a3c4;
@@ -75,6 +77,9 @@
 	}
 	}
 @media screen and (max-width: 600px) {
+		.QuestPratc{
+		padding-bottom:22px;
+	}
 	.MobileWidth{
 		width:100%
 	}
@@ -213,6 +218,11 @@ h1 {
 		.JustifyPC{
 		text-align: justify!important;
 	}
+	
+	.QuestPratc{
+		padding-bottom:32px;
+	}
+	
 	.Feather{
 		width:31%;
 		transform: rotate(13deg);		
@@ -234,7 +244,7 @@ h1 {
 	}
 	
 .SizePequeno{
-	font-size:16px;
+	font-size:17px;
 }
 	.header{
 background-image: url(../img/Header.jpg);
