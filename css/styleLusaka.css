@@ -85,7 +85,10 @@
 		margin-top:50px;
 	}
 	}
-@media screen and (max-width: 600px) {		
+@media screen and (max-width: 600px) {	
+.dogmargin{
+	
+}	
 .CatClass{
 		width:96%;
 	}
@@ -227,6 +230,10 @@ h1 {
 }
 
 @media screen and (min-width: 600px) {
+	
+	.dogmargin{
+		margin: 25px 90px 0px 90px;
+	}
 		.CatClass{
 		width:100%;
 	}
