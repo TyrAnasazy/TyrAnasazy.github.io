@@ -13,7 +13,7 @@
 
 	
 	.MobileTitlePink{
-		color:#d4a3c4 ! important;
+		color:#D18741 ! important;
 		font-size:20px;
 	}
 			
@@ -54,8 +54,8 @@
 		padding-bottom:32px;
 	}
 .PinkTitle{
-	background-color: #d4a3c4;
-    box-shadow: 0.4em 0 0 #d4a3c4, -0.4em 0 0 #d4a3c4;
+	background-color: #D18741;
+    box-shadow: 0.4em 0 0 #D18741, -0.4em 0 0 #D18741;
     color: black !important;
     font-size: 22px;
     line-height: 35px;
