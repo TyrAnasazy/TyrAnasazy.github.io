@@ -448,8 +448,29 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 	src: url('AireBoldPro.eot');
 	src: local('☞AireBoldPro'), local('AireBoldPro'),
 		url('AireBoldPro.eot?#iefix') format('embedded-opentype'),
-		url('./fonts/AireBoldPro.woff') format('woff'),
+		url('./fonts/Simplicite.woff') format('woff'),
 		url('AireBoldPro.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Floreal';
+	src: url('AireBoldPro.eot');
+	src: local('☞AireBoldPro'), local('AireBoldPro'),
+		url('AireBoldPro.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/Floreal.woff') format('woff'),
+		url('AireBoldPro.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Seasons';
+	src: url('AireBoldPro.eot');
+	src: local('☞AireBoldPro'), local('AireBoldPro'),
+		url('AireBoldPro.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/Seasons.woff') format('woff'),
+		url('AireBoldPro.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
