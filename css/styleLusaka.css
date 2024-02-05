@@ -448,7 +448,7 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 	src: url('AireBoldPro.eot');
 	src: local('☞AireBoldPro'), local('AireBoldPro'),
 		url('AireBoldPro.eot?#iefix') format('embedded-opentype'),
-		url('./fonts/AireBoldPro.woff') format('woff'),
+		url('./fonts/simplicite.woff') format('woff'),
 		url('AireBoldPro.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
