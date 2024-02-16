@@ -444,9 +444,10 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
     font-style: normal;
 }
 @font-face {
-	font-family: 'simplicite';
-	src: local('simplicite'),
-		url('./fonts/simplicite.woff') format('woff');
+	font-family: 'Simplicite';
+	src: local('Simplicite'),
+		url('./fonts/Simplicite.woff') format('woff'),
+		url('AireBoldPro.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
