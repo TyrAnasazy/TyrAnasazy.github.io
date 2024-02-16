@@ -339,7 +339,6 @@ background-image: url(../img/Header__animals_pc.png);
 }
 p{
 	font-size:18px;
-	letter-spacing:1px;
 }
 span{
 	font-size:18px;
@@ -376,7 +375,7 @@ h1 {
 }
 
 html *{
-	font-family: Simplicite !important;
+	font-family: Floreal !important;
 }
 html, body {
   overflow-x: hidden;
@@ -454,11 +453,8 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 }
 @font-face {
 	font-family: 'Floreal';
-	src: url('AireBoldPro.eot');
-	src: local('☞AireBoldPro'), local('AireBoldPro'),
-		url('AireBoldPro.eot?#iefix') format('embedded-opentype'),
-		url('./fonts/Floreal.woff') format('woff'),
-		url('AireBoldPro.ttf') format('truetype');
+	src: local('Floreal')
+		url('./fonts/Floreal.woff') format('woff'),;
 	font-weight: bold;
 	font-style: normal;
 }
