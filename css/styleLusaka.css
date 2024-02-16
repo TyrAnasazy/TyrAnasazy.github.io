@@ -375,7 +375,7 @@ h1 {
 }
 
 html *{
-	font-family: AireBoldPro !important;
+	font-family: Simplicite !important;
 }
 html, body {
   overflow-x: hidden;
@@ -444,7 +444,7 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
     font-style: normal;
 }
 @font-face {
-	font-family: 'AireBoldPro';
+	font-family: 'simplicite';
 	src: url('AireBoldPro.eot');
 	src: local('☞AireBoldPro'), local('AireBoldPro'),
 		url('AireBoldPro.eot?#iefix') format('embedded-opentype'),
