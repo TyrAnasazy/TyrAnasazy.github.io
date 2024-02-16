@@ -312,7 +312,6 @@ background-image: url(../img/Header__animals_pc.png);
     font-size: 22px;
     line-height: 35px;
     margin-top: 24px;
-    font-family: 'Droid Serif Regular' !important;
     
 }
 
@@ -322,7 +321,7 @@ background-image: url(../img/Header__animals_pc.png);
 		padding-left:30px!important;
 	}
 .BordauxText{
-	font-size:17px;
+	font-size:24px;
 }
 .BordauxPadding{
 	    padding-left: 20px; 
@@ -338,11 +337,11 @@ background-image: url(../img/Header__animals_pc.png);
 .ImageBottomMargin{
 }
 p{
-	font-size:18px;
-	letter-spacing:1px;
+	font-size:24px;
+	letter-spacing:1.3px;
 }
 span{
-	font-size:18px;
+	font-size:24px;
 }
 
 
@@ -376,7 +375,7 @@ h1 {
 }
 
 html *{
-	font-family: Mirage !important;
+	font-family: Simplicite !important;
 }
 html, body {
   overflow-x: hidden;
