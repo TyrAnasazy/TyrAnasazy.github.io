@@ -340,6 +340,7 @@ background-image: url(../img/Header__animals_pc.png);
 p{
 	font-size:18px;
 	letter-spacing:1px;
+	text-shadow: -0.3px 0px whitesmoke;
 }
 span{
 	font-size:18px;
