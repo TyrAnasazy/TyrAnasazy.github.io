@@ -5,7 +5,7 @@
 		margin-top:32px;
     font-size: 22px;
     line-height: 35px;
-    font-family: 'Droid Serif Regular' !important;
+    font-family: 'Simplicite' !important;
 	}
 		.MobileCenter{		
 		text-align:center;
@@ -62,7 +62,7 @@
     margin-left: -33px;
     margin-top: 10px;
 	Width: fit-content;
-    font-family: 'Droid Serif Regular' !important;
+    font-family: 'Simplicite' !important;
     
 }
 	
@@ -101,7 +101,7 @@
 	.PinkTitle{
     font-size: 22px;
     line-height: 35px;
-    font-family: 'Droid Serif Regular' !important;
+    font-family: 'Simplicite' !important;
 	}
 		.MobileCenter{		
 		text-align:center;
@@ -109,7 +109,7 @@
 
 	
 	.MobileTitlePink{
-		color:#d4a3c4 ! important;
+		color:#D18741 ! important;
 		font-size:20px;
 	}
 	.ImageBottomVisibility{
@@ -198,7 +198,7 @@ h1 {
     font-size: 20px;
     line-height: 35px;
     margin-top: 24px;
-    font-family: 'Droid Serif Regular' !important;
+    font-family: 'Simplicite' !important;
     
 }	
 	.header{
