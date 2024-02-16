@@ -376,7 +376,7 @@ h1 {
 }
 
 html *{
-	font-family: Simplicite !important;
+	font-family: Mirage !important;
 }
 html, body {
   overflow-x: hidden;
@@ -472,4 +472,10 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: 'Mirage';
+	src: local('Mirage'),
+		url('./fonts/mirage.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
