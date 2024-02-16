@@ -5,7 +5,7 @@
 		margin-top:32px;
     font-size: 22px;
     line-height: 35px;
-    font-family: 'Simplicite' !important;
+    font-family: 'Maleah Regular' !important;
 	}
 		.MobileCenter{		
 		text-align:center;
@@ -62,7 +62,7 @@
     margin-left: -33px;
     margin-top: 10px;
 	Width: fit-content;
-    font-family: 'Simplicite' !important;
+    font-family: 'Maleah Regular' !important;
     
 }
 	
@@ -101,7 +101,7 @@
 	.PinkTitle{
     font-size: 22px;
     line-height: 35px;
-    font-family: 'Simplicite' !important;
+    font-family: 'Maleah Regular' !important;
 	}
 		.MobileCenter{		
 		text-align:center;
@@ -198,7 +198,7 @@ h1 {
     font-size: 20px;
     line-height: 35px;
     margin-top: 24px;
-    font-family: 'Simplicite' !important;
+    font-family: 'Maleah Regular' !important;
     
 }	
 	.header{
@@ -374,7 +374,7 @@ h1 {
 }
 
 html *{
-	font-family: Simplicite !important;
+	font-family: Maleah Regular !important;
 }
 html, body {
   overflow-x: hidden;
@@ -441,14 +441,6 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
         url('./Milky Matcha Personal Use.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-@font-face {
-	font-family: 'Simplicite';
-	src: local('Simplicite'),
-		url('./fonts/Simplicite.woff') format('woff'),
-		url('AireBoldPro.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
 }
 @font-face {
 	font-family: 'Floreal';
