@@ -340,7 +340,6 @@ background-image: url(../img/Header__animals_pc.png);
 p{
 	font-size:18px;
 	letter-spacing:1px;
--webkit-transform: translateZ(1px);
 }
 span{
 	font-size:18px;
@@ -378,13 +377,9 @@ h1 {
 
 html *{
 	font-family: Simplicite !important;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
 }
 html, body {
   overflow-x: hidden;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
 }
 body {
   position: relative
