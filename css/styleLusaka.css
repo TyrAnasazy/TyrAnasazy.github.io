@@ -82,7 +82,7 @@
 	.WhiteRose{
 		width: 27em !important;
 		padding-top: 10px;
-		margin-top:50px;
+		margin-top:39px;
 	}
 	}
 @media screen and (max-width: 600px) {	
@@ -99,7 +99,7 @@
 		width:100%
 	}
 	.PinkTitle{
-    font-size: 22px;
+    font-size: 24px;
     line-height: 35px;
     font-family: 'Maleah Regular' !important;
 	}
@@ -195,7 +195,7 @@ h1 {
 }
 .FerramentasTitle{
 	
-    font-size: 20px;
+    font-size: 22px;
     line-height: 35px;
     margin-top: 24px;
     font-family: 'Maleah Regular' !important;
@@ -309,7 +309,7 @@ background-image: url(../img/Header__animals_pc.png);
 	
 .FerramentasTitle{
 	
-    font-size: 22px;
+    font-size: 24px;
     line-height: 35px;
     margin-top: 24px;
     
@@ -321,7 +321,7 @@ background-image: url(../img/Header__animals_pc.png);
 		padding-left:30px!important;
 	}
 .BordauxText{
-	font-size:18px;
+	font-size:19px;
 	letter-spacing:1px;
 }
 .BordauxPadding{
