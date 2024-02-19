@@ -42,10 +42,10 @@
 	
 @media screen and (min-width: 1200px) {
 		.FontSizeTop{
-		font-size: 20px;
+		font-size: 24px;
 	}
 		.FontSizeTop2{
-		font-size: 32px;
+		font-size: 33px;
 	}
 		.FontSizeTop3{
 		font-size: 56px;
@@ -448,11 +448,11 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
     font-style: normal;
 }
 @font-face {
-	font-family: 'Floreal';
+	font-family: 'AireBoldPro';
 	src: url('AireBoldPro.eot');
 	src: local('☞AireBoldPro'), local('AireBoldPro'),
-		url('AireBoldPro.eot?#iefix') format('embedded-opentype'),
-		url('./fonts/Floreal.woff') format('woff'),
+		url('AireLightPro.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/AireBoldPro.woff') format('woff'),
 		url('AireBoldPro.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
