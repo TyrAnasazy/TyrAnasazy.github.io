@@ -68,6 +68,8 @@
 	
 	.MobileWidthCandle{
 		width:30em;
+		transform: scaleY(1.09);
+		Margin-top:20px;
 	}
 	
 	
@@ -96,6 +98,9 @@
 		padding-bottom:22px;
 	}
 	.MobileWidth{
+		width:100%
+	}
+	.MobileWidthCompass{
 		width:100%
 	}
 	.PinkTitle{
@@ -282,6 +287,10 @@ background-image: url(../img/Header__animals_pc.png);
 	}
 	.MobileWidth{
 		width:36em;
+		margin-top: 28px;
+	}
+	.MobileWidthCompass{
+		width:39em;
 		margin-top: 28px;
 	}
 	.MobileWidthDogs{
