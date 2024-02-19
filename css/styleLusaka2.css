@@ -42,10 +42,10 @@
 	
 @media screen and (min-width: 1200px) {
 		.FontSizeTop{
-		font-size: 20px;
+		font-size: 24px;
 	}
 		.FontSizeTop2{
-		font-size: 32px;
+		font-size: 33px;
 	}
 		.FontSizeTop3{
 		font-size: 56px;
@@ -82,7 +82,7 @@
 	.WhiteRose{
 		width: 27em !important;
 		padding-top: 10px;
-		margin-top:50px;
+		margin-top:39px;
 	}
 	}
 @media screen and (max-width: 600px) {	
@@ -99,7 +99,7 @@
 		width:100%
 	}
 	.PinkTitle{
-    font-size: 22px;
+    font-size: 24px;
     line-height: 35px;
     font-family: 'Maleah Regular' !important;
 	}
@@ -177,7 +177,7 @@
 
 	
 p{
-	font-size:16px;
+	font-size:17px;
 }
 span{
 	font-size:15px;
@@ -188,14 +188,14 @@ h1 {
     font-size: 29px;
 }
 .BordauxText{
-	font-size:16px;
+	font-size:18px;
 }
 .BordauxPadding{
 	
 }
 .FerramentasTitle{
 	
-    font-size: 20px;
+    font-size: 22px;
     line-height: 35px;
     margin-top: 24px;
     font-family: 'Maleah Regular' !important;
@@ -216,7 +216,7 @@ h1 {
     background-position: 53% 130.7%;
 	}
 .SizePequeno{
-	font-size:14px;
+	font-size:16px;
 }
 	
 	.MobilePaddingDogs{
@@ -266,7 +266,7 @@ h1 {
 	}
 	
 .SizePequeno{
-	font-size:17px;
+	font-size:18px;
 }
 	.header{
 background-image: url(../img/Header.jpg);
@@ -309,7 +309,7 @@ background-image: url(../img/Header__animals_pc.png);
 	
 .FerramentasTitle{
 	
-    font-size: 22px;
+    font-size: 24px;
     line-height: 35px;
     margin-top: 24px;
     
@@ -321,7 +321,8 @@ background-image: url(../img/Header__animals_pc.png);
 		padding-left:30px!important;
 	}
 .BordauxText{
-	font-size:18px;
+	font-size:19px;
+	letter-spacing:1px;
 }
 .BordauxPadding{
 	    padding-left: 20px; 
@@ -337,15 +338,18 @@ background-image: url(../img/Header__animals_pc.png);
 .ImageBottomMargin{
 }
 p{
-	font-size:18px;
+	font-size:20px;
+	letter-spacing:1px;
 }
 span{
-	font-size:18px;
+	font-size:20px;
+	letter-spacing:1px;
 }
 
 
 h1 {
     font-size: 32px;
+	letter-spacing:1px;
 }
 }
 
@@ -375,6 +379,7 @@ h1 {
 
 html *{
 	font-family: Maleah Regular !important;
+	letter-spacing:1px;
 }
 html, body {
   overflow-x: hidden;
@@ -443,11 +448,11 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
     font-style: normal;
 }
 @font-face {
-	font-family: 'Floreal';
+	font-family: 'AireBoldPro';
 	src: url('AireBoldPro.eot');
 	src: local('☞AireBoldPro'), local('AireBoldPro'),
-		url('AireBoldPro.eot?#iefix') format('embedded-opentype'),
-		url('./fonts/Floreal.woff') format('woff'),
+		url('AireLightPro.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/AireBoldPro.woff') format('woff'),
 		url('AireBoldPro.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
