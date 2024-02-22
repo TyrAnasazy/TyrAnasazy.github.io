@@ -247,7 +247,8 @@ h1 {
 		margin: 25px 90px 0px 90px;
 	}
 		.CatClass{
-		width:100%;
+		width:103%;
+		transform: scaleY(1.3);
 	}
 		.JustifyPC{
 		text-align: justify!important;
