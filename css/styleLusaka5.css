@@ -5,7 +5,7 @@
 		margin-top:32px;
     font-size: 22px;
     line-height: 35px;
-    font-family: 'Florentino' !important;
+    font-family: 'AireLightPro' !important;
 	}
 		.MobileCenter{		
 		text-align:center;
@@ -62,7 +62,7 @@
     margin-left: -33px;
     margin-top: 10px;
 	Width: fit-content;
-    font-family: 'Florentino' !important;
+    font-family: 'AireLightPro' !important;
     
 }
 	
@@ -101,7 +101,7 @@
 	.PinkTitle{
     font-size: 22px;
     line-height: 35px;
-    font-family: 'Florentino' !important;
+    font-family: 'AireLightPro' !important;
 	}
 		.MobileCenter{		
 		text-align:center;
@@ -198,7 +198,7 @@ h1 {
     font-size: 20px;
     line-height: 35px;
     margin-top: 24px;
-    font-family: 'Florentino' !important;
+    font-family: 'AireLightPro' !important;
     
 }	
 	.header{
@@ -374,7 +374,7 @@ h1 {
 }
 
 html *{
-	font-family: Florentino !important;
+	font-family: AireLightPro !important;
 }
 html, body {
   overflow-x: hidden;
@@ -463,8 +463,8 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 	font-style: normal;
 }
 @font-face {
-    font-family: 'Florentino';
+    font-family: 'AireLightPro';
     font-style: normal;
     font-weight: normal;
-    src: local('Florentino'), url('./fonts/Florentino.woff') format('woff');
+    src: local('AireLightPro'), url('./fonts/AireLightPro.woff') format('woff');
 }

@@ -5,7 +5,7 @@
 		margin-top:32px;
     font-size: 22px;
     line-height: 35px;
-    font-family: 'Athena' !important;
+    font-family: 'AireBoldPro' !important;
 	}
 		.MobileCenter{		
 		text-align:center;
@@ -62,7 +62,7 @@
     margin-left: -33px;
     margin-top: 10px;
 	Width: fit-content;
-    font-family: 'Athena' !important;
+    font-family: 'AireBoldPro' !important;
     
 }
 	
@@ -101,7 +101,7 @@
 	.PinkTitle{
     font-size: 22px;
     line-height: 35px;
-    font-family: 'Athena' !important;
+    font-family: 'AireBoldPro' !important;
 	}
 		.MobileCenter{		
 		text-align:center;
@@ -198,7 +198,7 @@ h1 {
     font-size: 20px;
     line-height: 35px;
     margin-top: 24px;
-    font-family: 'Athena' !important;
+    font-family: 'AireBoldPro' !important;
     
 }	
 	.header{
@@ -374,7 +374,7 @@ h1 {
 }
 
 html *{
-	font-family: Athena !important;
+	font-family: AireBoldPro !important;
 }
 html, body {
   overflow-x: hidden;
@@ -463,15 +463,9 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Athena';
-	src: local('Athena'),
-		url('./fonts/Athena.woff') format('woff');
+	font-family: 'AireBoldPro';
+	src: local('AireBoldPro'),
+		url('./fonts/AireBoldPro.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
-}
-@font-face {
-    font-family: 'Athena';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Athena'), url('./fonts/Athena.woff') format('woff');
 }
