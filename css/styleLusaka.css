@@ -93,6 +93,7 @@
 }	
 .CatClass{
 		width:96%;
+		    margin-top: 20px;
 	}
 		.QuestPratc{
 		padding-bottom:22px;
@@ -249,6 +250,7 @@ h1 {
 		.CatClass{
 		width:103%;
 		transform: scaleY(1.3);
+		    margin-top: 155px;
 	}
 		.JustifyPC{
 		text-align: justify!important;
