@@ -51,6 +51,8 @@
 		font-size: 56px;
 	}
 	.FontSizeTopDog{
+		margin-top: -10px;
+		margin-bottom: -10px;
 		font-size: 32px;
 	}
 		.QuestPratc{
@@ -156,6 +158,9 @@
 	}
 	
 	.FontSizeTopDog{
+		
+		margin-top: -5px;
+		margin-bottom: -5px;
 		font-size: 5.7vw !important;
 	}
 	
