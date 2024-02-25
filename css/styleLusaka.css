@@ -50,6 +50,9 @@
 		.FontSizeTop3{
 		font-size: 56px;
 	}
+	.FontSizeTopDog{
+		font-size: 32px;
+	}
 		.QuestPratc{
 		padding-bottom:32px;
 	}
@@ -151,6 +154,10 @@
 		font-size: 9vw !important;
 	}
 	
+	.FontSizeTopDog{
+		font-size: 5.7vw !important;
+	}
+	
 	.MobileWidthDogs{
 		width:100%
 	}
@@ -247,11 +254,11 @@ h1 {
 	.dogmargin{
 		margin: 25px 90px 0px 90px;
 	}
-		.CatClass{
+	.CatClass{
 		width:100%;
-		    margin-top: 38px;
+		margin-top: 38px;
 	}
-		.JustifyPC{
+	.JustifyPC{
 		text-align: justify!important;
 	}
 	
@@ -264,12 +271,12 @@ h1 {
 		transform: rotate(13deg);		
 		margin-left: auto;
 		margin-right: auto;
-		    margin-top: 32px;
-    margin-bottom: -25px;
+		margin-top: 32px;
+		margin-bottom: -25px;
 	}
 	.FeatherDiv{
 		margin-right: -137px;
-		    margin-left: -110px;
+		margin-left: -110px;
 		margin-top: -5px;
 	}
 	.HeaderM{
