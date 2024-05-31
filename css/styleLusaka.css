@@ -148,7 +148,6 @@
 	}
 	
 	.FontSizeTop{
-		font-size: 2.5vw;
 	}
 	
 	.FontSizeTop2{
@@ -343,7 +342,7 @@ background-image: url(../img/Header__animals_pc.png);
 	
     font-size: 24px;
     line-height: 35px;
-    margin-top: 24px;
+    margin-top: 50px;
     
 }
 
