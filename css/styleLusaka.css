@@ -96,9 +96,19 @@
 	}
 	}
 @media screen and (max-width: 600px) {	
+.Acompanhamento{
+padding-top:25px !important;
+padding-bottom: 50px !important;	
+}
+
 .dogmargin{
 	
-}	
+}
+.headerdiv{
+	padding-top:50px !important;
+	padding-bottom: 0px !important;
+}
+	
 .CatClass{
 		width:96%;
 		    margin-top: 20px;
@@ -156,7 +166,7 @@
 	}
 	
 	.FontSizeTop3{
-		font-size: 9vw !important;
+		font-size: 5.7vw !important;
 	}
 	
 	.FontSizeTopDog{
@@ -253,6 +263,17 @@ h1 {
 }
 
 @media screen and (min-width: 600px) {
+	.Acompanhamento{
+padding-top:50px !important;
+padding-bottom: 50px !important;	
+}
+
+
+	.headerdiv{
+	padding-top:100px !important;
+	padding-bottom: 0px !important;	
+	}
+	
 		.JustifyCenter{
 		text-align: Center !important;
 	}
