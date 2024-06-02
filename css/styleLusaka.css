@@ -104,6 +104,10 @@ padding-bottom: 50px !important;
 .dogmargin{
 	
 }
+
+.Nome{
+	font-size: 33px;
+}
 .headerdiv{
 	padding-top:50px !important;
 	padding-bottom: 0px !important;
@@ -269,7 +273,9 @@ padding-top:50px !important;
 padding-bottom: 50px !important;	
 }
 
-
+.Nome{
+	font-size: 36px;
+}
 	.headerdiv{
 	padding-top:100px !important;
 	padding-bottom: 0px !important;	
