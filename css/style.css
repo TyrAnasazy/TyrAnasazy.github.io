@@ -103,6 +103,8 @@ header.scrolled {
     left: 0;
     min-width: 100%;
     z-index: 999;
+	width: 250px;
+    text-align: left;
 }
 
 .desktop-nav ul li ul.dropdown-content li {
@@ -221,7 +223,7 @@ h1 {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin: 20px 0 0;
 	font-family: Maleah Regular !important;
 }
@@ -230,6 +232,11 @@ a:focus, a:hover {
     color: #23527c;
     text-decoration: none !important;
 }
+
+.BurgerText{
+	font-size: 18px;
+}
+	
 
 @media screen and (max-width: 1200px) and (min-width: 600px) {
 		
@@ -647,7 +654,7 @@ background-image: url(../img/Header__animals_pc.png);
 	display: block;
 }
 .w3-content{
-	max-width: 1200px;
+	max-width: 1200px !important;
 }
 .img-responsive{
 	display:initial;
