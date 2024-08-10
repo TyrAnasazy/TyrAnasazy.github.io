@@ -26,7 +26,7 @@ html * {
 
 .mobile-dropdown .mobile-dropdown-content li a {
     text-decoration: none;
-    color: #333;
+    color: #472410;
 }
 
 /* Chevron icon styles */
@@ -161,7 +161,7 @@ header.scrolled {
 }
 
 .mobile-menu ul li a {
-    color: #333;
+    color: #472410;
     text-decoration: none;
     font-weight: bold;
 }
@@ -249,7 +249,7 @@ a:focus, a:hover {
 }
 	
 
-@media screen and (max-width: 1200px) and (min-width: 600px) {
+@media screen and (max-width: 1200px) and (min-width: 768px) {
 		
 	.PinkTitle{
 		margin-top:32px;
@@ -346,7 +346,7 @@ a:focus, a:hover {
 	}
 }
 
-@media screen and (max-width: 600px) {	
+@media screen and (max-width: 768px) {	
 .Acompanhamento{
 padding-top:25px !important;
 padding-bottom: 50px !important;	
@@ -514,7 +514,7 @@ p{
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 	.Acompanhamento{
 padding-top:50px !important;
 padding-bottom: 50px !important;	
