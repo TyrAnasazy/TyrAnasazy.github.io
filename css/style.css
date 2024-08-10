@@ -7,6 +7,11 @@ body.menu-open {
     position: relative;
 }
 
+html * {
+    font-family: Maleah Regular !important;
+    letter-spacing: 1px;
+}
+
 .mobile-dropdown .mobile-dropdown-content {
     display: none;
     list-style: none;
@@ -213,7 +218,7 @@ header.scrolled {
 }
 
 main {
-    padding: 60px 20px;
+    padding: 60px 0px;
 }
 
 h1 {
