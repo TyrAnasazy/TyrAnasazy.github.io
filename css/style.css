@@ -96,6 +96,10 @@ header.scrolled {
     font-weight: bold;
 }
 
+.dropdown{
+	font-size:16px;
+}
+
 .desktop-nav ul li ul.dropdown-content {
     display: none;
     position: absolute;
@@ -108,7 +112,7 @@ header.scrolled {
     left: 0;
     min-width: 100%;
     z-index: 999;
-	width: 260px;
+	width: 280px;
     text-align: left;
 }
 
