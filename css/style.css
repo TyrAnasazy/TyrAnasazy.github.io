@@ -92,12 +92,11 @@ header.scrolled {
 
 .desktop-nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #472410;
     font-weight: bold;
 }
 
 .dropdown{
-	font-size:16px;
 }
 
 .desktop-nav ul li ul.dropdown-content {
@@ -114,6 +113,8 @@ header.scrolled {
     z-index: 999;
 	width: 280px;
     text-align: left;
+	font-size:16px;
+	color:#472410;
 }
 
 .desktop-nav ul li ul.dropdown-content li {
