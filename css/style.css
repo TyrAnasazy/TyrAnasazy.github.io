@@ -30,26 +30,26 @@ html * {
 }
 
 /* Chevron icon styles */
-.chevron {
-    font-size: 0.8em;
-    margin-left: 5px;
+.mobile-dropdown .chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	transform: rotate(-45deg);
+	vertical-align: middle;
+	width: 0.45em;	
     transition: transform 0.3s ease;
 }
 
-.mobile-dropdown.open .chevron {
-    transform: rotate(180deg); /* Rotate for upward chevron */
+.mobile-dropdown.open .chevron::before {
+    transform: rotate(136deg); /* Rotate for upward chevron */
+	
+    transition: transform 0.3s ease;
 }
 
-/* Ensure chevron is properly styled */
-.mobile-dropdown-toggle .chevron {
-    content: "\f078"; /* Font Awesome down-chevron */
-    font-family: 'Font Awesome 5 Free'; /* Adjust based on Font Awesome version */
-    font-weight: 900; /* For Font Awesome 5, ensure it's a solid icon */
-}
-
-.mobile-dropdown.open .mobile-dropdown-toggle .chevron {
-    content: "\f077"; /* Font Awesome up-chevron */
-}
 body {
     margin: 0;
     padding: 0;
