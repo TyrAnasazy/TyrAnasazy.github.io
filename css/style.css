@@ -251,6 +251,10 @@ a:focus, a:hover {
 	text-align: justify;
 }	
 
+.BigTitle{
+ font-size:36px;
+}
+
 @media screen and (max-width: 1200px) and (min-width: 768px) {
 		
 	.PinkTitle{
@@ -480,9 +484,13 @@ p{
 .BordauxPadding{
 	
 }
+.BigTitle{
+ font-size:34px;
+}
+
 .FerramentasTitle{
 	
-    font-size: 24px;
+    font-size: 22px;
     line-height: 35px;
     margin-top: 24px;
     font-family: 'Maleah Regular' !important;
