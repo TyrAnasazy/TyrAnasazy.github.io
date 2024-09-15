@@ -353,14 +353,14 @@ a:focus, a:hover {
 
 @media screen and (max-width: 768px) {	
 	.my-justify{
-		text-align: left !important;
+		text-align: center !important;
 	}
 .Acompanhamento{
 padding-top:25px !important;
 padding-bottom: 50px !important;	
 }
 p{
-	font-size:18px;
+	font-size:16px;
 }
 .dogmargin{
 	
