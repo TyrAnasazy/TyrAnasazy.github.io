@@ -247,7 +247,9 @@ a:focus, a:hover {
 .BurgerText{
 	font-size: 18px;
 }
-	
+.my-justify{
+	text-align: justify;
+}	
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
 		
@@ -291,6 +293,9 @@ a:focus, a:hover {
 	}
 	
 @media screen and (min-width: 1200px) {
+	.my-justify{
+		text-align: justify;
+	}
 		.FontSizeTop{
 		font-size: 22px;
 	}
@@ -347,6 +352,9 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 768px) {	
+	.my-justify{
+		text-align: left !important;
+	}
 .Acompanhamento{
 padding-top:25px !important;
 padding-bottom: 50px !important;	
