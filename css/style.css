@@ -1,3 +1,13 @@
+:root {
+    --background-color: #F7F2EE; /* Light background */
+    --text-color: #472410; /* Light text color */
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #080d11; /* Dark background */
+        --text-color: #ffffff; /* Dark text color */
+    }
+}
 .hero-container {
     position: relative;
     width: 100%;
@@ -112,9 +122,9 @@ html * {
 body {
     margin: 0;
     padding: 0;
-    background: #F7F2EE;
     text-align: center;
-    color: #472410;
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
 }
 
 header {
