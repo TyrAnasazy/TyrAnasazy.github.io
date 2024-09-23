@@ -18,6 +18,10 @@
     z-index: -1;
 }
 
+:root {
+     color-scheme: light only;
+}
+
 /* Mobile-specific styles */
 @media (max-width: 768px) {
     .hero-image {
