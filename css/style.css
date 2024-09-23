@@ -22,6 +22,7 @@
 @media (max-width: 768px) {
     .hero-image {
         object-fit: contain; /* Ensures the image fits within the container on smaller screens */
+		height:75% !important;
     }
 }
 
