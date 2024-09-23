@@ -1,4 +1,3 @@
-@media (prefers-color-scheme: dark) {
 .hero-container {
     position: relative;
     width: 100%;
@@ -845,4 +844,3 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
     font-weight: normal;
     src: local('Gemola Regular'), url('./fonts/Gemola.woff') format('woff');
     }
-}
