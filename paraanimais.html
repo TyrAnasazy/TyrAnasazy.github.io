@@ -1,184 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-<title>Em Consciência pelos Animais</title>
-<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier da Consciência</title>
+    <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/styleLusaka.css">
-
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
-<body>
+<body style="background: #F7F2EE;">
+    <header>
+        <nav class="desktop-nav">
+            <ul>
+                <!-- <li><a href="./index6.html"  style="font-family: Gemola Regular !important;">ATELIER DA CONSCIÊNCIA</a></li> -->
+				<li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;margin-top: -5px;"></a></li>
+                <li><a href="./Consultoria.html">Acompanhamento Terapêutico</a></li>
+                <li class="dropdown">
+                    <a href="#">Terapias</a>
+                    <ul class="dropdown-content">
+                        <li><a href="./Leitura.html">Leitura de Aura</a></li>
+                        <li><a href="./Alinhamento.html">Alinhamento Energético</a></li>
+                        <li><a href="./Tarot.html">Tarot Terapêutico</a></li>
+                        <li><a href="./Caminho.html">O teu Caminho com os Anjos</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Casa.html">Consultoria Energética para a Casa</a></li>
+                <li><a href="./paraanimais.html">Terapias para Animais</a></li>
+                <!-- <li class="dropdown"> -->
+					<!-- <a href="#">FORMAÇÕES</a> -->
+					<!-- <ul class="dropdown-content"> -->
+						<!-- <li><a href="./Reiki.html">Iniciações de Reiki Essencial</a></li> -->
+						<!-- <li><a href="./Formacao.html">Meditação das Rosas</a></li> -->
+					<!-- </ul> -->
+				<!-- </li> -->
+                <!-- <li><a href="./NaTuaCasa.html">NA TUA CASA</a></li> -->
+                <li><a href="./SobreMim.html">Sobre Mim...</a></li>
+            </ul>
+        </nav>
 
-<!-- Navbar -->
-
-
-<!-- Header -->
-<header class="">
-<div class="HeaderM" style="
-    width: auto;
-">
-<img src="img/Heads2.webp" fetchpriority="high" style="
-    height: auto;
-    width: 200%;
-    /* max-width: 100px; */
-    transform: translateX(-165px);
-">
-</div>
-<div class="HeaderP" style="
-    width: auto;
-">
-<img src="img/Heads2.webp" fetchpriority="high" style="
-    height: auto;
-    width: 100%;
-    /* max-width: 100px; */
-">
-</div>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: #F7F2EE">
-  <div class="w3-content" style="
-    max-width: 980px;
-">
-    <div class="w3">
-      <h1 class="w3-center FontSizeTop3 ImageBottomVisibility" style="color: #472410;font-family: Milky !important;font-size:50px;">A telier da Consciência</h1>
-      <h1 class="w3-center FontSizeTop3 ImageBottomVisibilityReverse" style="color: #472410;font-family: Milky !important;font-size:50px;">A telier</h1>
-      <h1 class="w3-center FontSizeTop3 ImageBottomVisibilityReverse" style="color: #472410;font-family: Milky !important;font-size:50px;margin-top:-35px;">da Consciência</h1>
-	<p class="w3-center FontSizeTopDog" style="font-family: Milky !important;color:#D18741;">para Animais</p>
-      <p class="w3-center dogmargin FontSizeTopDogy" style="color: #472410;font-family: Maleah Regular!important;">
-Deixo-te aqui a oportunidade de conheceres o Animal que vive contigo, em todos os seus aspectos, e participares activamente de forma a tornares a vossa vida quotidiana equilibrada, em respeito mútuo, conhecendo e aceitando a sua vontade e deixando-o, dentro das tuas capacidades, viver de forma livre.
-
+        <div class="mobile-header">
+            <button class="hamburger" id="hamburger-btn">
+                <div class="bar" style="background: #472410;"></div>
+                <div class="bar" style="background: #472410;"></div>
+                <div class="bar" style="background: #472410;"></div>
+            </button>
+            <div class="mobile-menu" id="mobile-menu">
+                <button class="close-btn" id="close-btn">&times;</button>
+                <ul>
+                    <li><img src="./img/Flor.png" style="height: 100px;"></li>
+					<li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;margin-top: -5px;"></a></li>
+                    <li><a href="./Consultoria.html" class="BurgerText">Acompanhamento Terapêutico</a></li>
+                    <li class="mobile-dropdown">
+                        <a href="#" class="mobile-dropdown-toggle BurgerText">Terapias <span class="chevron"></span></a>
+                        <ul class="mobile-dropdown-content">
+							<li><a href="./Leitura.html" class="BurgerText">Leitura de Aura</a></li>
+							<li><a href="./Alinhamento.html" class="BurgerText">Alinhamento Energético</a></li>
+							<li><a href="./Tarot.html" class="BurgerText">Tarot Terapêutico</a></li>
+							<li><a href="./Caminho.html" class="BurgerText">O teu Caminho com os Anjos</a></li>
+                        </ul>
+                    </li>
+                <li><a href="./Casa.html" class="BurgerText">Consultoria Energética para a Casa</a></li>
+                <li><a href="./paraanimais.html" class="BurgerText">Terapias para Animais</a></li>
+					<!-- <li class="mobile-dropdown"> -->
+                        <!-- <a href="#" class="mobile-dropdown-toggle BurgerText">FORMAÇÕES <span class="chevron"></span></a> -->
+                        <!-- <ul class="mobile-dropdown-content"> -->
+							<!-- <li><a href="./Reiki.html" class="BurgerText">Iniciações de Reiki Essencial</a></li> -->
+							<!-- <li><a href="./Formacao.html" class="BurgerText">Meditação das Rosas</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </li> -->
+                    <!-- <li><a href="./NaTuaCasa.html" class="BurgerText">NA TUA CASA</a></li> -->
+                    <li><a href="./SobreMim.html" class="BurgerText">Sobre Mim...</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+<div class="w3-row-padding w3-container Acompanhamento" id="Acompanhamento" style="background-color:#F7F2EE;">
+<div class="w3-content ">
+<h1 class="w3-center BigTitle" style="font-family: Maleah Regular!important;padding-bottom:30px;color:#472410;">Terapias para Animais</h1>
+      <p class="my-justify FontSizeTop" style="color: #472410;text-indent:30px;">
+A base deste trabalho é uma limpeza energética profunda do teu espaço. O processo inicia-se com um Ritual do Sal ou uma Leitura de Aura que permitem limpar os residuos energéticos das tuas emoções, pensamentos e palavras acumulados no teu espaço e nos objectos dentro dele. 
 </p>
-    </div>
-  </div>
-</div>
-<!-- Third Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: #F7F2EE">
-  <div class="w3-content">
-    <div class="w3 w3-center">
-      <h1  style="color: #472410;font-family: Maleah Regular!important">Comunicação Telepática Animal</p> 
-	  <p  class="w3-just" style="color: #472410;">Através da Comunicação Telepática é possível compreenderes o teu animal, a sua vontade, os seus gostos, aquilo que sente e necessita… poderás esclarecer questões associadas ao seu comportamento, às suas emoções e à sua saúde (onde se pode perguntar o que sentem). É também possível esclarecê-lo, à priori, acerca de intervenções ou mudanças que vão acontecer no seu corpo ou vida. A comunicação trará clareza para o que se passa com eles e que ainda não sabes como compreender.
-</p>  
-    </div>
-	</div>
-</div>
-<!-- Second Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:#472410">
+      <p class="my-justify FontSizeTop" style="color: #472410;text-indent:30px;">
+O ambiente em que vives influencia directamente a tua energia e a de quem vive contigo, gerando bloqueios que se manifestam em situações que em nada relacionaríamos com a casa em si. São aspectos de personalidade e energias com as quais estás habituado a conviver, mas que te limitam de variadas formas no teu dia a dia.
+</p>
+      <p class="my-justify FontSizeTop" style="color: #472410;text-indent:30px;">
+A partir do momento em que a energia da casa (loja, escritório, atelier, etc) for limpa e cuidada, é feita uma visita de consultoria que permite conhecer o espaço e entender como o habitas. Delineamos um projecto que te ajuda a perceber o que podes mudar, ajustar, decorar, organizar, e reorganizar, para que tudo flua em equilibrio e harmonia. 
+</p>
+      <p class="my-justify FontSizeTop" style="color: #472410;text-indent:30px;">
+Ao longo dos anos desenvolvi um método que permite personalizar a casa ao teu gosto e adequa-la às tuas necessidades (e da tua família).
+</p>
+      <p class="my-justify FontSizeTop" style="color: #472410;text-indent:30px;">
+Através deste método, é-te dado um plano de acção para a reposição do natural fluir da energia do espaço com cores e peças decorativas ao teu gosto. Onde é identificado o equilíbrio dos quatro elementos, no seu todo e em cada uma das divisões. 
+</p>
+		  <div class="ImageBottomVisibilityReverse MobileMargin" style="background-color:#F7F2EE;margin-top: 12px;">
   <div class="w3-content LineTopics">
-
-<div class="w3-content w3-text-white " style=" line-height:1.4;">
-<p class="w3-center" style="font-size: 32px;color:#D18741">Leitura de Aura para Animais</p>
-	<p class=" MobileCenter"style="color: #F7F2EE !important;">A Leitura de Aura para Animais permite alinhar e reequilibrar a energia vital própria de cada animal e trazer consciência para a interacção humano-animal. Limpa bloqueios que possam haver na energia e que impedem uma vida saudável do animal ou uma relação simples e descomplicada com os seus humanos. Assim como cria o espaço para que se desenvolva o comportamento adequado às situações do dia a dia em conjunto e nos momentos em que o animal se encontra sozinho.
+ <div class="col w3-center MobileMargin" style="margin-bottom:22px;">
+      <img src="img/Candle.webp" alt="Flowers" class="img-responsive candle" style="margin-left: auto;margin-right: auto;">
+    </div>
+    </div>
+	<div class="col-md-12" style="text-align:center;margin-top: 10px; padding: 0px;">
+      <p class="my-justify FontSizeTop" style="color: #472410;text-indent:30px;">
+Serão identificados linhas e pontos geopáticos relevantes. Aprendes o que representa cada divisão e cada peça importante na energia do teu espaço, para que possas tirar um melhor partido das tuas coisas e da tua casa. 
 </p>
-</div>
-    <div class="w3-third w3-center MobileMarginCandle ImageBottomMargin ImageBottomVisibility">
-      <img src="img/Dog1.webp" alt="Flowers" class = "MobileWidthCandle img-responsive CatClass" Style=""></img>
-    </div>
-<div class="w3-twothird w3-text-white " style=" line-height:1.4;">
-<!--<p class="w3-text-white MobileCenter TitlePink  MobileTitlePink" style="margin-top: 23px;margin-left: -10px !important;font-size: 26px;">Leitura de Aura para Animais</p>-->
-
-<p class=" MobileCenter  BordauxPadding DogText"style="color: #F7F2EE !important;">
-Cada animal mostra ao seu cuidador humano determinados aspectos, do segundo, que estão desalinhados. Assim, doenças ou  problemas de comportamento nos animais representam bloqueios na energia do animal mas, acima de tudo, trabalho a fazer pelo seu humano. Esta terapia vai permitir a cura e tomada de consciência sobre estas situações, de forma a que o animal seja liberto desse trabalho e possa assim regressar à sua essência natural.
-<br><br>
-Poderão também durante a Leitura surgir informações para melhor nutrir a relação entre cuidador e animal, e sobre a relação deste com outros elementos da família humana ou com outros animais.
-<br><br>
-Poderemos ver também informação sobre que cuidados práticos específicos podem ser necessários implementar  para a promoção da saúde física e comportamental do animal, na fase de vida em que este se encontra.
-<br><br></p>
-<div class="w3-container ImageBottomVisibilityReverse MobileMargin"  style="background-color:#472410">
-  <div class="w3-content LineTopics">
- <div class="w3-third w3-center MobileMargin ImageBottomMargin">
-      <img src="img/Dog1.webp" alt="Flowers" class = "MobileWidthDogs img-responsive CatClass" style="margin-top:-25px;"></img>
-    </div>
-    </div>
-    </div>
-	<p class="MobileCenter  BordauxPadding DogText" style="color: #F7F2EE !important;">
-Assim a Leitura de Aura para Animais será de grande utilidade na cura do animal mas também do humano seu cuidador. 
+      <p class="my-justify FontSizeTop" style="color: #472410;text-indent:30px;">
+Serão ainda abordados conceitos-chave como a importância da simplicidade, da ordem e da funcionalidade, “cada coisa no seu lugar”, no sentido de permitir a higiene energética e apoiar na manutenção do ruído energético.
 </p>
-<br>
-    </div>
-	<h2 class="w3-center FerramentasTitle QuestPratc" style="font-family: Maleah Regular!important;color:#D18741;">Questões Práticas</h2>
-	      <p class="w3-text-white w3-center MobileCenter  DogText" style="color: #F7F2EE !important;padding-left:0px !important;line-height:1.4;">O meu objectivo com estes trabalhos é sempre promover o bem estar Animal, faço-os para permitir que cada vez mais haja consciência e respeito para com eles, para que possam viver mais ligados com a sua verdadeira essência. Assim, se é também esse o teu objectivo para com o animal pelo qual és responsável ou se precisares de mais informações sobre estes trabalhos envia-me um  <a href="#contactos" style="color:#D18741"> email</a>.
+      <p class="my-justify FontSizeTop" style="color: #472410;text-indent:30px;">
+Neste processo, vais pondo em prática o plano desenvolvido para ti e transformar a tua casa no teu Lar e, com isso, mudar a tua vida (e da tua familia).
 </p>
-  </div>
-</div>
-<!-- Third Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: #C98881">
-  <div class="w3-content">
-    <div class="w3 w3-center">
-      <h1  style="color: #472410;font-family: Maleah Regular!important">Doula de Alma Animal </p> 
-	  <p  class="w3-just" style="color: #472410;">Como Terapeuta e Doula de Alma Animal posso-vos acompanhar no processo de fim de vida do teu animal.
-	  </br></br>Conhecendo a morte como oposto do parto (e não da vida), é possível deixá-los partir de forma Consciente. Será sempre um momento intenso, durante um processo de luto fica sempre um vazio em ti que aprenderás a preencher desde dentro, haverão certamente momentos de tristeza ou saudade, mas terás os conhecimentos e as ferramentas de que precisas para o fazer em paz, em aceitação, com gratidão e fé, deixando-o seguir a sua viagem em Amor.
-
-</p>  
-    </div>
-	</div>
-</div>
-
-
-<!-- fifth Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: #F7F2EE">
-  <div class="w3-content">
-    <div class="w3 w3-center">
-      <h1  style="color: #472410;font-family: Maleah Regular!important">Sobre Mim...</h1>
-	  <p  class="w3-just" style="color: #472410;">Em bebé “babau” foi a minha primeira palavra, significava cão… os anos passaram e juntamente com o aprender a desligar-me de tudo o que sentia, cresci com medo de cães!  <br>
-Foi só aos 17 Anos que conheci aquele que me levaria não só a perder o medo, mas acima de tudo a transformar-me profundamente e a reconectar-me com o meu verdadeiro Sentir. 
-<br>
-Não só porque com ele era “seguro” sentir, mas porque quando ele precisou eu não parei de procurar até o conseguir ajudar, e nesse processo descobri que a melhor forma de o ajudar era ajudando-me a mim mesma. Reconciliei-me com o meu sentir e aprendi a cuidar de mim com o mesmo amor com que cuidava dele. 
-<br>
-Ao ver a cura que todo este caminho trouxe para a nossa vida decidi partilhá-lo com o mundo e tornar-me Terapeuta, não de Animais mas de Pessoas, porque eu acredito que é através da nossa, humana, tomada de consciência que os animais voltarão a ser Livres!
-<br>Mas enquanto for preciso... aqui estou também por eles!</p>
-    </div>
-  </div>
-</div>
-
-<!-- Sixth Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" id="contactos" style="background-color: #C98881;">
-  <div class="w3-content">
-    <div class="w3 w3-center">
-	<!--<img src="img/CatLogo2.webp" alt="Flowers" class = "MobileWidthLogo img-responsive"></img>-->
-      <h1  style="color: white;font-family: Maleah Regular!important">Catarina Português</h1>
-	   <div class="w3-content">
-	   <p  class="w3-center " style="margin-Top:30px;color: white !important;">
-Se quiseres vir aprender e cuidar da tua energia espreita <a href="https:\\www.atelierdaconsciencia.pt">www.atelierdaconsciencia.pt</a>!</p>
-</div>
-
-      <p class="w3-center"  style="color: white;">
-	  catarina.portugues<span style="font-family: Mirage!important;">@<span>gmail.com
-</p>
-    </div>
-  </div>
-</div>
-<!--
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div> -->
-
-<!-- Footer
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
  </div>
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer> -->
+    </div>
+  <div class="w3-content ImageBottomVisibility">
+    <div class="col-md-12" style="text-align:center;margin-top: 10px; padding: 0px;width: 69.666667%;">
+      <p class="my-justify FontSizeTop" style="color: #472410;text-indent:30px;">
+Serão identificados linhas e pontos geopáticos relevantes. Aprendes o que representa cada divisão e cada peça importante na energia do teu espaço, para que possas tirar um melhor partido das tuas coisas e da tua casa. 
+</p>
+      <p class="my-justify FontSizeTop" style="color: #472410;text-indent:30px;">
+Serão ainda abordados conceitos-chave como a importância da simplicidade, da ordem e da funcionalidade, “cada coisa no seu lugar”, no sentido de permitir a higiene energética e apoiar na manutenção do ruído energético.
+</p>
+      <p class="my-justify FontSizeTop" style="color: #472410;text-indent:30px;">
+Neste processo, vais pondo em prática o plano desenvolvido para ti e transformar a tua casa no teu Lar e, com isso, mudar a tua vida (e da tua familia).
+</p>
+ </div>
+     <div class="col-md-12 col-lg-4 w3-center MobileMargin ImageBottomVisibility" style="padding:0px !important;margin-right: -65px;width: 31.333333%;">
+      <img src="img/Candle.webp" alt="Flowers" class="MobileWidth img-responsive" style="max-width:inherit;width:23em !important;margin-top:-5px !important;margin-left: 36px;">
+    </div>
+</div>
+</div>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+	  
+<div class="w3-row-padding w3-padding-64" style="background-color: #F7F2EE;margin-Top:-20px;">
+  <div class="w3-content">
+    <div class="w3">
+      <h1 class="w3-center QuestPratc FerramentasTitle" style="color: #472410;font-family: Maleah Regular!important;">Questões Práticas</h1>
+      <p class=" w3-center FontSizeTop" style="color:#472410;">A frequência das sessões é algo a combinar entre nós de acordo com a tua disponibilidade e com o tipo de trabalho que formos fazendo, sabendo que o objectivo é sempre criares bases sólidas para que depois possas caminhar sozinho. </p>
+<br>
+<p class="w3-center FontSizeTop" style="color:#472410;">
+Para algum esclarecimento, marcação ou pedido de mais
+informações sobre as sessões envia-me um <a href="./SobreMim.html" class="FontSizeTop" style="color:#C18787"> <u>email</u></a>.
+</p>
+    </div>
+  </div>
 
+
+</div>
+
+</div>
+    </main>
+    <script src="css/script.js"></script>
 </body>
 </html>
