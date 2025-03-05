@@ -414,7 +414,7 @@ a:focus, a:hover {
 	}
 }
 
-@media screen and (max-width: 1360px) {	
+@media screen and (max-width: 1370px) {	
 	.my-justify{
 		text-align: justify !important;
 	}
@@ -589,7 +589,7 @@ p{
     }
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1370px) {
 	.Acompanhamento{
 padding-top:50px !important;
 padding-bottom: 50px !important;	
