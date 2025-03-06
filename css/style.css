@@ -315,8 +315,23 @@ a:focus, a:hover {
  font-size:36px;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 768px) {
-		
+@media screen and (max-width: 768px) {
+	
+.titleSize{
+	font-size:28px !important;
+}
+
+}
+@media screen and (max-width: 1370px) and (min-width: 1200px) {
+	.OverrideBootstrap{
+		width:100% !important;
+	}
+}
+@media screen and (max-width: 1370px) and (min-width: 768px) {
+
+		.IntermediateSize {
+			width: 100% !important;
+		}
 	.PinkTitle{
 		margin-top:32px;
     font-size: 22px;
@@ -352,6 +367,9 @@ a:focus, a:hover {
 		margin-top: -30px;
 	}
 	.WhiteRose{
+	}
+			.FontSizeTop{
+		font-size: 22px !important;
 	}
 	}
 	
@@ -415,6 +433,7 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 1370px) {	
+
 	.my-justify{
 		text-align: justify !important;
 	}
@@ -719,6 +738,10 @@ background-image: url(../img/Header__animals_pc.png);
 
 .ImageBottomMargin{
 }
+}
+
+.titleSize{
+	font-size:36px;
 }
 
 .row{
