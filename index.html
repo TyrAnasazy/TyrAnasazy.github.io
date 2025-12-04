@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt" style="overflow:hidden;" data-theme="light">
+<html lang="pt" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
 <meta property="og:image" itemprop="image" content="https://tyranasazy.github.io/img/Tree_rosa_uncircled.png"/>
 <meta property="og:image:type" content="image/png">
 <meta property="og:url" content="www.atelierdaconsciencia.pt" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body style="background:  #F7F2EE !important; ">
     <header>
@@ -95,7 +96,90 @@
 	<body>
     <div class="hero-container">
         <img src="img/Header.webp" alt="Hero Image" class="hero-image">
+</div>
+
+<!-- ===================== 3 Blocks Section ===================== -->
+<section class="container py-5">
+
+    <!-- Block 1 -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-3 text-center">
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=600&auto=format&fit=crop" 
+                 class="img-fluid mb-3" alt="Mock Image 1">
+        </div>
+        <div class="col-md-9">
+            <p>Texto descritivo muito curto sobre este bloco. Alinhado com o estilo visual do Atelier da Consciência.</p>
+        </div>
     </div>
+
+    <!-- Block 2 -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-3 text-center">
+            <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=600&auto=format&fit=crop" 
+                 class="img-fluid mb-3" alt="Mock Image 2">
+        </div>
+        <div class="col-md-9">
+            <p>Texto descritivo muito curto sobre este bloco.</p>
+        </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="row align-items-center">
+        <div class="col-md-3 text-center">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&auto=format&fit=crop" 
+                 class="img-fluid mb-3" alt="Mock Image 3">
+        </div>
+        <div class="col-md-9">
+            <p>Texto descritivo muito curto sobre este bloco.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ===================== Carousel ===================== -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">Feedback de Clientes</h2>
+
+    <div id="feedbackCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="p-4">
+                    <p>"Experiência transformadora. Senti uma clareza que já não encontrava há anos."</p>
+                    <small>— Cliente A</small>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="p-4">
+                    <p>"A Catarina guia com leveza e profundidade. Recomendo a 100%."</p>
+                    <small>— Cliente B</small>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="p-4">
+                    <p>"Uma viagem interior que me devolveu energia e direção."</p>
+                    <small>— Cliente C</small>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
     </main>
     <script src="css/script.js"></script>
