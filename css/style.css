@@ -870,14 +870,13 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 	
 /* Center feedback text inside carousel slides */
 .carousel-item {
-    text-align: center;        /* Center the text horizontally */
+    text-align: center;
     display: flex;
-    justify-content: center;   /* Center the block horizontally */
-    align-items: center;       /* Center vertically */
-    flex-direction: column;    /* Stack quote + name vertically */
-    padding: 40px 20px;        /* More breathing room */
+    justify-content: center;
+    align-items: flex-start; /* was center */
+    flex-direction: column;
+    padding: 40px 20px;
 }
-
 
 .carousel-item p {
     font-size: 1.3em;
@@ -894,3 +893,166 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 .carousel-control-next-icon {
     filter: invert(1) brightness(0); /* make arrows black */
 }
+/* Limit text width so arrows never overlap */
+.carousel-content {
+    max-width: 900px;
+	height:485px;
+    margin: 0 auto;
+    padding: 0 60px; /* space for arrows */
+}
+/* Make carousel keep the height of the tallest slide */
+.carousel-inner {
+    display: grid;
+}
+
+.carousel-item {
+    grid-area: 1 / 1;
+}
+
+.site-footer {
+  background-color: #f7f4f1;
+  color: #472410;
+  padding: 50px 20px 20px;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #472410;
+}
+
+.footer-column p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+}
+
+.footer-links a,
+.site-footer a {
+  color: #A67C52;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-disclaimer {
+  max-width: 900px;
+  margin: 30px auto 20px;
+  font-size: 0.85rem;
+  color: #6b4a32;
+  text-align: center;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6b4a32;
+}
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+  }
+
+  .contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+    color: #472410;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  .form-toggle {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-toggle label {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    margin-right: 18px;
+  }
+
+  .gdpr {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .gdpr input {
+    margin-right: 10px;
+  }
+
+  .contact-form button {
+    background: #472410;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  .contact-form button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  .form-message {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+
+  .form-message.success {
+    background: #eef7f0;
+    color: #1f5f2a;
+    border: 1px solid #cfe9d5;
+  }
+
+  .form-message.error {
+    background: #fff1f1;
+    color: #7a1f1f;
+    border: 1px solid #f0caca;
+  }
+
+  .contact-form a {
+    color: #A67C52;
+    text-decoration: none;
+  }
+
+  .contact-form a:hover {
+    text-decoration: underline;
+  }

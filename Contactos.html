@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier da Consciência</title>
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+<body style="background: #F7F2EE;">
+    <header>
+        <nav class="desktop-nav">
+            <ul>
+				<li><a href="./index.html">Home</a></li>
+						<li><a href="./Consultoria.html">Consultoria Terapêutica</a></li>
+                <li class="dropdown">
+                    <a href="#">Técnicas</a>
+                    <ul class="dropdown-content">
+                        <li><a href="./Leitura.html">Leitura de Aura</a></li>
+                        <li><a href="./Alinhamento.html">Alinhamento Energético</a></li>
+                        <li><a href="./Tarot.html">Tarot Terapêutico</a></li>
+                    </ul>
+                </li>
+				<li class="dropdown">
+					<a href="#">Eventos</a>
+					<ul class="dropdown-content">
+						<li><a href="./CirculoTematico.html">Meditação da Lua Nova</a></li>
+						<li><a href="./CirculoMulheres.html">Circulo de Meditação para Mulheres</a></li>
+						<!-- <li><a href="./Constelacoes.html">Constelações com os Anjos</a></li> -->
+					</ul>
+				</li>
+				<li><a href="./Contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-header">
+            <button class="hamburger" id="hamburger-btn">
+                <div class="bar" style="background: #472410;"></div>
+                <div class="bar" style="background: #472410;"></div>
+                <div class="bar" style="background: #472410;"></div>
+            </button>
+            <div class="mobile-menu" id="mobile-menu">
+                <button class="close-btn" id="close-btn">&times;</button>
+                <ul>
+                    <li><img src="./img/Flor.png" style="height: 100px;"></li>
+					<li><a href="./index.html">Home</a></li>
+							<li><a href="./Consultoria.html" class="BurgerText">Consultoria Terapêutica</a></li>
+                    <li class="mobile-dropdown"> 
+                        <a href="#" class="mobile-dropdown-toggle BurgerText">Técnicas<span class="chevron"></span></a>
+                        <ul class="mobile-dropdown-content">
+							<li><a href="./Leitura.html" class="BurgerText">Leitura de Aura</a></li>
+							<li><a href="./Alinhamento.html" class="BurgerText">Alinhamento Energético</a></li>
+							<li><a href="./Tarot.html" class="BurgerText">Tarot Terapêutico</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-dropdown">
+                        <a href="#" class="mobile-dropdown-toggle BurgerText">Eventos<span class="chevron"></span></a>
+                        <ul class="mobile-dropdown-content">
+							<li><a href="./CirculoTematico.html" class="BurgerText">Meditação da Lua Nova</a></li>
+							<li><a href="./CirculoMulheres.html" class="BurgerText">Circulo de Meditação para Mulheres</a></li>
+							<!-- <li><a href="./Constelacoes.html" class="BurgerText">Constelações com os Anjos</a></li> -->
+                        </ul>
+                    </li>
+					<li><a href="./Contactos.html" class="BurgerText">Contactos</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+<form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+  <!-- Web3Forms required -->
+  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+  <input type="hidden" name="from_name" value="Website Catarina Português" />
+
+  <!-- Subject will be set dynamically -->
+  <input type="hidden" name="subject" id="subject" value="Novo contacto via site" />
+
+  <!-- Honeypot -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display:none;" />
+
+  <!-- Base fields -->
+  <label>
+    Nome
+    <input type="text" name="nome" required />
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" required />
+  </label>
+
+  <label>
+    Telefone
+    <input type="tel" name="telefone" required />
+  </label>
+
+  <!-- Toggle -->
+  <fieldset class="form-toggle">
+    <legend>Motivo do contacto</legend>
+
+    <label>
+      <input type="radio" name="tipo_contacto" value="Primeira sessão" checked />
+      Marcar Primeira sessão
+    </label>
+
+    <label>
+      <input type="radio" name="tipo_contacto" value="Inscrição evento" />
+      Inscrição Evento
+    </label>
+  </fieldset>
+
+  <!-- Primeira sessão -->
+  <div id="primeiraSessao">
+    <label>
+      O que te trouxe aqui
+      <textarea name="motivo" rows="4" placeholder="Partilha brevemente o que te motivou a procurar acompanhamento"></textarea>
+    </label>
+
+    <label>
+      Melhor horário
+      <input type="text" name="horario" placeholder="Ex.: dias úteis 18h–21h" />
+    </label>
+  </div>
+
+  <!-- Evento -->
+  <div id="evento" hidden>
+    <label>
+      Evento
+      <select name="evento">
+        <option value="">Seleciona um evento</option>
+        <option value="Meditação Mensal">Meditação Mensal</option>
+        <option value="Workshop Temático">Workshop Temático</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- GDPR consent -->
+  <label class="gdpr">
+    <input type="checkbox" name="gdpr_consent" required />
+    Li e aceito a <a href="/privacidade" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o tratamento dos meus dados
+    para resposta a este pedido.
+  </label>
+
+  <button id="submitBtn" type="submit">Enviar</button>
+
+  <!-- Inline messages -->
+  <div id="formSuccess" class="form-message success" role="status" aria-live="polite" hidden>
+    Obrigado! A tua mensagem foi enviada com sucesso. Vou responder-te assim que possível.
+  </div>
+
+  <div id="formError" class="form-message error" role="alert" aria-live="assertive" hidden>
+    Ocorreu um erro ao enviar. Por favor tenta novamente ou envia email para
+    <a href="mailto:contacto@seudominio.pt">contacto@seudominio.pt</a>.
+  </div>
+</form>
+
+    </main>
+    <script>
+  const form = document.getElementById("contactForm");
+  const primeiraSessao = document.getElementById("primeiraSessao");
+  const evento = document.getElementById("evento");
+
+  const motivo = document.querySelector('[name="motivo"]');
+  const horario = document.querySelector('[name="horario"]');
+  const eventoSelect = document.querySelector('[name="evento"]');
+
+  const subject = document.getElementById("subject");
+  const submitBtn = document.getElementById("submitBtn");
+
+  const successBox = document.getElementById("formSuccess");
+  const errorBox = document.getElementById("formError");
+
+  function updateForm() {
+    const tipo = document.querySelector('input[name="tipo_contacto"]:checked').value;
+
+    // Auto-route subject
+    subject.value = (tipo === "Primeira sessão")
+      ? "Pedido: Marcar Primeira Sessão"
+      : "Inscrição: Evento";
+
+    if (tipo === "Primeira sessão") {
+      primeiraSessao.hidden = false;
+      evento.hidden = true;
+
+      motivo.required = true;
+      horario.required = true;
+      eventoSelect.required = false;
+      eventoSelect.value = "";
+    } else {
+      primeiraSessao.hidden = true;
+      evento.hidden = false;
+
+      motivo.required = false;
+      horario.required = false;
+      motivo.value = "";
+      horario.value = "";
+      eventoSelect.required = true;
+    }
+  }
+
+  document.querySelectorAll('input[name="tipo_contacto"]').forEach(radio => {
+    radio.addEventListener("change", updateForm);
+  });
+
+  updateForm();
+
+  // Submit via fetch to avoid leaving the page
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    successBox.hidden = true;
+    errorBox.hidden = true;
+    submitBtn.disabled = true;
+    submitBtn.textContent = "A enviar...";
+
+    try {
+      const formData = new FormData(form);
+
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        form.reset();
+        // Restore default selection and visibility after reset
+        document.querySelector('input[name="tipo_contacto"][value="Primeira sessão"]').checked = true;
+        updateForm();
+
+        successBox.hidden = false;
+      } else {
+        errorBox.hidden = false;
+      }
+    } catch (err) {
+      errorBox.hidden = false;
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Enviar";
+    }
+  });
+</script>
+
+</body>
+</html>
