@@ -69,9 +69,9 @@
         </div>
     </header>
     <main>
-<form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+<form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form FontSizeTop" style="margin-top:20px;margin-bottom:20px;">
   <!-- Web3Forms required -->
-  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+  <input type="hidden" name="access_key" value="afd9d16b-9e04-4e8d-819d-63fe05750b46" />
   <input type="hidden" name="from_name" value="Website Catarina Português" />
 
   <!-- Subject will be set dynamically -->
@@ -83,7 +83,7 @@
   <!-- Base fields -->
   <label>
     Nome
-    <input type="text" name="nome" required />
+    <input type="text" name="nome" required class="FontSizeTop"/>
   </label>
 
   <label>
@@ -130,8 +130,8 @@
       Evento
       <select name="evento">
         <option value="">Seleciona um evento</option>
-        <option value="Meditação Mensal">Meditação Mensal</option>
-        <option value="Workshop Temático">Workshop Temático</option>
+        <option value="Meditação da lua nova">Meditação da lua nova</option>
+        <option value="Circuclo de meditação para mulheres">Circuclo de meditação para mulheres</option>
       </select>
     </label>
   </div>
@@ -157,6 +157,47 @@
 </form>
 
     </main>
+	<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Contact -->
+    <div class="footer-column">
+      <p>
+        Email: <a href="mailto:contacto@seudominio.pt">contacto@seudominio.pt</a><br>
+        <!-- Optional phone -->
+        <!-- Telefone: <a href="tel:+351XXXXXXXXX">+351 XXX XXX XXX</a> -->
+      </p>
+    </div>
+
+    <!-- Social / Networks -->
+    <div class="footer-column">
+      <ul class="footer-links">
+        <li><a href="https://www.instagram.com/seuinstagram" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/suapagina" target="_blank" rel="noopener">Facebook</a></li>
+        <!-- Add/remove as needed -->
+      </ul>
+    </div>
+
+    <!-- Location / Online -->
+    <div class="footer-column">
+      <p>
+        Sessões online<br>
+        Atendimento presencial sob marcação
+      </p>
+    </div>
+
+    <!-- Legal -->
+    <div class="footer-column">
+      <ul class="footer-links">
+		<li><a href="/faq">FAQ</a></li>
+        <li><a href="/privacidade">Política de Privacidade</a></li>
+        <li><a href="/termos">Termos e Condições</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+    <script src="css/script.js"></script>
     <script>
   const form = document.getElementById("contactForm");
   const primeiraSessao = document.getElementById("primeiraSessao");

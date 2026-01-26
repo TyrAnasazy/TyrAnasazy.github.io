@@ -896,7 +896,6 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 /* Limit text width so arrows never overlap */
 .carousel-content {
     max-width: 900px;
-	height:485px;
     margin: 0 auto;
     padding: 0 60px; /* space for arrows */
 }
@@ -922,6 +921,10 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .footer-column h4 {
@@ -980,7 +983,7 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
   .contact-form label {
     display: flex;
     flex-direction: column;
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     color: #472410;
   }
 
@@ -988,7 +991,7 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
   .contact-form textarea,
   .contact-form select {
     padding: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border: 1px solid #ccc;
     border-radius: 6px;
   }
@@ -1056,3 +1059,11 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
   .contact-form a:hover {
     text-decoration: underline;
   }
+button,
+input,
+select,
+textarea {
+  font: inherit;              /* font-family + font-size + line-height */
+  letter-spacing: inherit;
+  color: inherit;
+}
