@@ -1,0 +1,284 @@
+<!-- File: privacidade.html (or Privacidade.html — keep the same casing you link to) -->
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade (RGPD) — Atelier da Consciência</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+
+  <!-- Optional: small, page-specific layout helpers (safe even if you remove later) -->
+  <style>
+    .legal-wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .legal-wrap h1 { margin: 0 0 10px; }
+    .legal-meta { opacity: 0.85; margin-bottom: 24px; }
+    .legal-toc {
+      border: 1px solid rgba(71,36,16,0.15);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin: 18px 0 28px;
+      background: rgba(255,255,255,0.35);
+    }
+    .legal-toc ul { margin: 10px 0 0; padding-left: 18px; }
+    .legal-section { margin: 28px 0; }
+    .legal-section h2 { margin: 0 0 10px; }
+    .legal-note {
+      margin-top: 18px;
+      padding: 12px 14px;
+      border-left: 4px solid rgba(166,124,82,0.9);
+      background: rgba(255,255,255,0.35);
+      border-radius: 8px;
+    }
+    code { font-size: 0.95em; }
+  </style>
+
+  <script src="css/script.js" defer></script>
+</head>
+
+<body style="background: #F7F2EE;">
+  <header>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="./index.html">Consultoria Terapêutica</a></li>
+        <li><a href="./OCaminho.html">O Caminho</a></li>
+        <li><a href="./Tecnicas.html">Técnicas</a></li>
+        <li><a href="./Eventos.html">Eventos</a></li>
+
+        <!-- <li class="dropdown"> -->
+          <!-- <a href="#">Técnicas</a> -->
+          <!-- <ul class="dropdown-content"> -->
+            <!-- <li><a href="./Leitura.html">Leitura de Aura</a></li> -->
+            <!-- <li><a href="./Alinhamento.html">Alinhamento Energético</a></li> -->
+            <!-- <li><a href="./Tarot.html">Tarot Terapêutico</a></li> -->
+          <!-- </ul> -->
+        <!-- </li> -->
+
+        <!-- <li class="dropdown"> -->
+          <!-- <a href="#">Eventos</a> -->
+          <!-- <ul class="dropdown-content"> -->
+            <!-- <li><a href="./CirculoTematico.html">Meditação da Lua Nova</a></li> -->
+            <!-- <li><a href="./CirculoMulheres.html">Circulo de Meditação para Mulheres</a></li> -->
+          <!-- </ul> -->
+        <!-- </li> -->
+        <li><a href="./Perguntas.html">Perguntas Frequentes</a></li>
+        <li><a href="./Contactos.html">Marcar sessão</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-header">
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+      >
+        <div class="bar" style="background: #472410;"></div>
+        <div class="bar" style="background: #472410;"></div>
+        <div class="bar" style="background: #472410;"></div>
+      </button>
+
+      <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="close-btn" id="close-btn" aria-label="Fechar menu">&times;</button>
+
+        <ul>
+          <li><img src="./img/Flor.png" style="height: 100px;" alt="" /></li>
+          <li><a href="./index.html" class="BurgerText">Consultoria Terapêutica</a></li>
+          <li><a href="./OCaminho.html" class="BurgerText">O Caminho</a></li>
+          <li><a href="./Tecnicas.html" class="BurgerText">Técnicas</a></li>
+          <li><a href="./Eventos.html" class="BurgerText">Eventos</a></li>
+
+          <!-- <li class="mobile-dropdown"> -->
+            <!-- <a href="#" class="mobile-dropdown-toggle BurgerText">Técnicas<span class="chevron"></span></a> -->
+            <!-- <ul class="mobile-dropdown-content"> -->
+              <!-- <li><a href="./Leitura.html" class="BurgerText">Leitura de Aura</a></li> -->
+              <!-- <li><a href="./Alinhamento.html" class="BurgerText">Alinhamento Energético</a></li> -->
+              <!-- <li><a href="./Tarot.html" class="BurgerText">Tarot Terapêutico</a></li> -->
+            <!-- </ul> -->
+          <!-- </li> -->
+
+          <!-- <li class="mobile-dropdown"> -->
+            <!-- <a href="#" class="mobile-dropdown-toggle BurgerText">Eventos<span class="chevron"></span></a> -->
+            <!-- <ul class="mobile-dropdown-content"> -->
+              <!-- <li><a href="./CirculoTematico.html" class="BurgerText">Meditação da Lua Nova</a></li> -->
+              <!-- <li><a href="./CirculoMulheres.html" class="BurgerText">Circulo de Meditação para Mulheres</a></li> -->
+              <!-- <!-- <li><a href="./Constelacoes.html" class="BurgerText">Constelações com os Anjos</a></li> --> -->
+            <!-- </ul> -->
+          <!-- </li> -->
+          <li><a href="./Perguntas.html" class="BurgerText">Perguntas Frequentes</a></li>
+          <li><a href="./Contactos.html" class="BurgerText">Marcar sessão</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <article class="legal-wrap" id="conteudo">
+    <a href="#sec1" class="skip-link" style="position:absolute;left:-9999px;">Saltar para o conteúdo</a>
+
+    <h1>Política de Privacidade (RGPD)</h1>
+
+    <div class="legal-meta">
+      Esta Política de Privacidade descreve como são tratados os dados pessoais recolhidos através deste site, em conformidade com o RGPD
+      (incluindo o dever de informação previsto no art. 13.º).
+    </div>
+
+    <nav class="legal-toc" aria-label="Índice da Política de Privacidade">
+      <strong>Índice</strong>
+      <ul>
+        <li><a href="#sec1">1) Responsável pelo tratamento</a></li>
+        <li><a href="#sec2">2) Dados pessoais recolhidos e como são recolhidos</a></li>
+        <li><a href="#sec3">3) Finalidades e bases legais do tratamento</a></li>
+        <li><a href="#sec4">4) Destinatários e subcontratantes</a></li>
+        <li><a href="#sec5">5) Transferências internacionais</a></li>
+        <li><a href="#sec6">6) Prazos de conservação</a></li>
+        <li><a href="#sec7">7) Direitos dos titulares e como exercer</a></li>
+        <li><a href="#sec8">8) Reclamações</a></li>
+        <li><a href="#sec9">9) Cookies e analytics</a></li>
+        <li><a href="#sec10">10) Decisões automatizadas e perfis</a></li>
+      </ul>
+    </nav>
+
+    <section id="sec1" class="legal-section">
+      <h2>1) Responsável pelo tratamento</h2>
+      <p>A responsável pelo tratamento dos dados pessoais é:</p>
+      <p>
+        <strong>Nome:</strong> Catarina Português<br />
+        <strong>Email de contacto (privacidade):</strong> <a href="mailto:[INSERIR EMAIL]">[INSERIR EMAIL]</a>
+      </p>
+    </section>
+
+    <section id="sec2" class="legal-section">
+      <h2>2) Dados pessoais recolhidos e como são recolhidos</h2>
+      <p>Recolho apenas os dados necessários para comunicação:</p>
+
+      <h3>A) Mailing list (manual)</h3>
+      <ul style="text-align:left;">
+        <li><strong>Email</strong> (quando a pessoa se inscreve).</li>
+        <li>A mailing list é gerida manualmente no Gmail (não é automatizada por plataformas de email marketing).</li>
+      </ul>
+
+      <h3>B) Formulário de contacto (Web3Forms)</h3>
+      <ul style="text-align:left;">
+        <li><strong>Nome</strong> (quando fornecido no formulário)</li>
+        <li><strong>Email</strong></li>
+        <li><strong>Telefone</strong> (apenas se a pessoa o inserir)</li>
+        <li><strong>Mensagem</strong> (conteúdo do pedido)</li>
+      </ul>
+      <p>O formulário é processado pela Web3Forms, que recebe a submissão e a encaminha para o meu email.</p>
+
+      <h3>C) Dados técnicos de funcionamento e segurança</h3>
+      <p>
+        Podem ser tratados dados técnicos de acesso (ex.: endereço IP, data/hora, navegador) no âmbito do alojamento e de serviços
+        anti-spam/segurança associados ao formulário.
+      </p>
+    </section>
+
+    <section id="sec3" class="legal-section">
+      <h2>3) Finalidades e bases legais do tratamento</h2>
+
+      <h3>A) Envio de comunicações por email (mailing list)</h3>
+      <p><strong>Finalidade:</strong> envio de comunicações/informação relacionada com o meu projeto/atividades.</p>
+      <p><strong>Base legal:</strong> consentimento (art. 6.º, n.º 1, al. a) RGPD).</p>
+      <p>
+        <strong>Como cancelar:</strong> a qualquer momento, enviando pedido para
+        <a href="mailto:[INSERIR EMAIL]">[INSERIR EMAIL]</a> para remoção manual da lista.
+      </p>
+
+      <h3>B) Responder a pedidos via formulário/telefone</h3>
+      <p><strong>Finalidade:</strong> responder ao pedido e devolver contacto (quando solicitado).</p>
+      <p>
+        <strong>Base legal:</strong> diligências pré-contratuais a pedido do titular e/ou interesse legítimo em responder a contactos (consoante o contexto).
+      </p>
+
+      <h3>C) Segurança e prevenção de abuso (anti-spam)</h3>
+      <p><strong>Finalidade:</strong> proteger o formulário contra spam/abuso e garantir a segurança do serviço.</p>
+      <p><strong>Base legal:</strong> interesse legítimo em garantir segurança e integridade do serviço.</p>
+    </section>
+
+    <section id="sec4" class="legal-section">
+      <h2>4) Destinatários e subcontratantes</h2>
+      <p>Os dados não são partilhados com terceiros para fins comerciais.</p>
+      <p>Para funcionamento técnico, podem ser tratados por prestadores essenciais (subcontratantes):</p>
+
+      <ul style="text-align:left;">
+        <li><strong>Google (Gmail):</strong> receção/gestão dos emails e mailing list manual.</li>
+        <li><strong>Amen (alojamento):</strong> infraestrutura necessária ao funcionamento do site (atua como subcontratante no âmbito dos serviços prestados).</li>
+        <li><strong>Web3Forms (formulário):</strong> processamento/entrega das submissões do formulário.</li>
+      </ul>
+
+      <p>
+        <strong>Nota sobre subprestadores da Web3Forms (anti-spam e infraestrutura):</strong>
+        a Web3Forms indica que utiliza infraestrutura na AWS e serviços de prevenção de spam (ex.: CleanTalk e Akismet),
+        podendo partilhar IP e email do remetente para esse fim.
+      </p>
+    </section>
+
+    <section id="sec5" class="legal-section">
+      <h2>5) Transferências internacionais</h2>
+      <p>
+        Alguns prestadores (ex.: serviços de email e processamento de formulários) podem tratar dados fora do Espaço Económico Europeu.
+        Nesses casos, aplicam-se salvaguardas previstas no RGPD (ex.: mecanismos contratuais adequados).
+      </p>
+    </section>
+
+    <section id="sec6" class="legal-section">
+      <h2>6) Prazos de conservação</h2>
+      <ul style="text-align:left;">
+        <li><strong>Mailing list (email):</strong> até ao pedido de remoção/cancelamento.</li>
+        <li><strong>Pedidos via formulário/telefone:</strong> até 12 meses após a resolução do pedido (para gestão de seguimentos), podendo ser eliminados antes se solicitado.</li>
+        <li><strong>Web3Forms (armazenamento de submissões):</strong> a Web3Forms indica retenção limitada das submissões (ex.: 30 dias em planos gratuitos e 1 ano em planos Pro).</li>
+      </ul>
+    </section>
+
+    <section id="sec7" class="legal-section">
+      <h2>7) Direitos dos titulares e como exercer</h2>
+      <p>
+        Nos termos do RGPD, pode exercer direitos de acesso, retificação, apagamento, limitação, oposição e portabilidade (quando aplicável),
+        bem como retirar consentimento (mailing list) a qualquer momento.
+      </p>
+      <p>Para exercer direitos: enviar pedido para <a href="mailto:[INSERIR EMAIL]">[INSERIR EMAIL]</a>.</p>
+    </section>
+
+    <section id="sec8" class="legal-section">
+      <h2>8) Reclamações</h2>
+      <p>Pode apresentar reclamação junto da CNPD através dos canais oficiais.</p>
+    </section>
+
+    <section id="sec9" class="legal-section">
+      <h2>9) Cookies e analytics</h2>
+      <p>Este site não utiliza cookies de marketing/analytics nem ferramentas de analytics.</p>
+      <p>(Podem existir elementos técnicos estritamente necessários ao funcionamento do alojamento/infraestrutura, sem finalidade de perfilagem/marketing.)</p>
+    </section>
+
+    <section id="sec10" class="legal-section">
+      <h2>10) Decisões automatizadas e perfis</h2>
+      <p>Não são realizadas decisões exclusivamente automatizadas nem criação de perfis com efeitos legais ou significativamente similares.</p>
+    </section>
+  </article>
+</main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <p>
+          Email: <a href="mailto:contacto@seudominio.pt">contacto@seudominio.pt</a><br />
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <ul class="footer-links">
+          <li><a href="https://www.instagram.com/seuinstagram" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/suapagina" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </body>
+  </html>
