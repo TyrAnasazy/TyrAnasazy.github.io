@@ -15,7 +15,7 @@
       <ul>
         <li><a href="./index.html">Consultoria Terapêutica</a></li>
         <li><a href="./OCaminho.html">O Caminho</a></li>
-        <li><a href="./Tecnicas.html">Técnicas</a></li>
+        <li><a href="./Tecnicas.html">Terapias</a></li>
 
         <!-- <li class="dropdown"> -->
           <!-- <a href="#">Técnicas</a> -->
@@ -58,7 +58,7 @@
           <li><img src="./img/Flor.png" style="height: 100px;" alt="" /></li>
           <li><a href="./index.html" class="BurgerText">Consultoria Terapêutica</a></li>
           <li><a href="./OCaminho.html" class="BurgerText">O Caminho</a></li>
-          <li><a href="./Tecnicas.html" class="BurgerText">Técnicas</a></li>
+          <li><a href="./Tecnicas.html" class="BurgerText">Terapias</a></li>
 
           <!-- <li class="mobile-dropdown"> -->
             <!-- <a href="#" class="mobile-dropdown-toggle BurgerText">Técnicas<span class="chevron"></span></a> -->
@@ -100,18 +100,18 @@
 
   <!-- Base fields -->
   <label style="text-align:left;">
-    Nome
+    Nome *
     <input type="text" name="nome" required class="FontSizeTop"/>
   </label>
 
   <label style="text-align:left;">
-    Email
+    Email *
     <input type="email" name="email" required />
   </label>
 
   <label style="text-align:left;">
     Telefone
-    <input type="tel" name="telefone" required />
+    <input type="tel" name="telefone" />
   </label>
 
   <!-- Toggle -->
@@ -120,34 +120,38 @@
 
     <label>
       <input type="radio" name="tipo_contacto" value="Primeira sessão" checked />
-      Marcar Primeira sessão
+      Marcar Primeira Sessão
     </label>
 
     <label>
       <input type="radio" name="tipo_contacto" value="Inscrição evento" />
       Inscrição Evento
     </label>
+
+    <label>
+      <input type="radio" name="tipo_contacto" value="Marcar uma terapia" />
+      Marcar uma Terapia
+    </label>
   </fieldset>
 
   <!-- Primeira sessão -->
   <div id="primeiraSessao">
     <label style="text-align:left;">
-      O que te trouxe aqui
-      <textarea name="motivo" rows="4" placeholder="Partilha brevemente o que te motivou a procurar acompanhamento"></textarea>
+      O que te trouxe aqui*
+      <textarea name="motivo" rows="4" required placeholder="Partilha brevemente o que te motivou a procurar acompanhamento"></textarea>
     </label>
 
     <label style="text-align:left;">
-      Melhor horário
-      <input type="text" name="horario" placeholder="Ex.: dias úteis 18h–21h" />
+      Melhor horário*
+      <input type="text" name="horario" required placeholder="Ex.: dias úteis 18h–21h" />
     </label>
   </div>
 
   <!-- Evento -->
   <div id="evento" hidden>
-    <label>
+    <label  style="text-align:left;">
       Evento
       <select name="evento">
-        <option value="">Seleciona um evento</option>
         <option value="Meditação da lua nova">Meditação da lua nova</option>
         <option value="Circuclo de meditação para mulheres">Circuclo de meditação para mulheres</option>
       </select>
@@ -157,8 +161,7 @@
   <!-- GDPR consent -->
   <label class="gdpr">
     <input type="checkbox" name="gdpr_consent" required />
-    Li e aceito a <a href="./Privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o tratamento dos meus dados
-    para resposta a este pedido.
+    Li e aceito a <a href="./Privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o tratamento dos meus dados.
   </label>
 
   <button id="submitBtn" type="submit">Enviar</button>
