@@ -11,63 +11,76 @@
 </head>
 <body style="background: #F7F2EE;">
     <header>
-        <nav class="desktop-nav">
-            <ul>
-				<li><a href="./index.html">Home</a></li>
-						<li><a href="./Consultoria.html">Consultoria Terapêutica</a></li>
-                <li class="dropdown">
-                    <a href="#">Técnicas</a>
-                    <ul class="dropdown-content">
-                        <li><a href="./Leitura.html">Leitura de Aura</a></li>
-                        <li><a href="./Alinhamento.html">Alinhamento Energético</a></li>
-                        <li><a href="./Tarot.html">Tarot Terapêutico</a></li>
-                    </ul>
-                </li>
-				<li class="dropdown">
-					<a href="#">Eventos</a>
-					<ul class="dropdown-content">
-						<li><a href="./CirculoTematico.html">Meditação da Lua Nova</a></li>
-						<li><a href="./CirculoMulheres.html">Circulo de Meditação para Mulheres</a></li>
-						<!-- <li><a href="./Constelacoes.html">Constelações com os Anjos</a></li> -->
-					</ul>
-				</li>
-				<li><a href="./Contactos.html">Contactos</a></li>
-            </ul>
-        </nav>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Consultoria.html">Consultoria Terapêutica</a></li>
 
-        <div class="mobile-header">
-            <button class="hamburger" id="hamburger-btn">
-                <div class="bar" style="background: #472410;"></div>
-                <div class="bar" style="background: #472410;"></div>
-                <div class="bar" style="background: #472410;"></div>
-            </button>
-            <div class="mobile-menu" id="mobile-menu">
-                <button class="close-btn" id="close-btn">&times;</button>
-                <ul>
-                    <li><img src="./img/Flor.png" style="height: 100px;"></li>
-					<li><a href="./index.html">Home</a></li>
-							<li><a href="./Consultoria.html" class="BurgerText">Consultoria Terapêutica</a></li>
-                    <li class="mobile-dropdown"> 
-                        <a href="#" class="mobile-dropdown-toggle BurgerText">Técnicas<span class="chevron"></span></a>
-                        <ul class="mobile-dropdown-content">
-							<li><a href="./Leitura.html" class="BurgerText">Leitura de Aura</a></li>
-							<li><a href="./Alinhamento.html" class="BurgerText">Alinhamento Energético</a></li>
-							<li><a href="./Tarot.html" class="BurgerText">Tarot Terapêutico</a></li>
-                        </ul>
-                    </li>
-                    <li class="mobile-dropdown">
-                        <a href="#" class="mobile-dropdown-toggle BurgerText">Eventos<span class="chevron"></span></a>
-                        <ul class="mobile-dropdown-content">
-							<li><a href="./CirculoTematico.html" class="BurgerText">Meditação da Lua Nova</a></li>
-							<li><a href="./CirculoMulheres.html" class="BurgerText">Circulo de Meditação para Mulheres</a></li>
-							<!-- <li><a href="./Constelacoes.html" class="BurgerText">Constelações com os Anjos</a></li> -->
-                        </ul>
-                    </li>
-					<li><a href="./Contactos.html" class="BurgerText">Contactos</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+        <li class="dropdown">
+          <a href="#">Técnicas</a>
+          <ul class="dropdown-content">
+            <li><a href="./Leitura.html">Leitura de Aura</a></li>
+            <li><a href="./Alinhamento.html">Alinhamento Energético</a></li>
+            <li><a href="./Tarot.html">Tarot Terapêutico</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Eventos</a>
+          <ul class="dropdown-content">
+            <li><a href="./CirculoTematico.html">Meditação da Lua Nova</a></li>
+            <li><a href="./CirculoMulheres.html">Circulo de Meditação para Mulheres</a></li>
+          </ul>
+        </li>
+        <li><a href="./Contactos.html">FAQ</a></li>
+        <li><a href="./Contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-header">
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+      >
+        <div class="bar" style="background: #472410;"></div>
+        <div class="bar" style="background: #472410;"></div>
+        <div class="bar" style="background: #472410;"></div>
+      </button>
+
+      <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="close-btn" id="close-btn" aria-label="Fechar menu">&times;</button>
+
+        <ul>
+          <li><img src="./img/Flor.png" style="height: 100px;" alt="" /></li>
+          <li><a href="./index.html" class="BurgerText">Home</a></li>
+          <li><a href="./Consultoria.html" class="BurgerText">Consultoria Terapêutica</a></li>
+
+          <li class="mobile-dropdown">
+            <a href="#" class="mobile-dropdown-toggle BurgerText">Técnicas<span class="chevron"></span></a>
+            <ul class="mobile-dropdown-content">
+              <li><a href="./Leitura.html" class="BurgerText">Leitura de Aura</a></li>
+              <li><a href="./Alinhamento.html" class="BurgerText">Alinhamento Energético</a></li>
+              <li><a href="./Tarot.html" class="BurgerText">Tarot Terapêutico</a></li>
+            </ul>
+          </li>
+
+          <li class="mobile-dropdown">
+            <a href="#" class="mobile-dropdown-toggle BurgerText">Eventos<span class="chevron"></span></a>
+            <ul class="mobile-dropdown-content">
+              <li><a href="./CirculoTematico.html" class="BurgerText">Meditação da Lua Nova</a></li>
+              <li><a href="./CirculoMulheres.html" class="BurgerText">Circulo de Meditação para Mulheres</a></li>
+              <!-- <li><a href="./Constelacoes.html" class="BurgerText">Constelações com os Anjos</a></li> -->
+            </ul>
+          </li>
+          <li><a href="./Contactos.html" class="BurgerText">FAQ</a></li>
+          <li><a href="./Contactos.html" class="BurgerText">Contactos</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
     <main>
 	<div class="w3-row-padding w3-container Acompanhamento" id="Acompanhamento">
 <div class="">
@@ -122,43 +135,19 @@ informações sobre as sessões envia-me um <a href="./SobreMim.html#contactos" 
     <script src="css/script.js"></script>
 </body>
 <footer class="site-footer">
-  <div class="footer-container">
+    <div class="footer-container">
+      <div class="footer-column">
+        <p>
+          Email: <a href="mailto:contacto@seudominio.pt">contacto@seudominio.pt</a><br />
+        </p>
+      </div>
 
-    <!-- Contact -->
-    <div class="footer-column">
-      <p>
-        Email: <a href="mailto:contacto@seudominio.pt">contacto@seudominio.pt</a><br>
-        <!-- Optional phone -->
-        <!-- Telefone: <a href="tel:+351XXXXXXXXX">+351 XXX XXX XXX</a> -->
-      </p>
+      <div class="footer-column">
+        <ul class="footer-links">
+          <li><a href="https://www.instagram.com/seuinstagram" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/suapagina" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
     </div>
-
-    <!-- Social / Networks -->
-    <div class="footer-column">
-      <ul class="footer-links">
-        <li><a href="https://www.instagram.com/seuinstagram" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://www.facebook.com/suapagina" target="_blank" rel="noopener">Facebook</a></li>
-        <!-- Add/remove as needed -->
-      </ul>
-    </div>
-
-    <!-- Location / Online -->
-    <div class="footer-column">
-      <p>
-        Sessões online<br>
-        Atendimento presencial sob marcação
-      </p>
-    </div>
-
-    <!-- Legal -->
-    <div class="footer-column">
-      <ul class="footer-links">
-		<li><a href="/faq">FAQ</a></li>
-        <li><a href="/privacidade">Política de Privacidade</a></li>
-        <li><a href="/termos">Termos e Condições</a></li>
-      </ul>
-    </div>
-
-  </div>
-</footer>
+  </footer>
 </html>

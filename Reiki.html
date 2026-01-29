@@ -11,83 +11,76 @@
 </head>
 <body style="background: #F7F2EE;">
     <header>
-        <nav class="desktop-nav">
-            <ul>
-				<li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;padding: 0px;margin-top: -6px;"></a></li>						
-						<li><a href="./Consultoria.html">Consultoria Terapêutica</a></li>
-                <li class="dropdown">
-                    <a href="#">Terapias</a>
-                    <ul class="dropdown-content">
-                        <li><a href="./Leitura.html">Leitura de Aura</a></li>
-                        <li><a href="./Alinhamento.html">Alinhamento Energético</a></li>
-                        <li><a href="./Tarot.html">Tarot Terapêutico</a></li>
-                        <!-- <li><a href="./Caminho.html">O teu Caminho com os Anjos</a></li> -->
-                <li><a href="./Casa.html">Habitar Essencial</a></li> 
-                    </ul>
-                </li>
-				<li class="dropdown">
-                    <a href="#">Formações</a>
-                    <ul class="dropdown-content">
-                        <li><a href="./Reiki.html">Iniciações de Reiki Essencial</a></li>
-                        <li><a href="./Meditacao.html">Meditação das Rosas</a></li>
-                    </ul>
-                </li>
-				<li class="dropdown">
-					<a href="#">Meditações</a>
-					<ul class="dropdown-content">
-						<li><a href="./CirculoTematico.html">Meditação da Lua Nova</a></li>
-						<li><a href="./CirculoMulheres.html">Circulo de Meditação para Mulheres</a></li>
-						<!-- <li><a href="./Constelacoes.html">Constelações com os Anjos</a></li> -->
-					</ul>
-				</li>
-				<li><a href="./Agenda.html">Agenda</a></li>
-                <li><a href="./SobreMim.html">Sobre Mim...</a></li>
-            </ul>
-        </nav>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Consultoria.html">Consultoria Terapêutica</a></li>
 
-        <div class="mobile-header">
-            <button class="hamburger" id="hamburger-btn">
-                <div class="bar" style="background: #472410;"></div>
-                <div class="bar" style="background: #472410;"></div>
-                <div class="bar" style="background: #472410;"></div>
-            </button>
-            <div class="mobile-menu" id="mobile-menu">
-                <button class="close-btn" id="close-btn">&times;</button>
-                <ul>
-                    <li><img src="./img/Flor.png" style="height: 100px;"></li>
-					<li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;margin-top: -5px;"></a></li>
-							<li><a href="./Consultoria.html" class="BurgerText">Consultoria Terapêutica</a></li>
-                    <li class="mobile-dropdown"> 
-                        <a href="#" class="mobile-dropdown-toggle BurgerText">Terapias <span class="chevron"></span></a>
-                        <ul class="mobile-dropdown-content">
-							<li><a href="./Leitura.html" class="BurgerText">Leitura de Aura</a></li>
-							<li><a href="./Alinhamento.html" class="BurgerText">Alinhamento Energético</a></li>
-							<li><a href="./Tarot.html" class="BurgerText">Tarot Terapêutico</a></li>
-							<!-- <li><a href="./Caminho.html" class="BurgerText">O teu Caminho com os Anjos</a></li> -->
-                <li><a href="./Casa.html" class="BurgerText">Habitar Essencial</a></li> 
-                        </ul>
-                    </li>
-					<li class="mobile-dropdown">
-                        <a href="#" class="mobile-dropdown-toggle BurgerText">Formações <span class="chevron"></span></a>
-                        <ul class="mobile-dropdown-content">
-							<li><a href="./Reiki.html" class="BurgerText">Iniciações de Reiki Essencial</a></li>
-							 <li><a href="./Meditacao.html" class="BurgerText">Meditação das Rosas</a></li>
-                        </ul>
-                    </li>
-                    <li class="mobile-dropdown">
-                        <a href="#" class="mobile-dropdown-toggle BurgerText">Meditações<span class="chevron"></span></a>
-                        <ul class="mobile-dropdown-content">
-							<li><a href="./CirculoTematico.html" class="BurgerText">Meditação da Lua Nova</a></li>
-							<li><a href="./CirculoMulheres.html" class="BurgerText">Circulo de Meditação para Mulheres</a></li>
-							<!-- <li><a href="./Constelacoes.html" class="BurgerText">Constelações com os Anjos</a></li> -->
-                        </ul>
-                    </li>
-					<li><a href="./Agenda.html" class="BurgerText">Agenda</a></li>
-                    <li><a href="./SobreMim.html" class="BurgerText">Sobre Mim...</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+        <li class="dropdown">
+          <a href="#">Técnicas</a>
+          <ul class="dropdown-content">
+            <li><a href="./Leitura.html">Leitura de Aura</a></li>
+            <li><a href="./Alinhamento.html">Alinhamento Energético</a></li>
+            <li><a href="./Tarot.html">Tarot Terapêutico</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Eventos</a>
+          <ul class="dropdown-content">
+            <li><a href="./CirculoTematico.html">Meditação da Lua Nova</a></li>
+            <li><a href="./CirculoMulheres.html">Circulo de Meditação para Mulheres</a></li>
+          </ul>
+        </li>
+        <li><a href="./Contactos.html">FAQ</a></li>
+        <li><a href="./Contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-header">
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+      >
+        <div class="bar" style="background: #472410;"></div>
+        <div class="bar" style="background: #472410;"></div>
+        <div class="bar" style="background: #472410;"></div>
+      </button>
+
+      <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="close-btn" id="close-btn" aria-label="Fechar menu">&times;</button>
+
+        <ul>
+          <li><img src="./img/Flor.png" style="height: 100px;" alt="" /></li>
+          <li><a href="./index.html" class="BurgerText">Home</a></li>
+          <li><a href="./Consultoria.html" class="BurgerText">Consultoria Terapêutica</a></li>
+
+          <li class="mobile-dropdown">
+            <a href="#" class="mobile-dropdown-toggle BurgerText">Técnicas<span class="chevron"></span></a>
+            <ul class="mobile-dropdown-content">
+              <li><a href="./Leitura.html" class="BurgerText">Leitura de Aura</a></li>
+              <li><a href="./Alinhamento.html" class="BurgerText">Alinhamento Energético</a></li>
+              <li><a href="./Tarot.html" class="BurgerText">Tarot Terapêutico</a></li>
+            </ul>
+          </li>
+
+          <li class="mobile-dropdown">
+            <a href="#" class="mobile-dropdown-toggle BurgerText">Eventos<span class="chevron"></span></a>
+            <ul class="mobile-dropdown-content">
+              <li><a href="./CirculoTematico.html" class="BurgerText">Meditação da Lua Nova</a></li>
+              <li><a href="./CirculoMulheres.html" class="BurgerText">Circulo de Meditação para Mulheres</a></li>
+              <!-- <li><a href="./Constelacoes.html" class="BurgerText">Constelações com os Anjos</a></li> -->
+            </ul>
+          </li>
+          <li><a href="./Contactos.html" class="BurgerText">FAQ</a></li>
+          <li><a href="./Contactos.html" class="BurgerText">Contactos</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
     <main>
 	<div class="w3-row-padding w3-container Acompanhamento">
 <div class="w3-content ">
