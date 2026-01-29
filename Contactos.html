@@ -11,6 +11,7 @@
 </head>
 <body style="background: #F7F2EE;">
     <header>
+        <a style="float:left;margin-left:10px;color: #472410;font-size: 16px;"><strong>Catarina Mendonça Português</strong></a>
     <nav class="desktop-nav" aria-label="Navegação principal">
       <ul>
         <li><a href="./index.html">Consultoria Terapêutica</a></li>
@@ -110,7 +111,7 @@
   </label>
 
   <label style="text-align:left;">
-    Telefone
+    Telefone (se preferires que te ligue)
     <input type="tel" name="telefone" />
   </label>
 
@@ -150,19 +151,40 @@
   <!-- Evento -->
   <div id="evento" hidden>
     <label  style="text-align:left;">
-      Evento
+      Evento*
       <select name="evento">
+		  <option value="" disabled selected hidden>Seleciona uma opção</option>
         <option value="Meditação da lua nova">Meditação da lua nova</option>
         <option value="Circuclo de meditação para mulheres">Circuclo de meditação para mulheres</option>
       </select>
     </label>
   </div>
+  
+	<!-- Terapia -->
+	<div id="terapia" hidden>
+	  <label style="text-align:left;">
+		Terapia *
+		<select name="terapia" id="terapiaSelect">
+		  <!-- Placeholder: shown when nothing selected; disappears after user picks one -->
+		  <option value="" disabled selected hidden>Seleciona uma opção</option>
+
+		  <option value="Leitura de Aura">Leitura de Aura</option>
+		  <option value="Alinhamento Energético e Reequilíbrio Emocional Profundo">
+			Alinhamento Energético e Reequilíbrio Emocional Profundo
+		  </option>
+		  <option value="Tarot Terapêutico">Tarot Terapêutico</option>
+		</select>
+	  </label>
+	</div>
 
   <!-- GDPR consent -->
-  <label class="gdpr">
-    <input type="checkbox" name="gdpr_consent" required />
-    Li e aceito a <a href="./Privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o tratamento dos meus dados.
-  </label>
+<label class="gdpr">
+  <input type="checkbox" name="gdpr_consent" required />
+  <span>
+    Li e aceito a <a href="./privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o tratamento dos meus dados.
+  </span>
+</label>
+
 
   <button id="submitBtn" type="submit">Enviar</button>
 
@@ -178,108 +200,78 @@
 </form>
 
     </main>
-	<footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-column">
-        <p>
-          Email: <a href="mailto:contacto@seudominio.pt">contacto@seudominio.pt</a><br />
-        </p>
-      </div>
-
-      <div class="footer-column">
-        <ul class="footer-links">
+        <ul class="footer-links">          
+          <li><a href="mailto:contacto@seudominio.pt">contacto@seudominio.pt</a></li>
           <li><a href="https://www.instagram.com/seuinstagram" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.facebook.com/suapagina" target="_blank" rel="noopener">Facebook</a></li>
         </ul>
+		
+      <p class="footer-support">
+        Este projeto teve o apoio da Câmara de Cascais.
+      </p>
       </div>
     </div>
   </footer>
     <script src="css/script.js"></script>
     <script>
-  const form = document.getElementById("contactForm");
-  const primeiraSessao = document.getElementById("primeiraSessao");
-  const evento = document.getElementById("evento");
+ const form = document.getElementById("contactForm");
+const primeiraSessao = document.getElementById("primeiraSessao");
+const evento = document.getElementById("evento");
+const terapia = document.getElementById("terapia");
 
-  const motivo = document.querySelector('[name="motivo"]');
-  const horario = document.querySelector('[name="horario"]');
-  const eventoSelect = document.querySelector('[name="evento"]');
+const motivo = document.querySelector('[name="motivo"]');
+const horario = document.querySelector('[name="horario"]');
+const eventoSelect = document.querySelector('[name="evento"]');
+const terapiaSelect = document.querySelector('[name="terapia"]');
 
-  const subject = document.getElementById("subject");
-  const submitBtn = document.getElementById("submitBtn");
+const subject = document.getElementById("subject");
 
-  const successBox = document.getElementById("formSuccess");
-  const errorBox = document.getElementById("formError");
+function updateForm() {
+  const tipo = document.querySelector('input[name="tipo_contacto"]:checked').value;
 
-  function updateForm() {
-    const tipo = document.querySelector('input[name="tipo_contacto"]:checked').value;
+  // Show/hide sections
+  primeiraSessao.hidden = (tipo !== "Primeira sessão");
+  evento.hidden = (tipo !== "Inscrição evento");
+  terapia.hidden = (tipo !== "Marcar uma terapia");
 
-    // Auto-route subject
-    subject.value = (tipo === "Primeira sessão")
-      ? "Pedido: Marcar Primeira Sessão"
-      : "Inscrição: Evento";
+  // Required fields per flow
+  motivo.required = (tipo === "Primeira sessão");
+  horario.required = (tipo === "Primeira sessão");
+  eventoSelect.required = (tipo === "Inscrição evento");
+  terapiaSelect.required = (tipo === "Marcar uma terapia");
 
-    if (tipo === "Primeira sessão") {
-      primeiraSessao.hidden = false;
-      evento.hidden = true;
-
-      motivo.required = true;
-      horario.required = true;
-      eventoSelect.required = false;
-      eventoSelect.value = "";
-    } else {
-      primeiraSessao.hidden = true;
-      evento.hidden = false;
-
-      motivo.required = false;
-      horario.required = false;
-      motivo.value = "";
-      horario.value = "";
-      eventoSelect.required = true;
-    }
+  // Clear values when not used
+  if (tipo !== "Primeira sessão") {
+    motivo.value = "";
+    horario.value = "";
+  }
+  if (tipo !== "Inscrição evento") {
+    eventoSelect.value = "";
+  }
+  if (tipo !== "Marcar uma terapia") {
+    terapiaSelect.value = ""; // returns to placeholder
   }
 
-  document.querySelectorAll('input[name="tipo_contacto"]').forEach(radio => {
-    radio.addEventListener("change", updateForm);
-  });
+  // Subject
+  if (tipo === "Primeira sessão") {
+    subject.value = "Pedido: Marcar Primeira Sessão";
+  } else if (tipo === "Inscrição evento") {
+    subject.value = "Inscrição: Evento";
+  } else {
+    // Therapy
+    subject.value = "Pedido: Terapia";
+  }
+}
 
-  updateForm();
+document.querySelectorAll('input[name="tipo_contacto"]').forEach(radio => {
+  radio.addEventListener("change", updateForm);
+});
 
-  // Submit via fetch to avoid leaving the page
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
+updateForm();
 
-    successBox.hidden = true;
-    errorBox.hidden = true;
-    submitBtn.disabled = true;
-    submitBtn.textContent = "A enviar...";
-
-    try {
-      const formData = new FormData(form);
-
-      const res = await fetch(form.action, {
-        method: "POST",
-        body: formData
-      });
-
-      const data = await res.json();
-
-      if (res.ok && data.success) {
-        form.reset();
-        // Restore default selection and visibility after reset
-        document.querySelector('input[name="tipo_contacto"][value="Primeira sessão"]').checked = true;
-        updateForm();
-
-        successBox.hidden = false;
-      } else {
-        errorBox.hidden = false;
-      }
-    } catch (err) {
-      errorBox.hidden = false;
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.textContent = "Enviar";
-    }
-  });
 </script>
 
 </body>

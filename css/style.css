@@ -912,7 +912,7 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
   background-color: #f7f4f1;
   color: #472410;
   padding: 50px 20px 20px;
-  font-size: 0.95rem;
+  font-size: 16px;
 }
 
 .footer-container {
@@ -925,6 +925,7 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 
 .site-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+      text-align: left;
 }
 
 .footer-column h4 {
@@ -1009,10 +1010,21 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
     margin-right: 18px;
   }
 
-  .gdpr {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
+.gdpr{
+  display: flex;
+  align-items: flex-start; /* keeps checkbox aligned nicely */
+  gap: 10px;
+  text-align: left;
+}
+
+.gdpr input[type="checkbox"]{
+  margin-top: 4px; /* small tweak so it lines up with first text line */
+}
+
+.gdpr a{
+  white-space: nowrap; /* prevents “Política de Privacidade” splitting */
+}
+
 
   .gdpr input {
     margin-right: 10px;
@@ -1023,7 +1035,7 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
     color: #fff;
     border: none;
     padding: 12px;
-    font-size: 1rem;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 6px;
   }
@@ -1071,4 +1083,38 @@ ul.no-bullets {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
+}
+.footer-support{
+  margin: 12px 0 0;
+  color: #472410;        /* match your palette */
+  font-size: 16px;    /* slightly smaller than body */
+  opacity: 0.9;
+}
+
+/* Force the GDPR line to be one row: checkbox left, text right */
+label.gdpr{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+/* Undo any global rules that make inputs full width/block inside labels */
+label.gdpr > input[type="checkbox"]{
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  flex: 0 0 auto;
+}
+
+/* Keep the text next to it */
+label.gdpr > span{
+  display: inline-block;
+  flex: 1 1 auto;
+}
+
+/* Optional: stop “Política de Privacidade” breaking into 2 lines */
+label.gdpr a{
+  white-space: nowrap;
 }
