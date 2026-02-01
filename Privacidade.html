@@ -19,7 +19,7 @@
     .legal-wrap h1 { margin: 0 0 10px; }
     .legal-meta { opacity: 0.85; margin-bottom: 24px; }
     .legal-toc {
-      border: 1px solid rgba(71,36,16,0.15);
+      border: 1px solid rgba(207,186,172,0.65);
       border-radius: 12px;
       padding: 16px 18px;
       margin: 18px 0 28px;
@@ -31,19 +31,39 @@
     .legal-note {
       margin-top: 18px;
       padding: 12px 14px;
-      border-left: 4px solid rgba(166,124,82,0.9);
+      border-left: 4px solid rgba(200,139,82,0.95);
       background: rgba(255,255,255,0.35);
       border-radius: 8px;
     }
+	.legal-wrap a,
+.legal-toc a {
+  color: #334a35;
+  text-decoration: underline;
+  text-decoration-color: rgba(51, 74, 53, 0.35);
+  text-underline-offset: 3px;
+}
+
+.legal-wrap a:hover,
+.legal-toc a:hover,
+.legal-wrap a:focus,
+.legal-toc a:focus {
+  color: #334a35;               /* impede o hover azul (#23527c) */
+  text-decoration-color: rgba(51, 74, 53, 0.75);
+}
+
+.legal-wrap a:visited,
+.legal-toc a:visited {
+  color: #334a35;               /* mantém consistente */
+}
     code { font-size: 0.95em; }
   </style>
 
   <script src="css/script.js" defer></script>
 </head>
 
-<body style="background: #F7F2EE;">
+<body style="background: #f9f4ef;">
   <header>
-        <a style="float:left;margin-left:10px;color: #472410;"><strong>Catarina Mendonça Português</strong></a>
+        <a style="float:left;margin-left:10px;color: #292623;"><strong>Catarina Mendonça Português</strong></a>
     <nav class="desktop-nav" aria-label="Navegação principal">
       <ul>
         <li><a href="./index.html">Consultoria Terapêutica</a></li>
@@ -79,9 +99,9 @@
         aria-expanded="false"
         aria-label="Abrir menu"
       >
-        <div class="bar" style="background: #472410;"></div>
-        <div class="bar" style="background: #472410;"></div>
-        <div class="bar" style="background: #472410;"></div>
+        <div class="bar" style="background: #292623;"></div>
+        <div class="bar" style="background: #292623;"></div>
+        <div class="bar" style="background: #292623;"></div>
       </button>
 
       <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
