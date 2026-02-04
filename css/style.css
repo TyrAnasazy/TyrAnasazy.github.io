@@ -892,7 +892,8 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 }
 
 #feedbackCarousel .carousel-item p{
-  font-size: 1.3em;
+font-size: var(--ts-body);
+  line-height: var(--lh-body);
   line-height: 1.6;
   color: #472410;
 }
@@ -922,7 +923,8 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 
 
 .carousel-item p {
-    font-size: 1.3em;
+font-size: var(--ts-body);
+  line-height: var(--lh-body);
     line-height: 1.6;
     color: #472410;
 }
@@ -949,7 +951,7 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
 
 
 .site-footer {
-  background-color: #f7f4f1;
+  background-color: #F7F2EE;
   color: #472410;
   padding: 50px 20px 20px;
   font-size: 16px;
@@ -1070,10 +1072,6 @@ src: url('./fonts/DroidSerif-Regular.woff') format('woff');
   text-align: left;
 }
 
-.gdpr input[type="checkbox"]{
-  margin-top: 4px; /* small tweak so it lines up with first text line */
-}
-
 .gdpr a{
   white-space: nowrap; /* prevents “Política de Privacidade” splitting */
 }
@@ -1172,10 +1170,10 @@ label.gdpr a{
 }
 @media (max-width: 768px){
   .contact-form{ padding: 0 16px; }
-}
   .contact-box{
-    margin-bottom: 25px !important;
+    margin-bottom: 30px !important;
   }
+}
   
   /* =========================================================
    TYPE SCALE FINAL — MULI (MULISH)
@@ -1218,7 +1216,7 @@ label.gdpr a{
 /* 2) Design tokens (desktop defaults) */
 :root{
   --font-sans: "Muli", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --color-text: #2B2B2B;
+  --color-text: #472410;
 
   /* Desktop (≥1024px) */
   --ts-body: 19px;
@@ -1304,7 +1302,8 @@ p, li, dt, dd, blockquote{
 .t-h3{
   font-size: var(--ts-h3);
   line-height: var(--lh-h3);
-  font-weight: 600;
+  font-weight: 600;  
+    text-align: left;
 }
 
 .t-highlight{
@@ -1415,4 +1414,30 @@ input[type="reset"],
 /* paragraph indent helper */
 .indent-1{
   text-indent: 30px;
+}
+@media (max-width: 768px){
+  .site-footer{
+    text-align: center;              /* center text by default */
+  }
+
+  .footer-container{
+    justify-items: center;           /* center each grid item */
+  }
+
+  .footer-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;             /* center children (UL + p) */
+  }
+
+  .footer-links{
+    width: auto;                     /* stop shrink-wrap right alignment */
+    margin-left: 0;                  /* remove “push to right” */
+    margin-right: 0;
+    text-align: center;              /* keep LI centered */
+  }
+
+  .footer-support{
+    text-align: center;
+  }
 }
