@@ -98,7 +98,7 @@ html * {
 	height: 0.45em;
 	left: 0.15em;
 	position: relative;
-	transform: rotate(-45deg);
+	transform: rotate(136deg);
 	vertical-align: middle;
 	width: 0.45em;	
     transition: transform 0.3s ease;
@@ -314,11 +314,22 @@ a:focus, a:hover {
 .BigTitle{
  font-size:36px;
 }
-
+.imgmarginbottom{
+	margin-bottom:0px;
+}
+.images{
+	border-radius:16px;max-width:100%;height:auto;
+}
 @media screen and (max-width: 768px) {
 	
+.images{
+	border-radius:16px;max-width:90%;height:auto;
+}
 .titleSize{
 	font-size:28px !important;
+}
+.imgmarginbottom{
+	margin-bottom:20px;
 }
 
 }
@@ -435,7 +446,7 @@ a:focus, a:hover {
 @media screen and (max-width: 1370px) {	
 
 	.my-justify{
-		text-align: justify !important;
+		text-align: justify;
 	}
 .Acompanhamento{
 padding-top:25px !important;
@@ -489,9 +500,7 @@ p{
 }
 	.ImageBottomVisibilityReverse{
 	display:block;
-	padding-top:20px;
-		margin-left:auto;
-		margin-right:auto;	
+	padding-top:10px;
 }
 	.JustifyPC{
 		text-align: justify!important;
@@ -1168,11 +1177,25 @@ label.gdpr > span{
 label.gdpr a{
   white-space: nowrap;
 }
+.imageTerapias{
+	padding-right:18px;
+}
+
+.LinkAlign {
+	text-align: justify;
+}
+
 @media (max-width: 768px){
   .contact-form{ padding: 0 16px; }
   .contact-box{
     margin-bottom: 30px !important;
   }
+  .imageTerapias{
+	padding-right:0px;
+}
+.LinkAlign {
+	text-align: center;
+}
 }
   
   /* =========================================================
