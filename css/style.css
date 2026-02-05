@@ -1404,6 +1404,7 @@ textarea::placeholder {
  opacity: 0.7;
 }
 .quote-heart{
+	font-family: "Segoe UI Symbol","Apple Color Emoji","Noto Color Emoji",sans-serif;
   font-size: 1.1em;
   color: #C18787;
 }
