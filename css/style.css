@@ -1407,11 +1407,6 @@ textarea::placeholder {
   font-size: 1.1em;
   color: #C18787;
 }
-.quote-heart{
-  font-size: 1.1em;
-  vertical-align: middle;
-  color: #C18787;
-}
 
 /* mobile overrides */
 @media (max-width: 768px){
