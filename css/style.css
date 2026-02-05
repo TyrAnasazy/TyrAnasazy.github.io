@@ -1185,6 +1185,10 @@ label.gdpr a{
 	text-align: justify;
 }
 
+.MarginRosa{
+	margin-top:10px;
+}
+
 @media (max-width: 768px){
   .contact-form{ padding: 0 16px; }
   .contact-box{
@@ -1195,6 +1199,9 @@ label.gdpr a{
 }
 .LinkAlign {
 	text-align: center;
+}
+.MarginRosa{
+	margin-top:23px;
 }
 }
   
