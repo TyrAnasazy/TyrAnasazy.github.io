@@ -910,7 +910,7 @@ font-size: var(--ts-body);
 #feedbackCarousel .carousel-item small{
   display: block;
   margin-top: 10px;
-  color: #A67C52;
+  color: #8a8b60;
 }
 
 #feedbackCarousel .carousel-control-prev-icon,
@@ -941,7 +941,7 @@ font-size: var(--ts-body);
 .carousel-item small {
     display: block;
     margin-top: 10px;
-    color: #A67C52;
+    color: #8a8b60;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -1015,7 +1015,7 @@ font-size: var(--ts-body);
 
 .footer-links a,
 .site-footer a {
-  color: #A67C52;
+  color: #8a8b60;
   text-decoration: none;
 }
 
@@ -1124,7 +1124,7 @@ font-size: var(--ts-body);
   }
 
   .contact-form a {
-    color: #A67C52;
+    color: #8a8b60;
     text-decoration: none;
   }
 
