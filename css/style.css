@@ -68,7 +68,6 @@ body.menu-open {
 }
 
 html * {
-    font-family: Maleah Regular !important;
     letter-spacing: 1px;
 }
 
@@ -290,13 +289,11 @@ main {
 h1 {
     font-size: 3em;
     margin: 0;
-	font-family: Milky !important;
 }
 
 p {
     font-size: 1.4em;
     margin: 20px 0 0;
-	font-family: Maleah Regular !important;
 }
 
 a:focus, a:hover {
@@ -788,95 +785,7 @@ background-image: url(../img/Header__animals_pc.png);
 	padding-top: 50px!important;
     padding-bottom: 50px!important;
 }
-/* maven-pro-regular - latin */
-@font-face {
-  font-family: 'Maven Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/maven-pro-v32-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('./fonts/maven-pro-v32-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./fonts/maven-pro-v32-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./fonts/maven-pro-v32-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('./fonts/maven-pro-v32-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./fonts/maven-pro-v32-latin-regular.svg#MavenPro') format('svg'); /* Legacy iOS */
-}
-@font-face {
-    font-family: 'Delius';
-    src: url('./fonts/Delius-Regular.woff2') format('woff2'),
-         url('./fonts/Delius-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
-@font-face {
-font-family: 'Droid Serif Regular';
-font-style: normal;
-font-weight: normal;
-src: url('./fonts/DroidSerif-Regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Bray Notes';
-    src:url('./fonts/BrayNotes-Regular.woff2') format('woff2'),
-        url('./fonts/BrayNotes-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-/* @font-face { */
-    /* font-family: 'Milky'; */
-    /* src:url('./fonts/Milky Matcha Personal Use.woff2') format('woff2'), */
-        /* url('./Milky Matcha Personal Use.woff') format('woff'); */
-    /* font-weight: normal; */
-    /* font-style: normal; */
-/* } */
-@font-face {
-	font-family: 'AireBoldPro';
-	src: url('AireBoldPro.eot');
-	src: local('☞AireBoldPro'), local('AireBoldPro'),
-		url('AireLightPro.eot?#iefix') format('embedded-opentype'),
-		url('./fonts/AireBoldPro.woff') format('woff'),
-		url('AireBoldPro.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Seasons';
-	src: url('AireBoldPro.eot');
-	src: local('☞AireBoldPro'), local('AireBoldPro'),
-		url('AireBoldPro.eot?#iefix') format('embedded-opentype'),
-		url('./fonts/Seasons.woff') format('woff'),
-		url('AireBoldPro.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Mirage';
-	src: local('Mirage'),
-		url('./fonts/mirage.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
-}
-/* @font-face { */
-    /* font-family: 'Maleah Regular'; */
-    /* font-style: normal; */
-    /* font-weight: normal; */
-    /* src: local('Maleah Regular'), url('./fonts/Maleah-Regular.woff') format('woff'); */
-/* } */
-@font-face {
-    font-family: 'Maleah Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: url('./fonts/Muli-Light.woff') format('woff');
-}
-
-    @font-face {
-    font-family: 'Gemola Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gemola Regular'), url('./fonts/Gemola.woff') format('woff');
-    }
-	
 /* Center feedback text inside carousel slides */
 /* --- Feedback Carousel: keep Bootstrap show/hide behavior --- */
 
@@ -1213,21 +1122,24 @@ label.gdpr a{
 /* 1) Local font files (./fonts/) */
 @font-face {
   font-family: "Muli";
-  src: url("./fonts/Muli-Regular.woff") format("woff");
+  src: url("./fonts/Muli-Regular.woff2") format("woff2"),
+		url("./fonts/Muli-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Muli";
-  src: url("./fonts/Muli-SemiBold.woff") format("woff");
+  src: url("./fonts/Muli-SemiBold.woff2") format("woff2"),
+		url("./fonts/Muli-SemiBold.woff") format("woff"); 
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "Muli";
-  src: url("./fonts/Muli-Bold.woff") format("woff");
+   src: url("./fonts/Muli-Bold.woff2") format("woff2"),
+		url("./fonts/Muli-Bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -1242,7 +1154,9 @@ label.gdpr a{
   font-weight: 500;
   font-display: swap;
 }
-
+html, body{
+  font-family: var(--font-sans);
+}
 /* 2) Design tokens (desktop defaults) */
 :root{
   --font-sans: "Muli", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -1413,8 +1327,8 @@ input[type="reset"],
     --ts-h3: 20px;
     --lh-h3: 1.35;
 
-    --ts-nav: 15px;
-    --ts-btn: 15px;
+    --ts-nav: 17px;
+    --ts-btn: 17px;
   }
 }
 /* --- Helpers used in HTML updates --- */
@@ -1473,4 +1387,14 @@ input[type="reset"],
 }
 .no-bullets a{
   color: #8a8b60;
+}
+input::placeholder {
+ color: #472410;
+ font-style: italic;
+ opacity: 0.7;
+}
+textarea::placeholder {
+ color: #472410;
+ font-style: italic;
+ opacity: 0.7;
 }
