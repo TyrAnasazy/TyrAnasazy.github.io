@@ -1418,7 +1418,8 @@ textarea::placeholder {
     transform: translateY(1px); /* optional tweak */
   }
   .heart-icon{
-  width: 0.6em !important;
+  width: 0.8em !important;
+  margin-top:6px;
   height: 1.1em;
   vertical-align: middle;
   display: inline-block;
@@ -1426,7 +1427,7 @@ textarea::placeholder {
 }
 }
 .heart-icon{
-  width: 0.8em;
+  width: 1.1em;
   height: 1.1em;
   vertical-align: middle;
   display: inline-block;
