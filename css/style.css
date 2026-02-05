@@ -876,7 +876,7 @@ font-size: var(--ts-body);
 }
 
 .footer-container {
-  width: 1200px;
+  width: 800px;
   max-width: 100%;
   margin: 0 auto;
   display: grid;
@@ -1098,6 +1098,10 @@ label.gdpr a{
 	margin-top:10px;
 }
 
+.MarginAlinhamento {
+	margin-top:-33px;
+}
+
 @media (max-width: 768px){
   .contact-form{ padding: 0 16px; }
   .contact-box{
@@ -1111,6 +1115,9 @@ label.gdpr a{
 }
 .MarginRosa{
 	margin-top:23px;
+}
+.MarginAlinhamento {
+	margin-top:14px;
 }
 }
   
@@ -1397,4 +1404,14 @@ textarea::placeholder {
  color: #472410;
  font-style: italic;
  opacity: 0.7;
+}
+.quote-heart{
+  font-size: 1.1em;
+  vertical-align: middle;
+  color: #c43b3b;
+}
+.quote-heartWhite{
+  font-size: 1.1em;
+  vertical-align: middle;
+  color: #c43b3b;
 }
