@@ -1418,7 +1418,7 @@ textarea::placeholder {
     transform: translateY(1px); /* optional tweak */
   }
   .heart-icon{
-  width: 0.8em !important;
+  width: 1.0em !important;
   margin-top:6px;
   height: 1.1em;
   vertical-align: middle;
