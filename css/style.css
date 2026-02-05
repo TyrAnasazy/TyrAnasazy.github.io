@@ -1404,7 +1404,7 @@ textarea::placeholder {
  opacity: 0.7;
 }
 .quote-heart{
-	font-family: "Segoe UI Symbol","Apple Color Emoji","Noto Color Emoji",sans-serif;
+	font-family: "Segoe UI Symbol","Apple Color Emoji","Noto Color Emoji",sans-serif !important;
   font-size: 1.1em;
   color: #C18787;
 }
@@ -1417,4 +1417,11 @@ textarea::placeholder {
     display: inline-block;
     transform: translateY(1px); /* optional tweak */
   }
+}
+.heart-icon{
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: middle;
+  display: inline-block;
+  fill: currentColor;
 }
