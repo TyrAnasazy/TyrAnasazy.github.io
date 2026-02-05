@@ -819,7 +819,7 @@ font-size: var(--ts-body);
 #feedbackCarousel .carousel-item small{
   display: block;
   margin-top: 10px;
-  color: #8a8b60;
+  color: #A67C52;
 }
 
 #feedbackCarousel .carousel-control-prev-icon,
@@ -850,7 +850,7 @@ font-size: var(--ts-body);
 .carousel-item small {
     display: block;
     margin-top: 10px;
-    color: #8a8b60;
+    color: #A67C52;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -924,7 +924,7 @@ font-size: var(--ts-body);
 
 .footer-links a,
 .site-footer a {
-  color: #8a8b60;
+  color: #C18787;
   text-decoration: none;
 }
 
@@ -1386,7 +1386,7 @@ input[type="reset"],
   }
 }
 .no-bullets a{
-  color: #8a8b60;
+  color: #C18787;
 }
 input::placeholder {
  color: #472410;
