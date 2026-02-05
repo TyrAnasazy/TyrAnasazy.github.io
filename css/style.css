@@ -1417,9 +1417,16 @@ textarea::placeholder {
     display: inline-block;
     transform: translateY(1px); /* optional tweak */
   }
+  .heart-icon{
+  width: 0.6em !important;
+  height: 1.1em;
+  vertical-align: middle;
+  display: inline-block;
+  fill: currentColor;
+}
 }
 .heart-icon{
-  width: 1.1em;
+  width: 0.8em;
   height: 1.1em;
   vertical-align: middle;
   display: inline-block;
