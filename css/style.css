@@ -1464,3 +1464,6 @@ input[type="reset"],
     text-align: center;
   }
 }
+.no-bullets a{
+  color: #334a35;
+}
