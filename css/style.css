@@ -317,10 +317,18 @@ a:focus, a:hover {
 .images{
 	border-radius:16px;max-width:100%;height:auto;
 }
+.imagesCandle{
+	border-radius:16px;max-width:100%;height:auto;
+}
 @media screen and (max-width: 768px) {
 	
 .images{
 	border-radius:16px;max-width:90%;height:auto;
+}
+.imagesCandle{
+	       border-radius: 16px;
+        max-width: 40%;
+        height: auto;
 }
 .titleSize{
 	font-size:28px !important;
