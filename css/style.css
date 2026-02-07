@@ -1414,6 +1414,15 @@ textarea::placeholder {
  font-style: italic;
  opacity: 0.7;
 }
+.contact-form select{
+  color: #A67C52;
+}
+
+/* Dropdown options (works in many cases, not all) */
+.contact-form select option{
+  color: #A67C52;          /* or another color */
+}
+
 .quote-heart{
 	font-family: "Segoe UI Symbol","Apple Color Emoji","Noto Color Emoji",sans-serif !important;
 	margin-right: -10px;
