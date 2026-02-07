@@ -326,8 +326,9 @@ a:focus, a:hover {
 	border-radius:16px;max-width:90%;height:auto;
 }
 .imagesCandle{
-	       border-radius: 16px;
-        max-width: 40%;
+	margin-top:-40px;
+	       border-radius: 54px;
+        padding: 30px;
         height: auto;
 }
 .titleSize{
@@ -374,9 +375,6 @@ a:focus, a:hover {
 }
 .ImageBottomVisibilityReverse{
 	display:block;
-	padding-top:20px;
-		margin-left:auto;
-		margin-right:auto;	
 }
 	.WhiteRoseTransform{
 		transform:rotate(-90deg);
@@ -505,7 +503,6 @@ p{
 }
 	.ImageBottomVisibilityReverse{
 	display:block;
-	padding-top:10px;
 }
 	.JustifyPC{
 		text-align: justify!important;
