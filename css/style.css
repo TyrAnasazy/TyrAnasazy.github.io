@@ -320,10 +320,16 @@ a:focus, a:hover {
 .imagesCandle{
 	border-radius:16px;max-width:100%;height:auto;
 }
+.Tematico{
+	margin-top:45px;
+}
 @media screen and (max-width: 768px) {
 	
 .images{
 	border-radius:16px;max-width:90%;height:auto;
+}
+.Tematico{
+	margin-top:0px;
 }
 .imagesCandle{
 	margin-top:-40px;
