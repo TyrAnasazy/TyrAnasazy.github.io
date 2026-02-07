@@ -1405,12 +1405,12 @@ input[type="reset"],
   color: #C18787;
 }
 input::placeholder {
- color: #472410;
+ color: #A67C52;
  font-style: italic;
  opacity: 0.7;
 }
 textarea::placeholder {
- color: #472410;
+ color: #A67C52;
  font-style: italic;
  opacity: 0.7;
 }
