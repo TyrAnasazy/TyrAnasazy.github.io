@@ -1476,3 +1476,7 @@ textarea::placeholder {
   fill: currentColor;
       font-size: 1.2em;
 }
+.headertext-img{ width: 100%; height: auto; }
+@media (min-width: 768px){
+  .headertext-img{ width: 75%; }
+}
