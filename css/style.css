@@ -323,7 +323,19 @@ a:focus, a:hover {
 .Tematico{
 	margin-top:45px;
 }
+.ImageCandleIndex {
+	display:block;
+}
+.ImageCandleIndexReverse {
+	display:none;
+}
 @media screen and (max-width: 768px) {
+.ImageCandleIndex {
+	display:none;
+}
+.ImageCandleIndexReverse {
+	display:block;
+}
 	
 .images{
 	border-radius:16px;max-width:90%;height:auto;
@@ -880,7 +892,7 @@ font-size: var(--ts-body);
 .site-footer {
   background-color: #F7F2EE;
   color: #472410;
-  padding: 50px 20px 20px;
+  padding: 10px 10px 10px;
   font-size: 16px;
 }
 
@@ -1171,6 +1183,7 @@ label.gdpr a{
   font-display: swap;
 }
 html, body{
+  height: 100%;
   font-family: var(--font-sans);
 }
 /* 2) Design tokens (desktop defaults) */
@@ -1213,8 +1226,15 @@ html body *{
   letter-spacing: normal !important;
 }
 
+main{
+  flex: 1; /* pushes footer to bottom when content is short */
+}
+
 /* 4) Base typography */
 body{
+	  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   color: var(--color-text) !important;
   font-weight: 400;
   font-size: var(--ts-body);
