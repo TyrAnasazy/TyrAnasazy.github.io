@@ -1110,6 +1110,9 @@ label.gdpr a{
 .imageTerapias{
 	padding-right:18px;
 }
+.imageTerapiasLeft{
+	padding-left:18px;
+}
 
 .LinkAlign {
 	text-align: justify;
@@ -1124,6 +1127,9 @@ label.gdpr a{
 }
 
 @media (max-width: 768px){
+.imageTerapiasLeft{
+	padding-left:0px;
+}
   .contact-form{ padding: 0 16px; }
   .contact-box{
     margin-bottom: 30px !important;
@@ -1304,7 +1310,7 @@ h2{
   font-size: var(--ts-h2) !important;
   line-height: var(--lh-h2) !important;
   font-weight: 600 !important;
-  margin: 1.2em 0 0.5em;
+  margin: 1.2em 0 0em;
 }
 
 h3{
@@ -1478,5 +1484,5 @@ textarea::placeholder {
 }
 .headertext-img{ width: 100%; height: auto; }
 @media (min-width: 768px){
-  .headertext-img{ width: 75%; }
+  .headertext-img{ width: 65%; }
 }
