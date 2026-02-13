@@ -216,7 +216,7 @@ header.scrolled {
 }
 
 .mobile-menu ul li {
-    padding: 20px 0;
+    padding: 18px 0;
 }
 
 .mobile-menu ul li a {
@@ -1330,9 +1330,13 @@ small, .small, .note, figcaption{
 /* 7) Navigation + buttons (classes + sensible targeting) */
 .t-nav,
 .desktop-nav ul,
-.desktop-nav ul li a,
-.mobile-menu ul li a{
+.desktop-nav ul li a{
   font-size: var(--ts-nav) !important;
+  line-height: var(--lh-nav) !important;
+  font-weight: 600 !important;
+}
+.mobile-menu ul li a{
+  font-size: 18px !important;
   line-height: var(--lh-nav) !important;
   font-weight: 600 !important;
 }
