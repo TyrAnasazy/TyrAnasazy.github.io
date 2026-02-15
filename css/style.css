@@ -389,10 +389,10 @@ a:focus, a:hover {
 		margin-right:auto;		
 		}
 .ImageBottomVisibility{
-	display:none;
+	display:none !important;
 }
 .ImageBottomVisibilityReverse{
-	display:block;
+	display:block !important;
 }
 	.WhiteRoseTransform{
 		transform:rotate(-90deg);
@@ -451,10 +451,10 @@ a:focus, a:hover {
 	
 
 .ImageBottomVisibility{
-	display:block;
+	display:block !important;
 }
 .ImageBottomVisibilityReverse{
-	display:none;
+	display:none !important;
 }
 
 	.WhiteRose{
@@ -517,10 +517,10 @@ p{
 		font-size:20px;
 	}
 	.ImageBottomVisibility{
-	display:none;
+	display:none !important;
 }
 	.ImageBottomVisibilityReverse{
-	display:block;
+	display:block !important;
 }
 	.JustifyPC{
 		text-align: justify!important;
@@ -1489,4 +1489,39 @@ textarea::placeholder {
 .headertext-img{ width: 100%; height: auto; }
 @media (min-width: 768px){
   .headertext-img{ width: 65%; }
+}
+
+.imageTerapias img{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.marginBottomChave{
+	margin-bottom:0px !important;
+}
+
+@media (max-width: 768px){
+  .imageTerapias img{ max-width: 90%; } /* matches your .images mobile intent */
+  
+.marginBottomChave{
+	margin-bottom:23px !important;
+}
+}
+
+.terapia-thumb{
+  width: 100%;
+  max-width: 260px;      /* pick a size you like */
+  aspect-ratio: 1 / 1;   /* square; or 4/5, 3/4, etc */
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+.terapia-thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
