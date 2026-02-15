@@ -62,7 +62,7 @@ body.menu-open {
     overflow: hidden;
 }
 
-* Estilos gerais para o submenu */
+/* Estilos gerais para o submenu */
 .mobile-dropdown {
     position: relative;
 }
@@ -388,12 +388,6 @@ a:focus, a:hover {
 		margin-left:auto;
 		margin-right:auto;		
 		}
-.ImageBottomVisibility{
-	display:none !important;
-}
-.ImageBottomVisibilityReverse{
-	display:block !important;
-}
 	.WhiteRoseTransform{
 		transform:rotate(-90deg);
 		margin-top: -30px;
@@ -450,12 +444,6 @@ a:focus, a:hover {
 	
 	
 
-.ImageBottomVisibility{
-	display:block !important;
-}
-.ImageBottomVisibilityReverse{
-	display:none !important;
-}
 
 	.WhiteRose{
 		width: 27em !important;
@@ -516,12 +504,6 @@ p{
 		color:#D18741 ! important;
 		font-size:20px;
 	}
-	.ImageBottomVisibility{
-	display:none !important;
-}
-	.ImageBottomVisibilityReverse{
-	display:block !important;
-}
 	.JustifyPC{
 		text-align: justify!important;
 	}
@@ -1492,7 +1474,6 @@ textarea::placeholder {
 }
 
 .imageTerapias img{
-  display: block;
   margin: 0 auto;
   width: 100%;
   height: auto;
@@ -1524,4 +1505,13 @@ textarea::placeholder {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+/* Desktop/tablet (not mobile): show ImageBottomVisibility, hide Reverse */
+.ImageBottomVisibility { display: block; }
+.ImageBottomVisibilityReverse { display: none; }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .ImageBottomVisibility { display: none !important; }
+  .ImageBottomVisibilityReverse { display: block !important; }
 }
