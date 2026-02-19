@@ -454,9 +454,6 @@ a:focus, a:hover {
 
 @media screen and (max-width: 1370px) {	
 
-	.my-justify{
-		text-align: justify;
-	}
 .Acompanhamento{
 padding-top:25px !important;
 padding-bottom: 50px !important;	
@@ -1502,6 +1499,9 @@ textarea::placeholder {
 .LeituraAura{
 	margin-top: 0px;
 }
+	.my-justify{
+		text-align: left;
+	}
 }
 
 .terapia-thumb{
