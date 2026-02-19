@@ -1486,6 +1486,10 @@ textarea::placeholder {
 	margin-top:70px;
 }
 
+.LeituraAura{
+	margin-top: 15px;
+}
+
 @media (max-width: 768px){
   .imageTerapias img{ max-width: 90%; } /* matches your .images mobile intent */
   
@@ -1493,7 +1497,10 @@ textarea::placeholder {
 	margin-bottom:23px !important;
 }
 .LuaNova{
-	margin-top:0px;
+	margin-top:45px;
+}
+.LeituraAura{
+	margin-top: 0px;
 }
 }
 
