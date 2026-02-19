@@ -1470,7 +1470,7 @@ textarea::placeholder {
 }
 .headertext-img{ width: 100%; height: auto; }
 @media (min-width: 768px){
-  .headertext-img{ width: 65%; }
+  .headertext-img{ width: 85%; }
 }
 
 .imageTerapias img{
