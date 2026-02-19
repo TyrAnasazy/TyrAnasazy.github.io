@@ -1482,12 +1482,18 @@ textarea::placeholder {
 .marginBottomChave{
 	margin-bottom:0px !important;
 }
+.LuaNova{
+	margin-top:70px;
+}
 
 @media (max-width: 768px){
   .imageTerapias img{ max-width: 90%; } /* matches your .images mobile intent */
   
 .marginBottomChave{
 	margin-bottom:23px !important;
+}
+.LuaNova{
+	margin-top:0px;
 }
 }
 
