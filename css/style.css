@@ -1528,3 +1528,11 @@ textarea::placeholder {
   .ImageBottomVisibility { display: none !important; }
   .ImageBottomVisibilityReverse { display: block !important; }
 }
+@media (max-width: 1062px) {
+  .plan-break {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+	width: 100%;
+    margin-left: 0 !important; /* cancels offset-md-3 */
+  }
+}
