@@ -452,7 +452,7 @@ a:focus, a:hover {
 	}
 }
 
-@media screen and (max-width: 1370px) {	
+@media screen and (max-width: 1220px) {	
 
 	.my-justify{
 		text-align: justify;
@@ -619,7 +619,7 @@ p{
     }
 }
 
-@media screen and (min-width: 1370px) {
+@media screen and (min-width: 1220px) {
 	.Acompanhamento{
 padding-top:50px !important;
 padding-bottom: 50px !important;	
@@ -1534,5 +1534,37 @@ textarea::placeholder {
     max-width: 100% !important;
 	width: 100%;
     margin-left: 0 !important; /* cancels offset-md-3 */
+  }
+}
+/* Desktop + tablet: image fixed width on the left, text uses the remaining width */
+.mediaRow .imageTerapias{
+  float: left;
+  width: 282px;                 /* your desired width */
+  margin: 0 0px 20px 0;        /* space between image and text */
+  text-align: center;
+}
+
+.mediaRow .imageTerapias img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mediaRow .plan-break{
+  display: block;               /* normal block */
+}
+
+/* Mobile: stack, center image, text full width below */
+@media (max-width: 599.98px){
+  .mediaRow .imageTerapias{
+    float: none !important;
+    width: 100% !important;
+    margin: 0 0 16px 0;
+    text-align: center;
+  }
+
+  .mediaRow .imageTerapias img{
+    width: min(282px, 85vw);    /* centered, never “earth size” */
+    margin: 0 auto;
   }
 }
