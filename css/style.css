@@ -344,9 +344,7 @@ a:focus, a:hover {
 	margin-top:0px;
 }
 .imagesCandle{
-	margin-top:-40px;
 	       border-radius: 54px;
-        padding: 30px;
         height: auto;
 }
 .titleSize{
@@ -1565,6 +1563,40 @@ textarea::placeholder {
 
   .mediaRow .imageTerapias img{
     width: min(282px, 85vw);    /* centered, never “earth size” */
+    margin: 0 auto;
+  }
+}
+
+/* Desktop + tablet: image fixed width on the left, text uses the remaining width */
+.mediaRow .imageIndex{
+  float: left;
+  width: 192px;                 /* your desired width */
+  text-align: center;
+      padding-right: 18px;
+    margin-top: -10px;
+}
+
+.mediaRow .imageIndex img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mediaRow .plan-break{
+  display: block;               /* normal block */
+}
+
+/* Mobile: stack, center image, text full width below */
+@media (max-width: 599.98px){
+  .mediaRow .imageIndex{
+    float: none !important;
+    width: 100% !important;
+    margin: 0 0 16px 0;
+    text-align: center;
+  }
+
+  .mediaRow .imageIndex img{
+    width: min(192px, 85vw);    /* centered, never “earth size” */
     margin: 0 auto;
   }
 }
