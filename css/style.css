@@ -1519,7 +1519,7 @@ textarea::placeholder {
 }
 /* Desktop/tablet (not mobile): show ImageBottomVisibility, hide Reverse */
 .ImageBottomVisibility { display: block; }
-.ImageBottomVisibilityReverse { display: none; }
+.ImageBottomVisibilityReverse { display: none !important; }
 
 /* Mobile */
 @media (max-width: 772px) {
