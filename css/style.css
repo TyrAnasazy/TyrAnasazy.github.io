@@ -1522,7 +1522,7 @@ textarea::placeholder {
 .ImageBottomVisibilityReverse { display: none; }
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 772px) {
   .ImageBottomVisibility { display: none !important; }
   .ImageBottomVisibilityReverse { display: block !important; }
 }
@@ -1553,7 +1553,7 @@ textarea::placeholder {
 }
 
 /* Mobile: stack, center image, text full width below */
-@media (max-width: 599.98px){
+@media (max-width: 772px){
   .mediaRow .imageTerapias{
     float: none !important;
     width: 100% !important;
