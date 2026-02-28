@@ -1573,7 +1573,6 @@ textarea::placeholder {
   width: 192px;                 /* your desired width */
   text-align: center;
       padding-right: 18px;
-    margin-top: -10px;
 }
 
 .mediaRow .imageIndex img{
