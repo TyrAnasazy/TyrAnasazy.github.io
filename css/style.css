@@ -392,9 +392,6 @@ a:focus, a:hover {
 	}
 	.WhiteRose{
 	}
-			.FontSizeTop{
-		font-size: 22px !important;
-	}
 	}
 	
 @media screen and (min-width: 1200px) {
@@ -1526,6 +1523,17 @@ textarea::placeholder {
   .ImageBottomVisibility { display: none !important; }
   .ImageBottomVisibilityReverse { display: block !important; }
 }
+
+/* Desktop/tablet (not mobile): show ImageBottomVisibility, hide Reverse */
+.ImageBottomVisibilityRoses { display: block; }
+.ImageBottomVisibilityReverseRoses { display: none !important; }
+
+/* Mobile */
+@media (max-width: 1128px) {
+  .ImageBottomVisibilityRoses { display: none !important; }
+  .ImageBottomVisibilityReverseRoses { display: block !important; }
+}
+
 @media (max-width: 1062px) {
   .plan-break {
     flex: 0 0 100% !important;
@@ -1598,4 +1606,34 @@ textarea::placeholder {
     width: min(192px, 85vw);    /* centered, never “earth size” */
     margin: 0 auto;
   }
+}
+@media (max-width: 1128px) {
+  /* stop W3CSS column float behavior for the image column in these rows */
+  .mediaRow .imageTerapias{
+    float: none !important;
+    width: 100% !important;
+    margin: 0 0 16px 0 !important;
+    text-align: center;
+  }
+
+  /* keep image reasonable on “mobile mode” */
+  .mediaRow .imageTerapias img{
+    width: min(282px, 85vw);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* make the text blocks full width (kills the bootstrap offset visually) */
+  .mediaRow .plan-break{
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* Smooth “container” that shrinks continuously until it hits a max width */
+.container-smooth{
+  width: min(100% - 2rem, 1200px); /* pick your max width */
+  margin-inline: auto;
 }
