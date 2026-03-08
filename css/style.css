@@ -1637,3 +1637,42 @@ textarea::placeholder {
   width: min(100% - 2rem, 1200px); /* pick your max width */
   margin-inline: auto;
 }
+/* Right-side image: float right, fixed width */
+.mediaRow .imageTerapias--right{
+  float: right;
+  width: 282px;
+  margin: 0 0 20px 24px; /* space between text and image (on the left side now) */
+}
+  .PaddingBottom{
+	  padding-bottom: 120px;
+  }
+
+/* IMPORTANT: allow the text block to shrink beside the float (override col-12 width:100%) */
+@media (min-width: 1129px){
+  .mediaRow .plan-break--textFirst{
+    width: auto !important;
+    max-width: none !important;
+    margin-left: 0 !important;   /* if offset classes were creating visual offset */
+  }
+}
+@media (max-width: 928px) {
+  /* stop W3CSS column float behavior for the image column in these rows */
+  .mediaRow .imageLuaNova{
+    float: none !important;
+    width: 100% !important;
+    margin: 0 0 16px 0 !important;
+    text-align: center;
+  }
+  
+  .PaddingBottom{
+	  padding-bottom: 0px;
+  }
+
+  /* keep image reasonable on “mobile mode” */
+  .mediaRow .imageLuaNova img{
+    width: min(282px, 85vw);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
