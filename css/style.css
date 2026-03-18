@@ -910,7 +910,7 @@ font-size: var(--ts-body);
   margin: 0;
   width: max-content;       /* shrink-wrap to the longest item */
   margin-left: auto;        /* push UL to the right */
-  margin-right: 0;
+  margin-right: auto;
   text-align: center;       /* center each LI/link within the UL width */
   padding-left: 0;          /* if you have default UL padding */
   list-style: none;         /* optional */
