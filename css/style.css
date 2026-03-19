@@ -32,7 +32,9 @@
     .hero-image {
         object-fit: contain; /* Ensures the image fits within the container on smaller screens */
 		height:65% !important;
-    }
+    }.pads{
+	padding: 0 16px;
+}
 }
 
 .hero-text {
