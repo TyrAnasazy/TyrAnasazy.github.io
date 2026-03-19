@@ -1,6 +1,9 @@
 .pads{
 	padding: 0 46px;
 }
+.padsIndex{
+	padding: 0 46px;
+}
 
 .hero-container {
     position: relative;
@@ -32,8 +35,12 @@
     .hero-image {
         object-fit: contain; /* Ensures the image fits within the container on smaller screens */
 		height:65% !important;
-    }.pads{
+    }
+	.pads{
 	padding: 0 16px;
+}
+	.padsIndex{
+	padding: 0 0px;
 }
 }
 
@@ -1606,6 +1613,7 @@ textarea::placeholder {
     width: 100% !important;
     margin: 0 0 16px 0;
     text-align: center;
+	padding-right: 0px;
   }
 
   .mediaRow .imageIndex img{
@@ -1680,5 +1688,54 @@ textarea::placeholder {
     height: auto;
     display: block;
     margin: 0 auto;
+  }
+}/* Prevent horizontal overflow when “Marcar uma Terapia” section opens */
+.contact-form,
+.contact-form *{
+  box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  display: block;
+}
+
+/* Helps long option labels not force width */
+.contact-form select{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* Index testimonials: mobile = wider text + smaller arrows */
+@media (max-width: 772px){
+
+  /* Give the slide more usable width */
+  #feedbackCarousel .carousel-item{
+    padding: 18px 10px;        /* was 40px 20px */
+  }
+
+  /* Make the text area wider (reduce reserved arrow space) */
+  #feedbackCarousel .carousel-content{
+    max-width: 100%;
+    padding: 0 44px;           /* was 0 60px */
+  }
+
+  /* Keep tap targets usable, but shrink the icons */
+  #feedbackCarousel .carousel-control-prev,
+  #feedbackCarousel .carousel-control-next{
+    width: 44px;               /* tap target */
+  }
+
+  #feedbackCarousel .carousel-control-prev-icon,
+  #feedbackCarousel .carousel-control-next-icon{
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px; /* makes the arrow graphic smaller */
   }
 }
