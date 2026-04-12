@@ -29,9 +29,6 @@
     <nav class="desktop-nav" aria-label="Navegação principal">
       <ul>
         <li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;"></a></li>
-        <li><a href="./ConsultoriaTerapeutica.html">Consultoria Terapêutica</a></li>
-        <li><a href="./Terapias.html">Técnicas Terapêuticas</a></li>
-
         <!-- <li class="dropdown"> -->
 			<!-- <a href="#">Cursos</a> -->
 			<!-- <ul class="dropdown-content"> -->
@@ -39,7 +36,23 @@
 				<!-- <li><a href="./MeditacaoDasRosas.html">Meditação das Rosas</a></li> -->
 			<!-- </ul> -->
 		<!-- </li> -->
-
+		<li class="dropdown">
+          <a href="#">Na tua vida</a>
+          <ul class="dropdown-content">
+        <li><a href="./ConsultoriaTerapeutica.html">Consultoria Terapêutica</a></li>
+        <li><a href="./Terapias.html">Técnicas Terapêuticas</a></li>
+        <li><a href="./Perguntas.html">Perguntas Frequentes</a></li>
+          </ul>
+        </li>
+		<li class="dropdown">
+          <a href="#">Com os teus animais</a>
+          <ul class="dropdown-content">
+        <li><a href="./RelacaoAnimal.html">A Relação com o teu animal</a></li>
+        <li><a href="./LeituraAnimal.html">Leitura de Aura para Animais</a></li>
+        <li><a href="./PerguntasAnimais.html">Perguntas Frequentes</a></li>
+		  
+          </ul>
+        </li>
         <li class="dropdown">
           <a href="#">Trabalhos em Grupo</a>
           <ul class="dropdown-content">
@@ -51,7 +64,6 @@
           </ul>
         </li>
         <li><a href="./Agenda.html">Agenda</a></li>
-        <li><a href="./Perguntas.html">Perguntas Frequentes</a></li>
         <li><a href="./Contactos.html">Contacta-me</a></li>
       </ul>
     </nav>
@@ -75,16 +87,24 @@
         <ul>
           <li><a href="./index.html"><img src="./img/Header.webp" style="height: 180px; margin-bottom: -20px;" alt="" /></a></li>
           <!-- <li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;margin-top: -5px;"></a></li> -->
-          <li><a href="./ConsultoriaTerapeutica.html" class="BurgerText">Consultoria Terapêutica</a></li>
-          <li><a href="./Terapias.html" class="BurgerText">Técnicas Terapêuticas</a></li>
 
-		<!-- <li class="mobile-dropdown"> -->
-			<!-- <a href="#" class="mobile-dropdown-toggle BurgerText">Cursos <span class="chevron"></span></a> -->
-			<!-- <ul class="mobile-dropdown-content"> -->
-				<!-- <li><a href="./Reiki.html" class="BurgerText">Iniciações de Reiki Essencial</a></li> -->
-				 <!-- <li><a href="./MeditacaoDasRosas.html" class="BurgerText">Meditação das Rosas</a></li> -->
-			<!-- </ul> -->
-		<!-- </li> -->
+		
+          <li class="mobile-dropdown">
+            <a href="#" class="mobile-dropdown-toggle BurgerText">Na tua vida<span class="chevron"></span></a>
+            <ul class="mobile-dropdown-content">
+			  <li><a href="./ConsultoriaTerapeutica.html" class="BurgerText">Consultoria Terapêutica</a></li>
+			  <li><a href="./Terapias.html" class="BurgerText">Técnicas Terapêuticas</a></li>
+				<li><a href="./Perguntas.html" class="BurgerText">Perguntas Frequentes</a></li>
+            </ul>
+          </li>
+          <li class="mobile-dropdown">
+            <a href="#" class="mobile-dropdown-toggle BurgerText">Com os teus animais<span class="chevron"></span></a>
+            <ul class="mobile-dropdown-content">
+			  <li><a href="./RelacaoAnimal.html" class="BurgerText">A Relação com o teu animal</a></li>
+			  <li><a href="./LeituraAnimal.html" class="BurgerText">Leitura de Aura para Animais</a></li>
+			  <li><a href="./PerguntasAnimais.html" class="BurgerText">Perguntas Frequentes</a></li>
+            </ul>
+          </li>
 
           <li class="mobile-dropdown">
             <a href="#" class="mobile-dropdown-toggle BurgerText">Trabalhos em Grupo <span class="chevron"></span></a>
@@ -97,7 +117,6 @@
             </ul>
           </li>
           <li><a href="./Agenda.html" class="BurgerText">Agenda</a></li>
-          <li><a href="./Perguntas.html" class="BurgerText">Perguntas Frequentes</a></li>
           <li><a href="./Contactos.html" class="BurgerText">Contacta-me</a></li>
         </ul>
       </div>
@@ -152,6 +171,11 @@
       <input type="radio" name="tipo_contacto" value="Inscrição evento" />
       Inscrições
     </label>
+	
+	<label>
+	  <input type="radio" name="tipo_contacto" value="Leitura de Aura Animal" />
+	  Leitura de Aura Animal
+	</label>
   </fieldset>
 
   <!-- Primeira sessão -->
@@ -201,8 +225,68 @@
 		</select>
 	  </label>
 	</div>
+	
+	<!-- Animal -->
+	<!-- Leitura de Aura Animal -->
+<div id="auraAnimal" hidden>
+  <p class="t-body" style="text-align:center; margin-top:14px;">
+    Se sentes que este trabalho pode fazer sentido para o teu animal, podes partilhar a tua situação através do formulário.<br>
+    Cada caso é único e será olhado com atenção.
+  </p>
+
+  <p class="t-body" style="text-align:left; margin-top:14px; margin-bottom:8px;">
+    <strong>Sobre o animal</strong>
+  </p>
+
+  <label style="text-align:left;">
+    Nome do animal
+    <input type="text" name="animal_nome" />
+  </label>
+
+  <label style="text-align:left;">
+    Espécie
+    <input type="text" name="animal_especie" placeholder="Ex.: gato, cão" />
+  </label>
+
+  <label style="text-align:left;">
+    Contexto
+    <textarea name="animal_contexto" rows="3" placeholder="Breve contexto do animal e do momento atual"></textarea>
+  </label>
+
+  <label style="text-align:left;">
+    Nome das pessoas da casa
+    <input type="text" name="pessoas_casa" placeholder="Ex.: Ana, João, 1 criança" />
+  </label>
+
+  <label style="text-align:left;">
+    Morada
+    <input type="text" name="morada" />
+  </label>
+
+  <label style="text-align:left;">
+    Situação
+    <textarea name="animal_situacao" rows="4"></textarea>
+  </label>
+
+  <label style="text-align:left;">
+    O que te leva a procurar esta leitura neste momento?
+    <textarea name="porque_agora" rows="5"></textarea>
+  </label>
+
+  <label style="text-align:left;">
+    Que questões, preocupações ou temas gostarias de ver abordados?
+    <textarea name="questoes_temas" rows="5"></textarea>
+  </label>
+</div>
 
   <!-- GDPR consent -->
+<!-- Mailing list (optional) -->
+<label class="gdpr">
+  <input class="contact-box" type="checkbox" name="mailing_list" value="Sim" />
+  <span>Aderir à mailing list do Atelier da Consciência</span>
+</label>
+
+<!-- GDPR consent (required) -->
 <label class="gdpr">
   <input class="contact-box" type="checkbox" name="gdpr_consent" required />
   <span>
@@ -210,6 +294,10 @@
   </span>
 </label>
 
+<p class="t-body" style="text-align:center; margin-top:14px;">
+  <strong>Após envio:</strong><br>
+  Depois de receber o teu pedido, entrarei em contacto contigo para perceber melhor a situação e indicar-te os próximos passos.
+</p>
 
   <button id="submitBtn" type="submit">Enviar</button>
 
@@ -237,17 +325,53 @@
   </footer>
     <script src="css/script.js"></script>
     <script>
- const form = document.getElementById("contactForm");
+const form = document.getElementById("contactForm");
+
 const primeiraSessao = document.getElementById("primeiraSessao");
 const evento = document.getElementById("evento");
 const terapia = document.getElementById("terapia");
+const auraAnimal = document.getElementById("auraAnimal");
 
 const motivo = document.querySelector('[name="motivo"]');
 const horario = document.querySelector('[name="horario"]');
 const eventoSelect = document.querySelector('[name="evento"]');
 const terapiaSelect = document.querySelector('[name="terapia"]');
 
+const animalNome = document.querySelector('[name="animal_nome"]');
+const animalEspecie = document.querySelector('[name="animal_especie"]');
+const animalContexto = document.querySelector('[name="animal_contexto"]');
+const pessoasCasa = document.querySelector('[name="pessoas_casa"]');
+const morada = document.querySelector('[name="morada"]');
+const animalSituacao = document.querySelector('[name="animal_situacao"]');
+const porqueAgora = document.querySelector('[name="porque_agora"]');
+const questoesTemas = document.querySelector('[name="questoes_temas"]');
+
 const subject = document.getElementById("subject");
+
+function setRequiredForAuraAnimal(isRequired){
+  // Decide what you want required; here I’m making the core fields required.
+  animalNome.required = isRequired;
+  animalEspecie.required = isRequired;
+  animalSituacao.required = isRequired;
+  porqueAgora.required = isRequired;
+  questoesTemas.required = isRequired;
+
+  // Optional fields (set to required if you want)
+  animalContexto.required = false;
+  pessoasCasa.required = false;
+  morada.required = false;
+}
+
+function clearAuraAnimal(){
+  animalNome.value = "";
+  animalEspecie.value = "";
+  animalContexto.value = "";
+  pessoasCasa.value = "";
+  morada.value = "";
+  animalSituacao.value = "";
+  porqueAgora.value = "";
+  questoesTemas.value = "";
+}
 
 function updateForm() {
   const tipo = document.querySelector('input[name="tipo_contacto"]:checked').value;
@@ -256,12 +380,16 @@ function updateForm() {
   primeiraSessao.hidden = (tipo !== "Primeira sessão");
   evento.hidden = (tipo !== "Inscrição evento");
   terapia.hidden = (tipo !== "Marcar uma terapia");
+  auraAnimal.hidden = (tipo !== "Leitura de Aura Animal");
 
   // Required fields per flow
   motivo.required = (tipo === "Primeira sessão");
   horario.required = (tipo === "Primeira sessão");
   eventoSelect.required = (tipo === "Inscrição evento");
   terapiaSelect.required = (tipo === "Marcar uma terapia");
+
+  // Aura animal required fields
+  setRequiredForAuraAnimal(tipo === "Leitura de Aura Animal");
 
   // Clear values when not used
   if (tipo !== "Primeira sessão") {
@@ -272,16 +400,20 @@ function updateForm() {
     eventoSelect.value = "";
   }
   if (tipo !== "Marcar uma terapia") {
-    terapiaSelect.value = ""; // returns to placeholder
+    terapiaSelect.value = "";
+  }
+  if (tipo !== "Leitura de Aura Animal") {
+    clearAuraAnimal();
   }
 
   // Subject
   if (tipo === "Primeira sessão") {
-    subject.value = "Pedido: Marcar Primeira Sessão";
+    subject.value = "Pedido: Marcar Sessão";
   } else if (tipo === "Inscrição evento") {
     subject.value = "Inscrição: Evento";
+  } else if (tipo === "Leitura de Aura Animal") {
+    subject.value = "Pedido: Leitura de Aura Animal";
   } else {
-    // Therapy
     subject.value = "Pedido: Terapia";
   }
 }
@@ -291,7 +423,6 @@ document.querySelectorAll('input[name="tipo_contacto"]').forEach(radio => {
 });
 
 updateForm();
-
 </script>
 
 </body>
