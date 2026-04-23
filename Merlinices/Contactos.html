@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merlinices</title>
+  <meta name="description" content="Contactos Merlinices." />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/Tree_rosa.png">
+  <link rel="preload" href="../css/fonts/Muli-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="../css/fonts/Muli-SemiBold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="../css/fonts/Muli-Bold.woff2" as="font" type="font/woff2">
+  <style>
+    .brand-link {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body class="bg-page">
+  <header>
+    <a style="float:left;margin-left:10px;color:#472410;" class="ImageBottomVisibility" href="./index.html"><img src="../img/Tree_rosa.png" style="
+    height: 70px;
+    margin: -26px;
+    margin-left: 3px;
+    padding: 10px;
+"></a>
+    <a style="float:left;margin-left:10px;color:#472410;" class="ImageBottomVisibilityReverse" href="./index.html"><img src="../img/Flor.webp" style="
+    height: 70px;
+    margin-bottom: -26px;
+    margin-top: -6px;
+    margin-left: 3px;
+"></a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="./index.html" class="brand-link">Merlinices</a></li>
+        <li><a href="./leituraAnimal.html">Leitura de Aura para Animais</a></li>
+        <li><a href="./AcompanhamentoParaTi.html">Acompanhamento para Ti</a></li>
+        <li><a href="./PerguntasAnimais.html">Perguntas</a></li>
+        <li><a href="./Contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-header">
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+      >
+        <div class="bar" style="background:#472410;"></div>
+        <div class="bar" style="background:#472410;"></div>
+        <div class="bar" style="background:#472410;"></div>
+      </button>
+
+      <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="close-btn" id="close-btn" aria-label="Fechar menu">&times;</button>
+        <ul>
+          <li><a href="./index.html" class="BurgerText" style="padding-top:40px;">Merlinices</a></li>
+          <li><a href="./leituraAnimal.html" class="BurgerText">Leitura de Aura para Animais</a></li>
+          <li><a href="./AcompanhamentoParaTi.html" class="BurgerText">Acompanhamento para Ti</a></li>
+          <li><a href="./PerguntasAnimais.html" class="BurgerText">Perguntas</a></li>
+          <li><a href="./Contactos.html" class="BurgerText">Contactos</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrap pads">
+    <h1 class="w3-center t-h1 mb-3 text-accent" style="margin-top:90px;color: #8a8b60 !important;">Contactos</h1>
+
+    <p class="t-body contact-form" style="text-align:center;">Para marcar a Leitura de Aura para Animais ou esclarecer dúvidas.</p>
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form t-body" style="margin-top:20px;margin-bottom:20px;">
+      <input type="hidden" name="access_key" value="f563c9dc-c7df-45c3-8f4b-738542781bf8" />
+      <input type="hidden" name="from_name" value="Website Merlinices" />
+      <input type="hidden" name="subject" value="Pedido: Leitura de Aura Animal" />
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none;" />
+
+      <label style="text-align:left;">
+        Nome *
+        <input type="text" name="nome" required />
+      </label>
+
+      <label style="text-align:left;">
+        Email *
+        <input type="email" name="email" required />
+      </label>
+
+      <label style="text-align:left;">
+        Telefone (se preferires que te ligue)
+        <input type="tel" name="telefone" />
+      </label>
+
+      <p class="t-body" style="text-align:center;margin-top:14px;">
+        Se sentes que este trabalho pode fazer sentido para o teu animal, podes partilhar a tua situação através do formulário.<br>
+        Cada caso é único e será olhado com atenção.
+      </p>
+
+      <p class="t-body" style="text-align:left;margin-top:14px;margin-bottom:8px;">
+        <strong>Sobre o animal</strong>
+      </p>
+
+      <label style="text-align:left;">
+        Nome do animal *
+        <input type="text" name="animal_nome" required />
+      </label>
+
+      <label style="text-align:left;">
+        Espécie *
+        <input type="text" name="animal_especie" placeholder="Ex.: gato, cão" required />
+      </label>
+
+      <label style="text-align:left;">
+        Contexto
+        <textarea name="animal_contexto" rows="3" placeholder="Breve contexto do animal e do momento atual"></textarea>
+      </label>
+
+      <label style="text-align:left;">
+        Nome das pessoas da casa
+        <input type="text" name="pessoas_casa" />
+      </label>
+
+      <label style="text-align:left;">
+        Morada
+        <input type="text" name="morada" />
+      </label>
+
+      <label style="text-align:left;">
+        Situação
+        <textarea name="animal_situacao" rows="4"></textarea>
+      </label>
+
+      <label style="text-align:left;">
+        O que te leva a procurar esta leitura neste momento? *
+        <textarea name="porque_agora" rows="5" required></textarea>
+      </label>
+
+      <label style="text-align:left;">
+        Que questões, preocupações ou temas gostarias de ver abordados?
+        <textarea name="questoes_temas" rows="5"></textarea>
+      </label>
+
+      <label class="gdpr">
+        <input class="contact-box" type="checkbox" name="mailing_list" value="Sim" style="margin:0px;" />
+        <span>Aderir à mailing list do Merlinices</span>
+      </label>
+
+      <label class="gdpr">
+        <input class="contact-box" type="checkbox" name="gdpr_consent" required style="margin:0px;" />
+        <span>
+          Li e aceito a <a href="../Privacidade.html" style="color:#8a8b60 !important">Política de Privacidade</a> e autorizo o tratamento dos meus dados.
+        </span>
+      </label>
+
+      <button id="submitBtn" type="submit">Enviar</button>
+      <p class="t-body" style="text-align:center;margin-top:14px;">
+        Depois de receber o teu pedido, entrarei em contacto contigo para perceber melhor a situação e indicar-te os próximos passos.
+      </p>
+
+      <div id="formSuccess" class="form-message success" role="status" aria-live="polite" hidden>
+        Obrigado! A tua mensagem foi enviada com sucesso. Vou responder-te assim que possível.
+      </div>
+
+      <div id="formError" class="form-message error" role="alert" aria-live="assertive" hidden>
+        Ocorreu um erro ao enviar. Por favor tenta novamente ou envia email para
+        <a href="mailto:Merlinices@gmail.com">Merlinices@gmail.com</a>.
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <ul class="footer-links">
+          <li><strong>Merlinices</strong></li>
+          <li>Catarina Mendonça Português</li>
+          <li>Merlinices@gmail.com<br> <a href="https://www.instagram.com/Merlinices/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../css/script.js"></script>
+</body>
+</html>
