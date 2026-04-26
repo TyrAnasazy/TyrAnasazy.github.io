@@ -1,0 +1,19 @@
+body.merlinices-site,
+body.merlinices-site.bg-page,
+body.merlinices-site header,
+body.merlinices-site #mobile-menu,
+body.merlinices-site .site-footer,
+body.merlinices-site .Acompanhamento {
+  background: #faf7f2 !important;
+  background-color: #faf7f2 !important;
+}
+
+body.merlinices-site .text-accent,
+body.merlinices-site .link-accent {
+  color: #59654f !important;
+}
+
+body.merlinices-site .link-accent:hover,
+body.merlinices-site .link-accent:focus {
+  color: #59654f !important;
+}
