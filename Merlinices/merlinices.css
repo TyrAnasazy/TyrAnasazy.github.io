@@ -37,6 +37,15 @@ body.merlinices-site .t-h1 {
   font-weight: 400;
 }
 
+body.merlinices-site main h2,
+body.merlinices-site main h3,
+body.merlinices-site .t-h2,
+body.merlinices-site .t-h3 {
+  font-family: "Fraunces", "Maleah Regular", Georgia, serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
 body.merlinices-site .desktop-nav {
   padding-right: 24px;
 }
@@ -86,17 +95,17 @@ body.merlinices-site .mobile-header::after {
   width: calc(100% - 2.5ch);
   margin: 8px 0 0 1.35ch;
   color: #97abb3;
-  font-family: "Muli", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: "Fraunces", "Maleah Regular", Georgia, serif;
   font-size: 27px;
   font-weight: 400;
+  font-optical-sizing: auto;
   letter-spacing: 0.4em;
   line-height: 1.15;
   white-space: nowrap;
 }
 
 .ev-band__inner {
-  width: min(100% - 2rem, 980px);
-  padding: 52px 44px 58px;
+  padding: 52px 0 58px;
 }
 
 .ev-band__inner--testimonials {
@@ -109,8 +118,7 @@ body.merlinices-site .mobile-header::after {
 }
 
 .ev-band__intro {
-  max-width: 48rem;
-  margin: 0 auto 28px;
+  margin: 0 0 28px;
   text-align: center;
 }
 
@@ -128,8 +136,7 @@ body.merlinices-site .mobile-header::after {
 }
 
 .ev-home-note {
-  max-width: 52rem;
-  margin: 12px auto 0;
+  margin: 12px 0 0;
   font-size: 12px;
   line-height: 1.55;
 }
@@ -169,8 +176,7 @@ body.merlinices-site .merlin-list {
   }
 
   .ev-band__inner {
-    width: min(100% - 1.2rem, 980px);
-    padding: 32px 20px 36px;
+    padding: 32px 0 36px;
   }
 
   .ev-band__inner--testimonials {
