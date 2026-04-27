@@ -26,6 +26,11 @@ body.merlinices-site .link-accent:focus {
   color: #59654f !important;
 }
 
+body.merlinices-site .site-footer a,
+body.merlinices-site .footer-links a {
+  color: #59654f !important;
+}
+
 body.merlinices-site {
   color: #472410;
 }
