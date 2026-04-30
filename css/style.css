@@ -1569,8 +1569,19 @@ textarea::placeholder {
   margin: 0 0px 20px 0;        /* space between image and text */
   text-align: center;
 }
+.mediaRow .imageTerapias2{
+  float: left;
+  width: 282px;                 /* your desired width */
+  margin: 18px 0px 20px 0;        /* space between image and text */
+  text-align: center;
+}
 
 .mediaRow .imageTerapias img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.mediaRow .imageTerapias2 img{
   width: 100%;
   height: auto;
   display: block;
