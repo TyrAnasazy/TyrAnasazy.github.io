@@ -1391,6 +1391,13 @@ input[type="reset"],
   text-decoration-thickness: 2px;
 }
 
+@media (max-width: 768px){
+  .home-consultoria-cta{
+    font-size: 17px !important;
+    line-height: var(--lh-btn) !important;
+  }
+}
+
 /* paragraph indent helper */
 .indent-1{
   text-indent: 30px;
