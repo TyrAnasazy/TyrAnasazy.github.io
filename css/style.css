@@ -1392,12 +1392,12 @@ input[type="reset"],
  }
 
 .animal-link{
-   color: #59654f !important;
+   color: #9fa076 !important;
  }
 
 .animal-link:hover,
 .animal-link:focus{
-   color: #59654f !important;
+   color: #9fa076 !important;
  }
 
 @media (max-width: 768px){
