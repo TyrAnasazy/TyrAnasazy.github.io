@@ -1121,7 +1121,7 @@ label.gdpr a{
 	padding-left:0px;
 }
   .contact-form{ padding: 0 16px; }
-  .contact-box{
+  .contact-boxy{
     margin-bottom: 30px !important;
   }
   .imageTerapias{
@@ -1381,15 +1381,24 @@ input[type="reset"],
 }
 
 .link-accent{
-  color: #C18787 !important;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
+   color: #C18787 !important;
+   text-decoration: underline;
+   text-underline-offset: 2px;
+ }
 
 .link-accent:hover,
 .link-accent:focus{
-  text-decoration-thickness: 2px;
-}
+   text-decoration-thickness: 2px;
+ }
+
+.animal-link{
+   color: #59654f !important;
+ }
+
+.animal-link:hover,
+.animal-link:focus{
+   color: #59654f !important;
+ }
 
 @media (max-width: 768px){
   .home-consultoria-cta{
@@ -1488,11 +1497,12 @@ textarea::placeholder {
   .headertext-img{ width: 85%; }
 }
 
-.imageTerapias img{
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-}
+  .imageTerapias img,
+  .imageTerapias2 img{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
 
 .marginBottomChave{
 	margin-bottom:0px !important;
@@ -1506,7 +1516,8 @@ textarea::placeholder {
 }
 
 @media (max-width: 768px){
-  .imageTerapias img{ max-width: 90%; } /* matches your .images mobile intent */
+  .imageTerapias img,
+  .imageTerapias2 img{ max-width: 90%; } /* matches your .images mobile intent */
   
 .marginBottomChave{
 	margin-bottom:23px !important;
@@ -1593,18 +1604,20 @@ textarea::placeholder {
 
 /* Mobile: stack, center image, text full width below */
 @media (max-width: 772px){
-  .mediaRow .imageTerapias{
-    float: none !important;
-    width: 100% !important;
-    margin: 0 0 16px 0;
-    text-align: center;
+  .mediaRow .imageTerapias,
+  .mediaRow .imageTerapias2{
+      float: none !important;
+      width: 100% !important;
+      margin: 0 0 16px 0;
+      text-align: center;
+    }
+  
+  .mediaRow .imageTerapias img,
+  .mediaRow .imageTerapias2 img{
+      width: min(282px, 85vw);    /* centered, never “earth size” */
+      margin: 0 auto;
+    }
   }
-
-  .mediaRow .imageTerapias img{
-    width: min(282px, 85vw);    /* centered, never “earth size” */
-    margin: 0 auto;
-  }
-}
 
 /* Desktop + tablet: image fixed width on the left, text uses the remaining width */
 .mediaRow .imageIndex{
@@ -1627,42 +1640,106 @@ textarea::placeholder {
 /* Mobile: stack, center image, text full width below */
 @media (max-width: 599.98px){
   .mediaRow .imageIndex{
-    float: none !important;
-    width: 100% !important;
+      float: none !important;
+      width: 100% !important;
     margin: 0 0 16px 0;
     text-align: center;
 	padding-right: 0px;
   }
 
   .mediaRow .imageIndex img{
-    width: min(192px, 85vw);    /* centered, never “earth size” */
-    margin: 0 auto;
-  }
+      width: min(192px, 85vw);    /* centered, never “earth size” */
+      margin: 0 auto;
+    }
 }
-@media (max-width: 1128px) {
-  /* stop W3CSS column float behavior for the image column in these rows */
-  .mediaRow .imageTerapias{
-    float: none !important;
-    width: 100% !important;
-    margin: 0 0 16px 0 !important;
-    text-align: center;
-  }
+  @media (max-width: 928px){
+    .mediaRow--founder .imageIndex{
+      float: none !important;
+      width: 100% !important;
+      margin: 0 0 20px 0 !important;
+      text-align: center;
+      padding-right: 0 !important;
+    }
 
-  /* keep image reasonable on “mobile mode” */
-  .mediaRow .imageTerapias img{
-    width: min(282px, 85vw);
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    .mediaRow--founder .imageIndex img{
+      width: min(192px, 85vw);
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .mediaRow--founder .plan-break{
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-left: 0 !important;
+      clear: both;
+    }
+  }
+  @media (max-width: 1128px) {
+    /* stop W3CSS column float behavior for the image column in these rows */
+    .mediaRow .imageTerapias,
+  .mediaRow .imageTerapias2{
+        float: none !important;
+      width: 100% !important;
+      margin: 0 0 16px 0 !important;
+      text-align: center;
+    }
+  
+    /* keep image reasonable on “mobile mode” */
+  .mediaRow .imageTerapias img,
+  .mediaRow .imageTerapias2 img{
+      width: min(282px, 85vw);
+      height: auto;
+      display: block;
+      margin: 0 auto;
   }
 
   /* make the text blocks full width (kills the bootstrap offset visually) */
   .mediaRow .plan-break{
     width: 100% !important;
     max-width: 100% !important;
-    margin-left: 0 !important;
+      margin-left: 0 !important;
+    }
   }
-}
+
+  @media (max-width: 1220px) {
+    .mediaRow--consultoriaIntro .imageTerapias2{
+      float: none !important;
+      width: 100% !important;
+      margin: 0 0 24px 0 !important;
+      text-align: center;
+    }
+
+    .mediaRow--consultoriaIntro .imageTerapias2 img{
+      width: min(282px, 85vw);
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .mediaRow--consultoriaIntro .plan-break{
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-left: 0 !important;
+      clear: both;
+    }
+  }
+
+  @media (max-width: 1128px) {
+    #Tecnicas .mediaRow .imageTerapias,
+    #Tecnicas .mediaRow .imageTerapias2{
+      margin: 0 0 20px 0 !important;
+    }
+
+    #Tecnicas .mediaRow > .w3-col + .plan-break{
+      margin-top: 0 !important;
+    }
+
+    #Tecnicas .ImageBottomVisibilityReverseRoses,
+    #Tecnicas .marginBottomChave{
+      margin-bottom: 0 !important;
+    }
+  }
 
 /* Smooth “container” that shrinks continuously until it hits a max width */
 .container-smooth{
