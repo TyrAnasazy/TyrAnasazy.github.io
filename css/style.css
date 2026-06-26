@@ -802,7 +802,8 @@ background-image: url(../img/Header__animals_pc.png);
 /* Center feedback text inside carousel slides */
 /* --- Feedback Carousel: keep Bootstrap show/hide behavior --- */
 
-#feedbackCarousel .carousel-item{
+#feedbackCarousel .carousel-item,
+#animalFeedbackCarousel .carousel-item{
   /* hidden by default, Bootstrap logic */
   display: none;
   text-align: center;
@@ -818,36 +819,46 @@ background-image: url(../img/Header__animals_pc.png);
 /* show only active + transitioning items */
 #feedbackCarousel .carousel-item.active,
 #feedbackCarousel .carousel-item-next,
-#feedbackCarousel .carousel-item-prev{
+#feedbackCarousel .carousel-item-prev,
+#animalFeedbackCarousel .carousel-item.active,
+#animalFeedbackCarousel .carousel-item-next,
+#animalFeedbackCarousel .carousel-item-prev{
   display: flex;
 }
 
-#feedbackCarousel .carousel-item p{
+#feedbackCarousel .carousel-item p,
+#animalFeedbackCarousel .carousel-item p{
 font-size: var(--ts-body);
   line-height: var(--lh-body);
   line-height: 1.6;
   color: #472410;
 }
 
-#feedbackCarousel .carousel-item small{
+#feedbackCarousel .carousel-item small,
+#animalFeedbackCarousel .carousel-item small{
   display: block;
   color: #A67C52;
+  text-align: center;
 }
 
 #feedbackCarousel .carousel-control-prev-icon,
-#feedbackCarousel .carousel-control-next-icon{
+#feedbackCarousel .carousel-control-next-icon,
+#animalFeedbackCarousel .carousel-control-prev-icon,
+#animalFeedbackCarousel .carousel-control-next-icon{
   filter: invert(1) brightness(0);
 }
 
 /* Limit text width so arrows never overlap */
-#feedbackCarousel .carousel-content{
+#feedbackCarousel .carousel-content,
+#animalFeedbackCarousel .carousel-content{
   max-width: 900px;
   margin: 0 auto;
   padding: 0 60px;
 }
 
 /* Keep height of tallest slide */
-#feedbackCarousel .carousel-inner{
+#feedbackCarousel .carousel-inner,
+#animalFeedbackCarousel .carousel-inner{
   display: grid;
 }
 
@@ -1811,24 +1822,30 @@ textarea::placeholder {
 @media (max-width: 772px){
 
   /* Give the slide more usable width */
-  #feedbackCarousel .carousel-item{
+  #feedbackCarousel .carousel-item,
+  #animalFeedbackCarousel .carousel-item{
     padding: 18px 10px;        /* was 40px 20px */
   }
 
   /* Make the text area wider (reduce reserved arrow space) */
-  #feedbackCarousel .carousel-content{
+  #feedbackCarousel .carousel-content,
+  #animalFeedbackCarousel .carousel-content{
     max-width: 100%;
     padding: 0 44px;           /* was 0 60px */
   }
 
   /* Keep tap targets usable, but shrink the icons */
   #feedbackCarousel .carousel-control-prev,
-  #feedbackCarousel .carousel-control-next{
+  #feedbackCarousel .carousel-control-next,
+  #animalFeedbackCarousel .carousel-control-prev,
+  #animalFeedbackCarousel .carousel-control-next{
     width: 44px;               /* tap target */
   }
 
   #feedbackCarousel .carousel-control-prev-icon,
-  #feedbackCarousel .carousel-control-next-icon{
+  #feedbackCarousel .carousel-control-next-icon,
+  #animalFeedbackCarousel .carousel-control-prev-icon,
+  #animalFeedbackCarousel .carousel-control-next-icon{
     width: 18px;
     height: 18px;
     background-size: 18px 18px; /* makes the arrow graphic smaller */
