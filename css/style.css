@@ -841,8 +841,16 @@ font-size: var(--ts-body);
   text-align: center;
 }
 
-#feedbackCarousel .carousel-control-prev-icon,
-#feedbackCarousel .carousel-control-next-icon,
+#feedbackCarousel .carousel-control-prev-icon{
+  filter: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23472410'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+#feedbackCarousel .carousel-control-next-icon{
+  filter: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23472410'%3e%3cpath d='M4.646 1.646a.5.5 0 0 0 0 .708L10.293 8l-5.647 5.646a.5.5 0 0 0 .708.708l6-6a.5.5 0 0 0 0-.708l-6-6a.5.5 0 0 0-.708 0z'/%3e%3c/svg%3e");
+}
+
 #animalFeedbackCarousel .carousel-control-prev-icon,
 #animalFeedbackCarousel .carousel-control-next-icon{
   filter: invert(1) brightness(0);
@@ -1411,6 +1419,71 @@ input[type="reset"],
    color: #9fa076 !important;
  }
 
+.path-accordion{
+  border: 0;
+  margin: 1.75rem 0 0;
+}
+
+.path-accordion:first-of-type{
+  margin-top: 1.25rem;
+}
+
+.path-accordion > summary{
+  list-style: none;
+}
+
+.path-accordion > summary::-webkit-details-marker{
+  display: none;
+}
+
+.path-accordion > summary::marker{
+  content: "";
+}
+
+.path-accordion__summary{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  cursor: pointer;
+}
+
+.path-accordion__heading{
+  margin: 0 !important;
+  flex: 1 1 auto;
+}
+
+.path-accordion__chevron{
+  flex: 0 0 auto;
+  line-height: 1;
+}
+
+.path-accordion__chevron::before{
+  border-style: solid;
+  border-width: 0.18em 0.18em 0 0;
+  content: "";
+  display: inline-block;
+  height: 0.72em;
+  position: relative;
+  transform: rotate(45deg);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+  vertical-align: middle;
+  width: 0.72em;
+}
+
+.path-accordion[open] .path-accordion__chevron::before{
+  transform: rotate(135deg);
+}
+
+.path-accordion__content{
+  padding-top: 10px;
+}
+
+.path-accordion__content > :last-child{
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px){
   .home-consultoria-cta{
     font-size: 17px !important;
@@ -1613,6 +1686,23 @@ textarea::placeholder {
   display: block;               /* normal block */
 }
 
+.mediaRow--consultoriaIntro .consultoria-copy{
+  display: block;
+}
+
+.mediaRow--consultoriaIntro .imageTerapias2{
+  margin-right: 18px;
+}
+
+.mediaRow--consultoriaIntro .consultoria-copy p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.mediaRow--consultoriaIntro .consultoria-copy p:last-child{
+  margin-bottom: 0;
+}
+
 /* Mobile: stack, center image, text full width below */
 @media (max-width: 772px){
   .mediaRow .imageTerapias,
@@ -1642,6 +1732,13 @@ textarea::placeholder {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.founder-portrait{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50% !important;
 }
 
 .mediaRow .plan-break{
@@ -1732,6 +1829,12 @@ textarea::placeholder {
       width: 100% !important;
       max-width: 100% !important;
       margin-left: 0 !important;
+      clear: both;
+    }
+
+    .mediaRow--consultoriaIntro .consultoria-copy{
+      width: 100% !important;
+      max-width: 100% !important;
       clear: both;
     }
   }
