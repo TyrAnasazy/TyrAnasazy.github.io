@@ -4,185 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atelier da Consciência</title>
+    <meta name="description" content="Um Caminho de Desenvolvimento Pessoal">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<link rel="shortcut icon" type="image/x-icon" href="./img/Tree_rosa.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/Tree_rosa.png">
+    <link rel="preload" href="css/fonts/Muli-Regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="css/fonts/Muli-SemiBold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="css/fonts/Muli-Bold.woff2" as="font" type="font/woff2">
 </head>
-<body style="background: #F7F2EE;">
+<body class="bg-page">
     <header>
-        <nav class="desktop-nav">
-            <ul>
-				<li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;padding: 0px;margin-top: -6px;"></a></li>						
-						<li><a href="./Consultoria.html">Consultoria Terapêutica</a></li>
-                <li class="dropdown">
-                    <a href="#">Terapias</a>
-                    <ul class="dropdown-content">
-                        <li><a href="./Leitura.html">Leitura de Aura</a></li>
-                        <li><a href="./Alinhamento.html">Alinhamento Energético</a></li>
-                        <li><a href="./Tarot.html">Tarot Terapêutico</a></li>
-                        <!-- <li><a href="./Caminho.html">O teu Caminho com os Anjos</a></li> -->
-                <li><a href="./Casa.html">Habitar Essencial</a></li> 
-                    </ul>
-                </li>
-				<li class="dropdown">
-                    <a href="#">Formações</a>
-                    <ul class="dropdown-content">
-                        <li><a href="./Reiki.html">Iniciações de Reiki Essencial</a></li>
-                        <li><a href="./Meditacao.html">Meditação das Rosas</a></li>
-                    </ul>
-                </li>
-				<li class="dropdown">
-					<a href="#">Meditações</a>
-					<ul class="dropdown-content">
-						<li><a href="./CirculoTematico.html">Meditação da Lua Nova</a></li>
-						<li><a href="./CirculoMulheres.html">Círculo de Meditação para Mulheres</a></li>
-						<!-- <li><a href="./Constelacoes.html">Constelações com os Anjos</a></li> -->
-					</ul>
-				</li>
-				<li><a href="./Agenda.html">Agenda</a></li>
-                <li><a href="./SobreMim.html">Sobre Mim...</a></li>
-            </ul>
-        </nav>
+        <a style="float:left;margin-left:10px;color: #472410;" class="ImageBottomVisibility" href="./index.html"><img src="img/Tree_rosa.png" style="
+    height: 70px;
+    margin: -26px;
+    margin-left: 3px;
+    padding: 10px;
+"></a>
+        <a style="float:left;margin-left:10px;color: #472410;" class="ImageBottomVisibilityReverse" href="./index.html"><img src="img/Flor.webp" style="
+    height: 70px;
+    margin-bottom: -26px;
+    margin-top: -6px;
+    margin-left: 3px;
+"></a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="./index.html"><img src="./img/Untitled.png" style="height: 19px;padding: 0px;margin-top: -6px;" alt="" /></a></li>
+        <li><a href="./ConsultoriaTerapeutica.html">Consultoria Terapêutica</a></li>
+        <li><a href="./Caminho.html">O Caminho</a></li>
+        <li><a href="./MeditacaoLuaNova.html">Meditação da Lua Nova</a></li>
+        <li><a href="./Terapias.html">Técnicas Terapêuticas</a></li>
+        <li><a href="./Perguntas.html">Perguntas Frequentes</a></li>
+        <li><a href="./Contactos.html">Contacta-me</a></li>
+      </ul>
+    </nav>
 
-        <div class="mobile-header">
-            <button class="hamburger" id="hamburger-btn">
-                <div class="bar" style="background: #472410;"></div>
-                <div class="bar" style="background: #472410;"></div>
-                <div class="bar" style="background: #472410;"></div>
-            </button>
-            <div class="mobile-menu" id="mobile-menu">
-                <button class="close-btn" id="close-btn">&times;</button>
-                <ul>
-                    <li><img src="./img/Flor.png" style="height: 100px;"></li>
-					<li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;margin-top: -5px;"></a></li>
-							<li><a href="./Consultoria.html" class="BurgerText">Consultoria Terapêutica</a></li>
-                    <li class="mobile-dropdown"> 
-                        <a href="#" class="mobile-dropdown-toggle BurgerText">Terapias <span class="chevron"></span></a>
-                        <ul class="mobile-dropdown-content">
-							<li><a href="./Leitura.html" class="BurgerText">Leitura de Aura</a></li>
-							<li><a href="./Alinhamento.html" class="BurgerText">Alinhamento Energético</a></li>
-							<li><a href="./Tarot.html" class="BurgerText">Tarot Terapêutico</a></li>
-							<!-- <li><a href="./Caminho.html" class="BurgerText">O teu Caminho com os Anjos</a></li> -->
-                <li><a href="./Casa.html" class="BurgerText">Habitar Essencial</a></li> 
-                        </ul>
-                    </li>
-					<li class="mobile-dropdown">
-                        <a href="#" class="mobile-dropdown-toggle BurgerText">Formações <span class="chevron"></span></a>
-                        <ul class="mobile-dropdown-content">
-							<li><a href="./Reiki.html" class="BurgerText">Iniciações de Reiki Essencial</a></li>
-							 <li><a href="./Meditacao.html" class="BurgerText">Meditação das Rosas</a></li>
-                        </ul>
-                    </li>
-                    <li class="mobile-dropdown">
-                        <a href="#" class="mobile-dropdown-toggle BurgerText">Meditações<span class="chevron"></span></a>
-                        <ul class="mobile-dropdown-content">
-							<li><a href="./CirculoTematico.html" class="BurgerText">Meditação da Lua Nova</a></li>
-							<li><a href="./CirculoMulheres.html" class="BurgerText">Círculo de Meditação para Mulheres</a></li>
-							<!-- <li><a href="./Constelacoes.html" class="BurgerText">Constelações com os Anjos</a></li> -->
-                        </ul>
-                    </li>
-					<li><a href="./Agenda.html" class="BurgerText">Agenda</a></li>
-                    <li><a href="./SobreMim.html" class="BurgerText">Sobre Mim...</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <div class="mobile-header">
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+      >
+        <div class="bar" style="background: #472410;"></div>
+        <div class="bar" style="background: #472410;"></div>
+        <div class="bar" style="background: #472410;"></div>
+      </button>
+
+      <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="close-btn" id="close-btn" aria-label="Fechar menu">&times;</button>
+
+        <ul>
+          <li><a href="./index.html"><img src="./img/Header.webp" style="height: 180px; margin-bottom: -20px;" alt="" /></a></li>
+          <li><a href="./index.html"><img src="./img/Untitled.png" style="height: 19px;margin-top: -5px;" alt="" /></a></li>
+          <li><a href="./ConsultoriaTerapeutica.html" class="BurgerText">Consultoria Terapêutica</a></li>
+          <li><a href="./Caminho.html" class="BurgerText">O Caminho</a></li>
+          <li><a href="./MeditacaoLuaNova.html" class="BurgerText">Meditação da Lua Nova</a></li>
+          <li><a href="./Terapias.html" class="BurgerText">Técnicas Terapêuticas</a></li>
+          <li><a href="./Perguntas.html" class="BurgerText">Perguntas Frequentes</a></li>
+          <li><a href="./Contactos.html" class="BurgerText">Contacta-me</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
     <main>
-		<div class="w3-row-padding w3-container Acompanhamento" id="Acompanhamento">
-<div class="">
-<h1 class="w3-center titleSize" style="font-family: Maleah Regular!important;padding-bottom:30px;color:#C18787;">O teu Caminho com os Anjos</h1>
+  <div class="w3-row-padding w3-container Acompanhamento pads" id="Acompanhamento" style="background-color:#F7F2EE;">
+    <div class="w3-content">
 
-<div class="w3-content w3-container">
-      <p class="w3-center FontSizeTop" style="color:#472410;margin-bottom:20px">
-Existem 72 Frequências Angelicais que todos devemos acordar dentro de nós ao longo do nosso Caminho de Vida.<br>
-Uma das ferramentas que permite fazer este trabalho é o Mapa Astral, com ele é possível acompanhares com os Anjos um, qualquer, ano da tua vida e continuar ciclicamente a fazer este trabalho contigo própria/o, criando assim o teu Caminho com os Anjos.
-</p>
-</div>
-	      <div id="collapse5" class="">	
-		  <!--<div class="w3-container ImageBottomVisibilityReverse MobileMargin" style="background-color:#F7F2EE;margin-bottom: 15px;">
-  <div class="w3-content LineTopics">
- <div class="col w3-center MobileMargin">
-      <img src="img/Compass.webp" alt="Flowers" class="MobileWidth img-responsive" style="margin-left: 35px;max-width: 85% !important;">
-    </div>
-    </div>
-    </div>-->
-<div class="w3-row-padding w3-padding-64 w3-container MobileMargin" style="background-color:#F7F2EE;padding-top:0px !important;    padding-left: 0px;
-    padding-right: 0px;">
-  <div class="w3-content row">
-    <!--<div class="col-md-12 col-lg-4 w3-center MobileMargin ImageBottomVisibility" style="padding:0px !important;">
-      <img src="img/Compass.webp" alt="Flowers" class="MobileWidth img-responsive" style="    max-width: inherit;
-    width: 25em !important;
-    margin-top: 10px !important;
-    margin-bottom: 10px;
-    margin-left: 41px;">
-    </div>-->
-    <div class="col-md-12 col-lg-12" style="text-align:center;">
-	  <p style="color:#472410;text-align:center;" class="FontSizeTop">Ao longo dos 360 graus do teu mapa astral estarão 12 casas, cada uma representando uma área diferente da tua vida, os 12 signos cada um com as suas características específicas, e os vários planetas com as suas características e posições individuais e especiais para cada um de nós, será nestes que identificaremos quais das Frequências Angelicais específicas te acompanham, serão essas as que têm uma influência maior em ti, em todos os dias da tua vida. </p>
-	</div>
+        <h1 class="w3-center t-h1 mb-5 text-accent" style="color:#C18787;text-align:center;">O Caminho</h1>
 
-
+      <div class="w3-row mediaRow mediaRow--consultoriaIntro">
+        <div class="w3-col m3 w3-center imageTerapias2">
+          <img src="./img/Terapias.webp" alt="O Caminho" class="w3-image images">
+        </div>
+        <div class="w3-col">
+      </div>
+        <div class="col-12 col-lg-9 offset-md-3 plan-break">
+    <p class="my-justify t-body indent-1">
+        Não existe uma única forma de fazer este caminho.
+    </p>
   </div>
-  <div class="w3-content row">
-<p style="color:#472410;text-align:center;" class="FontSizeTop">Assim o percurso com os Anjos torna-se num maravilhoso caminho sem fim, pois apesar de haver um princípio e um fim no seu calendário, O teu Caminho com os Anjos inicia no dia em começas a tomar Consciência destas energias e se assim o desejares nunca terminará, permitindo-te pouco a pouco viver cada vez mais banhado e repleto pelas frequências mágicas destas maravilhosas energias. </p>
-   
-</div>
-</div>
-<br>
-<div class="w3-row-padding w3-container" style="background-color: #F7F2EE;margin-Top:-70px;">
-  <div class="w3-content">
-    <div class="w3 " style="color:#472410;" >
-<p class="w3-center FontSizeTop"style="color:#472410;">
-Para algum esclarecimento, marcação ou pedido de mais
-informações sobre o teu mapa envia-me um <a href="./SobreMim.html#contactos" style="color:#C18787"> <u>email</u></a>.
-</p>
+        <div class="col-12 col-lg-9 offset-md-3 plan-break">
+    <p class="my-justify t-body indent-1">
+        Podes escolher trabalhar áreas diferentes, de acordo com aquilo que está mais presente na tua vida e com o que sentes que precisa de ser compreendido, cuidado ou transformado.
+    </p>
+  </div>
+        <div class="col-12 col-lg-9 offset-md-3 plan-break">
+    <p class="my-justify t-body indent-1">
+        Algumas destas áreas têm uma estrutura própria e um número mínimo de sessões, para que o trabalho possa ser desenvolvido com profundidade. Outras, como os Caminhos de Profundidade, são mais abertas e vão sendo construídas a partir daquilo que quiseres trazer.
+    </p>
+  </div>
+        <div class="col-12 col-lg-9 offset-md-3 plan-break">
+    <p class="my-justify t-body indent-1">
+        O objetivo não é seguir um percurso fechado, mas criar um trabalho ajustado a ti, à tua realidade e ao momento em que estás.
+    </p>
+  </div>
+  </div>
+
+      <h3 class="t-h3 text-brand mt-4 text-start"><strong>Quem sou?</strong></h3>
+      <p class="my-justify t-body indent-1">
+        O teu <strong>Mapa dos Anjos</strong> ajuda-te a compreender melhor quem és, a reconhecer as tuas características, necessidades e recursos, e a perceber como se manifestam nas tuas escolhas, relações e desafios. Este trabalho permite-te conhecer-te com mais clareza e encontrar formas mais ajustadas de lidar contigo própria e com aquilo que vais vivendo.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Podemos também trabalhar de forma específica sobre <strong>Orientação Vocacional e Profissional</strong> através do teu Mapa Astrológico e dos Anjos.
+      </p>
+
+      <h3 class="t-h3 text-brand mt-4 text-start"><strong>Cuidar de Mim</strong></h3>
+      <p class="my-justify t-body indent-1">
+        Somos feitos de diferentes partes que se influenciam continuamente. Estas áreas de trabalho permitem-te conhecer melhor cada parte de ti e desenvolver formas concretas de auto-cuidado.
+      </p>
+      <ul class="ms-3 text-start t-body">
+        <li class="mb-2"><strong>O Corpo Físico:</strong> Compreender as necessidades fundamentais do teu corpo e a forma como o podes apoiar através do descanso, alimentação, movimento e dos elementos básicos de que precisa para funcionar melhor.</li>
+        <li class="mb-2"><strong>O Corpo Mental:</strong> Compreender como funciona a tua mente e aprender a cuidar dela, aprendendo a reconhecer aquilo que a ocupa, criar espaço, reorganizar, descansar e nutrir.</li>
+        <li class="mb-2"><strong>O Corpo Emocional:</strong> Aprender a compreender aquilo que sentes, reconhecer as tuas necessidades emocionais e desenvolver maior capacidade de regulação.</li>
+        <li class="mb-2">Enquadramento sobre o sistema nervoso e exploração do teu mapa de necessidades sensoriais, para compreenderes melhor as tuas necessidades e desenvolveres recursos ajustados à forma como funcionas.</li>
+        <li class="mb-2"><strong>O Corpo Energético:</strong> Aqui encontras diferentes trabalhos que te permitem conhecer melhor a tua energia e desenvolver ferramentas para cuidares dela com cada vez mais autonomia:</li>
+        <li class="mb-2">As <a class="link-accent" href="./Reiki.html">Iniciações de Reiki Essencial</a> são a oportunidade de aprender uma técnica simples e suave, perfeita para começares a cuidar da tua energia.</li>
+        <li class="mb-2"><a class="link-accent" href="./MeditacaoDasRosas.html">A Meditação das Rosas</a>: aprender uma ferramenta de higiene, proteção e reorganização energética que possas utilizar de forma autónoma no teu dia a dia.</li>
+        <li class="mb-2"><strong>Equilíbrio Feminino e Masculino:</strong> Explorar e equilibrar estas duas dimensões internas e compreender a forma como se expressam na tua vida, nas tuas escolhas e nas tuas relações.</li>
+        <li class="mb-2"><strong>O teu caminho com os Anjos:</strong> Conhecer diferentes frequências energéticas e aprender a trabalhar conscientemente com elas no teu desenvolvimento pessoal e na tua vida quotidiana.</li>
+      </ul>
+
+      <h3 class="t-h3 text-brand mt-4 text-start"><strong>Vida Real</strong></h3>
+      <p class="t-body text-brand mb-0"><strong>Estruturar o Tempo, a Energia e a Rotina</strong></p>
+      <p class="my-justify t-body indent-1">
+        Uma vida alinhada contigo não se constrói apenas organizando tarefas.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Neste módulo começamos por olhar para tudo aquilo que ocupa o teu tempo: trabalho, autocuidado, família, filhos, relações, casa, lazer, descanso, responsabilidades e todas as outras partes que compõem a tua vida.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Depois, aprofundamos a forma como estás a viver cada uma delas.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Olhamos para o espaço que cada área ocupa, a energia que te pede, aquilo que te dá ou retira, as dificuldades que se repetem, o que está desalinhado contigo e aquilo que precisa de ser reorganizado.
+      </p>
+      <p class="my-justify t-body indent-1">
+        A partir daí, trabalhamos prioridades, ritmo, distribuição de energia, necessidades e escolhas, construindo uma estrutura que faça sentido para a pessoa que és e para a vida que realmente tens.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Não se trata de produtividade.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Trata-se de compreender profundamente como estás a viver a tua vida e começar a transformá-la de forma consciente.
+      </p>
+
+      <h3 class="t-h3 text-brand mt-4 text-start"><strong>Caminhos de Profundidade</strong></h3>
+      <p class="my-justify t-body indent-1">
+        Há questões que não precisam de um programa definido. Precisam de espaço.
+      </p>
+      <p class="t-body text-brand mb-0"><strong>Padrões, Dores e Sombras</strong></p>
+      <p class="my-justify t-body indent-1">
+        Aqui podemos trabalhar aquilo que continua a repetir-se, a magoar ou a condicionar a tua vida: padrões emocionais e relacionais, crenças, experiências difíceis, perdas, luto, pesos herdados ou qualquer questão que sintas precisar de ser compreendida e transformada.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Também podemos aprofundar e aplicar à tua realidade aprendizagens feitas noutros módulos.
+      </p>
+      <p class="my-justify t-body indent-1">
+        O trabalho dura o tempo que fizer sentido para aquilo que quiseres trazer.
+      </p>
+      <p class="t-body text-brand mb-0"><strong>Relacionamentos</strong></p>
+      <p class="my-justify t-body indent-1">
+        Um espaço para olhar com profundidade para a forma como te relacionas.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Podemos trabalhar padrões que se repetem, necessidades, limites, comunicação, conflitos, escolhas, expectativas, dependência, autonomia ou outras dificuldades que estejam presentes nas tuas relações.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Este trabalho pode ser feito individualmente ou com o casal, quando a questão pertence à dinâmica da relação e ambos querem participar.
+      </p>
+      <p class="t-body text-brand mb-0"><strong>Maternidade e Parentalidade</strong></p>
+      <p class="my-justify t-body indent-1">
+        Os filhos são uma das relações mais profundas e exigentes da vida das mães e dos pais.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Aqui podemos trabalhar a relação com os filhos e aquilo que a parentalidade desperta em cada pessoa: emoções, padrões, expectativas, dificuldades, necessidades e formas de estar na relação.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Podemos explorar regulação emocional, comunicação, limites, autonomia, necessidades da criança, dinâmicas familiares e a distinção entre aquilo que pertence ao adulto, aquilo que pertence à criança e aquilo que nasce na própria relação.
+      </p>
+      <p class="my-justify t-body indent-1">
+        O objetivo não é “corrigir” a criança.
+      </p>
+      <p class="my-justify t-body indent-1">
+        É compreender melhor a criança, compreender-te a ti dentro da relação e encontrar formas mais conscientes de viver a parentalidade.
+      </p>
+
+      <h3 class="t-h3 text-brand mt-4 text-start"><strong>Neurodivergência</strong></h3>
+      <p class="t-body text-brand mb-0"><strong>Compreender a Minha Neurodivergência</strong></p>
+      <p class="my-justify t-body indent-1">
+        Um espaço para compreenderes melhor a tua forma particular de funcionar e o impacto que ela tem no quotidiano, nas relações, na regulação emocional, nas necessidades sensoriais, na energia, na organização da vida e na forma como te relacionas com o mundo.
+      </p>
+      <p class="my-justify t-body indent-1">
+        O trabalho é construído a partir da tua realidade e daquilo que quiseres compreender ou transformar.
+      </p>
+      <p class="t-body text-brand mb-0"><strong>Parentalidade e Neurodivergência</strong></p>
+      <p class="my-justify t-body indent-1">
+        Quando uma criança é neurodivergente, compreender a forma como ela funciona pode transformar profundamente a relação familiar.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Podemos trabalhar necessidades sensoriais e emocionais, comunicação, limites, autonomia, organização da vida familiar, situações de saturação ou conflito e aquilo que a neurodivergência da criança desperta também nos adultos que a acompanham.
+      </p>
+
+      <h3 class="t-h3 text-brand mt-4 text-start"><strong>O Teu Lar</strong></h3>
+      <p class="my-justify t-body indent-1">
+        A casa influencia profundamente a forma como vivemos.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Este trabalho pode incluir a energia do espaço, a sua organização e funcionalidade, a forma como cada divisão é utilizada e a relação entre o ambiente e as necessidades reais das pessoas que nele vivem.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Podemos fazer apenas um trabalho energético ou avançar para uma análise mais profunda e uma reorganização prática dos espaços.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Por ser um trabalho altamente personalizado, é realizado sob orçamento, de acordo com aquilo que será trabalhado, o estado atual da casa e a sua dimensão.
+      </p>
+
+      <h3 class="t-h3 text-brand mt-4 text-start"><strong>Os Teus Animais</strong></h3>
+      <p class="t-body text-brand mb-0"><strong>Leitura de Aura para Animais</strong></p>
+      <p class="my-justify t-body indent-1">
+        A <a href="./animais.html" class="link-accent animal-link">Leitura de Aura para Animais</a> permite observar o animal a nível energético e compreender informação relacionada com o seu estado, necessidades, tensões e relação com o ambiente e com as pessoas com quem vive.
+      </p>
+      <p class="my-justify t-body indent-1">
+        É sempre realizada com respeito pela individualidade do animal e não substitui acompanhamento veterinário quando necessário.
+      </p>
+      <p class="my-justify t-body indent-1">
+        Depois da leitura, caso faça sentido e os cuidadores o desejem, pode ser desenvolvido um trabalho posterior com os humanos da família para explorar aquilo que surgiu na leitura, as dinâmicas presentes e possíveis mudanças no ambiente ou na relação com o animal.
+      </p>
+
+      <h3 class="t-h3 text-brand mt-4 text-start"><strong>Por onde começar?</strong></h3>
+      <p class="my-justify t-body indent-1">
+        Escolhe a área que mais faz sentido para ti ou traz simplesmente aquilo para onde precisas de olhar neste momento.
+      </p>
+      <p class="my-justify t-body indent-1">
+        O caminho constrói-se a partir daí.
+      </p>
+
+      <p class="FontSizeTop" style="text-align:center;">
+        <a href="./Contactos.html" class="link-accent">Entrar em contacto</a>
+      </p>
+
     </div>
   </div>
-</div>
-</div>
-</div>
-</div>
-    </main>
+</main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <ul class="footer-links">
+          <li><strong>Catarina Mendonça Português</strong></li>
+          <li>catarina.atelierdaconsciencia@gmail.com<br> <a href="https://www.instagram.com/catarinaportugues/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
     <script src="css/script.js"></script>
 </body>
-<footer class="site-footer">
-  <div class="footer-container">
-
-    <!-- Contact -->
-    <div class="footer-column">
-      <p>
-        Email: <a href="mailto:contacto@seudominio.pt">contacto@seudominio.pt</a><br>
-        <!-- Optional phone -->
-        <!-- Telefone: <a href="tel:+351XXXXXXXXX">+351 XXX XXX XXX</a> -->
-      </p>
-    </div>
-
-    <!-- Social / Networks -->
-    <div class="footer-column">
-      <ul class="footer-links">
-        <li><a href="https://www.instagram.com/seuinstagram" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://www.facebook.com/suapagina" target="_blank" rel="noopener">Facebook</a></li>
-        <!-- Add/remove as needed -->
-      </ul>
-    </div>
-
-    <!-- Location / Online -->
-    <div class="footer-column">
-      <p>
-        Sessões online<br>
-        Atendimento presencial sob marcação
-      </p>
-    </div>
-
-    <!-- Legal -->
-    <div class="footer-column">
-      <ul class="footer-links">
-		<li><a href="/faq">FAQ</a></li>
-        <li><a href="/privacidade">Política de Privacidade</a></li>
-        <li><a href="/termos">Termos e Condições</a></li>
-      </ul>
-    </div>
-
-  </div>
-</footer>
 </html>

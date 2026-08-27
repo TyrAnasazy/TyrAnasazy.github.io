@@ -28,21 +28,11 @@
 "></a>
     <nav class="desktop-nav" aria-label="Navegação principal">
       <ul>
-        <li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;"></a></li>
+        <li><a href="./index.html"><img src="./img/Untitled.png" style="height: 19px;padding: 0px;margin-top: -6px;" alt="" /></a></li>
         <li><a href="./ConsultoriaTerapeutica.html">Consultoria Terapêutica</a></li>
+        <li><a href="./Caminho.html">O Caminho</a></li>
+        <li><a href="./MeditacaoLuaNova.html">Meditação da Lua Nova</a></li>
         <li><a href="./Terapias.html">Técnicas Terapêuticas</a></li>
-
-        <!-- <li class="dropdown"> -->
-          <!-- <a href="#">Trabalhos em Grupo</a> -->
-          <!-- <ul class="dropdown-content"> -->
-			<!-- <li><a href="./Reiki.html">Iniciações de Reiki Essencial</a></li> -->
-			<!-- <li><a href="./MeditacaoDasRosas.html">Curso de Meditação das Rosas</a></li> -->
-            <!-- <li><a href="./MeditacaoLuaNova.html">Meditação da Lua Nova</a></li> -->
-            <!-- <li><a href="./CirculoMulheres.html">Círculo de Meditação para Mulheres</a></li> -->
-			<!-- <li><a href="./Constelacoes.html">Constelações</a></li> -->
-          <!-- </ul> -->
-        <!-- </li> -->
-        <!-- <li><a href="./Agenda.html">Agenda</a></li> -->
         <li><a href="./Perguntas.html">Perguntas Frequentes</a></li>
         <li><a href="./Contactos.html">Contacta-me</a></li>
       </ul>
@@ -66,20 +56,11 @@
 
         <ul>
           <li><a href="./index.html"><img src="./img/Header.webp" style="height: 180px; margin-bottom: -20px;" alt="" /></a></li>
-          <!-- <li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;margin-top: -5px;"></a></li> -->
+          <li><a href="./index.html"><img src="./img/Untitled.png" style="height: 19px;margin-top: -5px;" alt="" /></a></li>
           <li><a href="./ConsultoriaTerapeutica.html" class="BurgerText">Consultoria Terapêutica</a></li>
+          <li><a href="./Caminho.html" class="BurgerText">O Caminho</a></li>
+          <li><a href="./MeditacaoLuaNova.html" class="BurgerText">Meditação da Lua Nova</a></li>
           <li><a href="./Terapias.html" class="BurgerText">Técnicas Terapêuticas</a></li>
-          <!-- <li class="mobile-dropdown"> -->
-            <!-- <a href="#" class="mobile-dropdown-toggle BurgerText">Trabalhos em Grupo <span class="chevron"></span></a> -->
-            <!-- <ul class="mobile-dropdown-content"> -->
-				<!-- <li><a href="./Reiki.html" class="BurgerText">Iniciações de Reiki Essencial</a></li> -->
-				 <!-- <li><a href="./MeditacaoDasRosas.html" class="BurgerText">Curso de Meditação das Rosas</a></li> -->
-              <!-- <li><a href="./MeditacaoLuaNova.html" class="BurgerText">Meditação da Lua Nova</a></li> -->
-              <!-- <li><a href="./CirculoMulheres.html" class="BurgerText">Círculo de Meditação para Mulheres</a></li> -->
-              <!-- <li><a href="./Constelacoes.html" class="BurgerText">Constelações</a></li> -->
-            <!-- </ul> -->
-          <!-- </li> -->
-          <!-- <li><a href="./Agenda.html" class="BurgerText">Agenda</a></li> -->
           <li><a href="./Perguntas.html" class="BurgerText">Perguntas Frequentes</a></li>
           <li><a href="./Contactos.html" class="BurgerText">Contacta-me</a></li>
         </ul>
@@ -87,9 +68,9 @@
     </div>
   </header>
     <main class="page-wrap pads">
-<h1 class="w3-center t-h1 mb-3 text-accent" style="margin-top:90px;">Contacta-me</h1>
+<h1 class="w3-center t-h1 mb-3 text-accent" style="margin-top:90px;">Contactos</h1>
 
-	  <p class="t-body contact-form" style="text-align: center;">Para marcar consultoria, pedir uma terapia energética ou reservar lugar num evento.</p>
+	  <p class="t-body contact-form" style="text-align: center;">Para marcar consultoria, pedir uma terapia energética ou reservar lugar na Meditação da Lua Nova.</p>
 <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form t-body" style="margin-top:20px;margin-bottom:20px;">
   <!-- Web3Forms required -->
   <input type="hidden" name="access_key" value="f563c9dc-c7df-45c3-8f4b-738542781bf8" />
@@ -131,10 +112,10 @@
       Marcar uma Terapia
     </label>
 
-    <!-- <label> -->
-      <!-- <input type="radio" name="tipo_contacto" value="Inscrição evento" /> -->
-      <!-- Inscrições -->
-    <!-- </label> -->
+    <label>
+      <input type="radio" name="tipo_contacto" value="Inscrição evento" />
+      Inscrição Lua Nova
+    </label>
   </fieldset>
 
   <!-- Primeira sessão -->
@@ -155,12 +136,7 @@
     <label  style="text-align:left;">
       Evento *
       <select name="evento">
-		  <option value="" disabled selected hidden>Seleciona uma opção</option>
-        <option value="Iniciações de Reiki Essencial">Iniciações de Reiki Essencial</option>
-        <option value="Meditação das Rosas">Curso de Meditação das Rosas</option>
-        <option value="Meditação da lua nova">Meditação da Lua Nova</option>
-        <option value="Círculo de meditação para mulheres">Círculo de Meditação para Mulheres</option>
-        <option value="Constelações">Constelações</option>
+        <option value="Meditação da Lua Nova" selected>Meditação da Lua Nova</option>
       </select>
     </label>
   </div>
@@ -173,9 +149,7 @@
 		  <!-- Placeholder: shown when nothing selected; disappears after user picks one -->
 		  <option value="" disabled selected hidden>Seleciona uma opção</option>
 
-		  <option value="Sessões de Reiki Essencial">Sessões de Reiki Essencial</option>
 		  <option value="Leitura de Aura">Leitura de Aura</option>
-		  <option value="Leitura de Constelações">Leitura de Constelações</option>
 		  <option value="Alinhamento Energético e Reequilíbrio Emocional Profundo">
 			Alinhamento Energético e Reequilíbrio Emocional Profundo
 		  </option>
@@ -266,7 +240,7 @@
 
   <div id="formError" class="form-message error" role="alert" aria-live="assertive" hidden>
     Ocorreu um erro ao enviar. Por favor tenta novamente ou envia email para
-    <a href="mailto:contacto@seudominio.pt">contacto@seudominio.pt</a>.
+    <a href="mailto:catarina.atelierdaconsciencia@gmail.com">catarina.atelierdaconsciencia@gmail.com</a>.
   </div>
 </form>
 
@@ -359,7 +333,9 @@ function updateForm() {
     horario.value = "";
   }
   if (tipo !== "Inscrição evento") {
-    eventoSelect.value = "";
+    eventoSelect.value = "Meditação da Lua Nova";
+  } else {
+    eventoSelect.value = "Meditação da Lua Nova";
   }
   if (tipo !== "Marcar uma terapia") {
     terapiaSelect.value = "";
@@ -377,7 +353,7 @@ function updateForm() {
   if (tipo === "Primeira sessão") {
     subject.value = "Pedido: Marcar Sessão";
   } else if (tipo === "Inscrição evento") {
-    subject.value = "Inscrição: Evento";
+    subject.value = "Inscrição: Meditação da Lua Nova";
   } else if (isAnimalAura) {
     subject.value = "Pedido: Leitura de Aura Animal";
   } else {
