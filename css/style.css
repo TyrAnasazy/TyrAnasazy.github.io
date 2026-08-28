@@ -826,6 +826,12 @@ background-image: url(../img/Header__animals_pc.png);
   display: flex;
 }
 
+/* Feedbacks change immediately instead of using Bootstrap's fade-out animation. */
+#feedbackCarousel.carousel-fade .carousel-item,
+#animalFeedbackCarousel.carousel-fade .carousel-item{
+  transition: opacity 0s linear;
+}
+
 #feedbackCarousel .carousel-item p,
 #animalFeedbackCarousel .carousel-item p{
 font-size: var(--ts-body);
@@ -839,14 +845,6 @@ font-size: var(--ts-body);
   display: block;
   color: #A67C52;
   text-align: center;
-}
-
-/* Homepage only: the founder portrait sits centered above its text. */
-#homepage-founder-image{
-  float: none !important;
-  width: min(192px, 85vw) !important;
-  margin: 0 auto 20px !important;
-  padding-right: 0 !important;
 }
 
 #feedbackCarousel .carousel-control-prev-icon{
@@ -1697,20 +1695,6 @@ textarea::placeholder {
 
 .mediaRow .plan-break{
   display: block;               /* normal block */
-}
-
-/* Keep the founder portrait above its introduction at every viewport width. */
-.mediaRow--founder .imageIndex{
-  float: none;
-  width: 192px;
-  margin: 0 auto 20px;
-  padding-right: 0;
-}
-
-.mediaRow--founder > .w3-col:not(.imageIndex){
-  clear: both;
-  float: none;
-  width: 100%;
 }
 
 .mediaRow--consultoriaIntro .consultoria-copy{
