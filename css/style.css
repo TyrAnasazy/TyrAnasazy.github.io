@@ -1452,16 +1452,14 @@ input[type="reset"],
 }
 
 .path-accordion__summary{
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 18px;
+  gap: 10px;
   cursor: pointer;
 }
 
 .path-accordion__heading{
   margin: 0 !important;
-  flex: 1 1 auto;
 }
 
 .path-accordion__chevron{
@@ -1471,7 +1469,7 @@ input[type="reset"],
 
 .path-accordion__chevron::before{
   border-style: solid;
-  border-width: 0.18em 0.18em 0 0;
+  border-width: 0 0.18em 0.18em 0;
   content: "";
   display: inline-block;
   height: 0.72em;
@@ -1484,7 +1482,7 @@ input[type="reset"],
 }
 
 .path-accordion[open] .path-accordion__chevron::before{
-  transform: rotate(135deg);
+  transform: rotate(-135deg);
 }
 
 .path-accordion__content{
@@ -1493,6 +1491,20 @@ input[type="reset"],
 
 .path-accordion__content > :last-child{
   margin-bottom: 0;
+}
+
+/* Extra breathing room between the main topics in "Cuidar de Mim". */
+.path-topic-list > li{
+  margin-bottom: 1rem;
+}
+
+.path-topic-list > li:last-child{
+  margin-bottom: 0;
+}
+
+.path-topic-list,
+.path-neurodiversity-list{
+  margin-top: 1rem;
 }
 
 @media (max-width: 768px){
