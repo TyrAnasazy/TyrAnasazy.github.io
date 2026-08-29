@@ -1726,6 +1726,48 @@ textarea::placeholder {
   margin-bottom: 0;
 }
 
+.mediaRow--caminhoIntro .caminho-intro-copy{
+  text-align: center;
+}
+
+.mediaRow--caminhoIntro .caminho-intro-copy p{
+  text-align: center;
+  text-indent: 0;
+}
+
+@media (min-width: 1221px){
+  .caminho-page-title{
+    box-sizing: border-box;
+    width: calc(100% - 300px);
+    margin-left: 300px !important;
+  }
+
+  .mediaRow--caminhoIntro{
+    display: flex;
+    align-items: center;
+  }
+
+  .mediaRow--caminhoIntro .imageTerapias2{
+    float: none;
+    flex: 0 0 282px;
+    width: 282px;
+    margin: 0 18px 0 0;
+  }
+
+  .mediaRow--caminhoIntro .caminho-intro-copy{
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .mediaRow--caminhoIntro .caminho-intro-copy p{
+    margin: 0 0 1rem;
+  }
+
+  .mediaRow--caminhoIntro .caminho-intro-copy p:last-child{
+    margin-bottom: 0;
+  }
+}
+
 /* Mobile: stack, center image, text full width below */
 @media (max-width: 772px){
   .mediaRow .imageTerapias,
