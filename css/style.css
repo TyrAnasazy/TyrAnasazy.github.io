@@ -1736,7 +1736,7 @@ textarea::placeholder {
 }
 
 .caminho-page-title{
-  margin-bottom: 0.75rem !important;
+  margin-bottom: 0 !important;
 }
 
 @media (min-width: 1221px){
