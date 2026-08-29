@@ -116,6 +116,11 @@
       <input type="radio" name="tipo_contacto" value="Inscrição evento" />
       Inscrição Lua Nova
     </label>
+
+    <label>
+      <input type="radio" name="tipo_contacto" value="Informações" />
+      Informações
+    </label>
   </fieldset>
 
   <!-- Primeira sessão -->
@@ -138,6 +143,14 @@
       <select name="evento">
         <option value="Meditação da Lua Nova" selected>Meditação da Lua Nova</option>
       </select>
+    </label>
+  </div>
+
+  <!-- Informações -->
+  <div id="informacoes" hidden>
+    <label style="text-align:left;">
+      Como te posso ajudar? *
+      <textarea name="informacoes_mensagem" rows="4" placeholder="Pergunta o que precisares de saber"></textarea>
     </label>
   </div>
   
@@ -261,6 +274,7 @@ const form = document.getElementById("contactForm");
 
 const primeiraSessao = document.getElementById("primeiraSessao");
 const evento = document.getElementById("evento");
+const informacoes = document.getElementById("informacoes");
 const terapia = document.getElementById("terapia");
 const auraAnimal = document.getElementById("auraAnimal");
 
@@ -268,6 +282,7 @@ const motivo = document.querySelector('[name="motivo"]');
 const horario = document.querySelector('[name="horario"]');
 const eventoSelect = document.querySelector('[name="evento"]');
 const terapiaSelect = document.querySelector('[name="terapia"]');
+const informacoesMensagem = document.querySelector('[name="informacoes_mensagem"]');
 
 const animalNome = document.querySelector('[name="animal_nome"]');
 const animalEspecie = document.querySelector('[name="animal_especie"]');
@@ -310,12 +325,14 @@ function updateForm() {
   // Show/hide main sections
   primeiraSessao.hidden = (tipo !== "Primeira sessão");
   evento.hidden = (tipo !== "Inscrição evento");
+  informacoes.hidden = (tipo !== "Informações");
   terapia.hidden = (tipo !== "Marcar uma terapia");
 
   // Base required fields per flow
   motivo.required = (tipo === "Primeira sessão");
   horario.required = (tipo === "Primeira sessão");
   eventoSelect.required = (tipo === "Inscrição evento");
+  informacoesMensagem.required = (tipo === "Informações");
   terapiaSelect.required = (tipo === "Marcar uma terapia");
 
   // Determine if this is the "animal aura" case
@@ -337,6 +354,9 @@ function updateForm() {
   } else {
     eventoSelect.value = "Meditação da Lua Nova";
   }
+  if (tipo !== "Informações") {
+    informacoesMensagem.value = "";
+  }
   if (tipo !== "Marcar uma terapia") {
     terapiaSelect.value = "";
     clearAuraAnimal();
@@ -356,6 +376,8 @@ function updateForm() {
     subject.value = "Inscrição: Meditação da Lua Nova";
   } else if (isAnimalAura) {
     subject.value = "Pedido: Leitura de Aura Animal";
+  } else if (tipo === "Informações") {
+    subject.value = "Pedido: Informações";
   } else {
     subject.value = "Pedido: Terapia";
   }
