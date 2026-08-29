@@ -1436,7 +1436,7 @@ input[type="reset"],
 }
 
 .path-accordion:first-of-type{
-  margin-top: 1.25rem;
+  margin-top: 2.25rem;
 }
 
 .path-accordion > summary{
@@ -1733,6 +1733,10 @@ textarea::placeholder {
 .mediaRow--caminhoIntro .caminho-intro-copy p{
   text-align: center;
   text-indent: 0;
+}
+
+.caminho-page-title{
+  margin-bottom: 0.75rem !important;
 }
 
 @media (min-width: 1221px){
