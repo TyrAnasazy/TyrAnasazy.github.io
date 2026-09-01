@@ -1736,7 +1736,15 @@ textarea::placeholder {
 }
 
 .caminho-page-title{
-  margin-bottom: -3rem !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: -2.5rem !important;
+}
+
+@media (max-width: 772px){
+  .caminho-page-title{
+    margin-top: 5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
 }
 
 @media (min-width: 1221px){
@@ -1851,6 +1859,10 @@ textarea::placeholder {
       margin-left: 0 !important;
       clear: both;
     }
+
+    .mediaRow--founder .founder-identity{
+      text-align: center;
+    }
   }
   @media (max-width: 1128px) {
     /* stop W3CSS column float behavior for the image column in these rows */
@@ -1880,6 +1892,10 @@ textarea::placeholder {
   }
 
   @media (max-width: 1220px) {
+    .caminho-page-title{
+      margin-bottom: 1.5rem !important;
+    }
+
     .mediaRow--consultoriaIntro .imageTerapias2{
       float: none !important;
       width: 100% !important;
@@ -1902,6 +1918,12 @@ textarea::placeholder {
     }
 
     .mediaRow--consultoriaIntro .consultoria-copy{
+      width: 100% !important;
+      max-width: 100% !important;
+      clear: both;
+    }
+
+    .mediaRow--caminhoIntro .caminho-intro-copy{
       width: 100% !important;
       max-width: 100% !important;
       clear: both;
