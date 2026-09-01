@@ -1456,6 +1456,19 @@ input[type="reset"],
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  caret-color: transparent;
+  outline: none;
+}
+
+.path-accordion__summary:focus{
+  outline: none;
+}
+
+.path-accordion__summary:focus-visible{
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
 }
 
 .path-accordion__heading{
@@ -1491,6 +1504,11 @@ input[type="reset"],
 
 .path-accordion__content > :last-child{
   margin-bottom: 0;
+}
+
+/* Keep the closing guidance separate when the final accordion is expanded. */
+.path-accordion[open] + p{
+  margin-top: 4rem;
 }
 
 /* Extra breathing room between the main topics in "Cuidar de Mim". */
