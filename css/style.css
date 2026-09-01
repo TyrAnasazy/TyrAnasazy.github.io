@@ -312,6 +312,7 @@ p {
 a:focus, a:hover {
     color: #23527c;
     text-decoration: none !important;
+    outline: none;
 }
 
 .BurgerText{
