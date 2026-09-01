@@ -1742,7 +1742,6 @@ textarea::placeholder {
 
 @media (max-width: 772px){
   .caminho-page-title{
-    margin-top: 5rem !important;
     margin-bottom: 1.5rem !important;
   }
 }
