@@ -1735,6 +1735,16 @@ textarea::placeholder {
   text-indent: 0;
 }
 
+.path-topic-title{
+  text-align: left;
+}
+
+@media (max-width: 768px){
+  .path-topic-title{
+    word-spacing: -0.04em;
+  }
+}
+
 .caminho-page-title{
   margin-top: 2.5rem !important;
   margin-bottom: -2.5rem !important;
