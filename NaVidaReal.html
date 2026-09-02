@@ -33,8 +33,15 @@
 
     .vida-real .nvr-hero-image {
       display: block;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
       width: 100%;
-      height: auto;
+    }
+
+    .vida-real .nvr-hero {
+      aspect-ratio: 1920 / 509;
+      overflow: hidden;
     }
 
     .vida-real .nvr-section {
@@ -327,10 +334,9 @@
   </style>
 </head>
 <body class="vida-real">
-  <header>
+  <header class="nvr-hero">
     <picture>
-      <source media="(max-width: 600px)" srcset="img/Heads2.webp">
-      <img src="img/Heads2.webp" alt="Flores brancas" class="nvr-hero-image" fetchpriority="high">
+    <img src="img/cerejeira-hero.jpeg" alt="Flores de cerejeira" class="nvr-hero-image" fetchpriority="high">
     </picture>
   </header>
 
