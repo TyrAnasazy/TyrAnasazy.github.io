@@ -107,6 +107,7 @@
 
     .vida-real .nvr-copy p {
       margin: 0 0 1.35rem;
+      text-indent: 30px;
     }
 
     .vida-real .nvr-copy p:last-child {
@@ -126,6 +127,14 @@
 
     .vida-real .nvr-topics-block > .nvr-inner.nvr-copy {
       margin-top: 2rem;
+    }
+
+    .vida-real .nvr-central-group {
+      margin-top: 4rem;
+    }
+
+    .vida-real .nvr-topics-block + .nvr-central-group {
+      margin-top: 1rem;
     }
 
     .vida-real .nvr-topics-section .nvr-index2-image,
@@ -218,8 +227,13 @@
       font-size: clamp(1.18rem, 2vw, 1.45rem);
       font-weight: 500;
       line-height: 1.45;
-      margin: 1.75rem 0 0;
+      margin: 1.75rem 0 1.35rem;
       padding: 0.2rem 0 0.2rem 1rem;
+      text-indent: 0;
+    }
+
+    .vida-real .nvr-copy p.nvr-statement {
+      text-indent: 0;
     }
 
     .vida-real .nvr-feedback-section {
@@ -357,7 +371,7 @@
 <body class="vida-real">
   <header class="nvr-hero">
     <picture>
-    <img src="img/cerejeira-hero.jpeg" alt="Flores de cerejeira" class="nvr-hero-image" fetchpriority="high">
+    <img src="img/Hero.png" alt="Na Vida Real" class="nvr-hero-image" fetchpriority="high">
     </picture>
   </header>
 
@@ -379,7 +393,7 @@
       <div class="nvr-topics-block">
         <div class="nvr-inner LineTopics">
           <div class="col-lg-4 col-md-12 w3-center MobileMarginCandle ImageBottomMargin nvr-index2-image" style="padding:0 !important">
-            <img src="img/Candle.webp" alt="Vela acesa" class="MobileWidthCandle img-responsive" loading="lazy" decoding="async">
+            <img src="img/NewSide.png" alt="Imagem decorativa" class="MobileWidthCandle img-responsive" loading="lazy" decoding="async">
           </div>
           <div class="col-lg-8 col-md-12 MobileTopMargin nvr-index2-copy" style="line-height:0.95;padding:0 !important">
             <p class="MobileCenter PinkTitle MobileTitlePink">Podemos trabalhar, por exemplo:</p>
@@ -387,20 +401,16 @@
           </div>
         </div>
         <div class="nvr-inner nvr-copy">
-          <p>Para quem trabalha por conta própria, o trabalho pode incluir também a criação das balizas necessárias para que o tempo profissional e o restante tempo tenham um lugar definido.</p>
           <p>Podemos organizar o tempo semana a semana, acompanhar as variações do ciclo menstrual e considerar também os ritmos mensais ou anuais.</p>
         </div>
       </div>
-    </section>
 
-    <section class="nvr-section nvr-section--white">
-      <div class="nvr-inner nvr-copy">
+      <div class="nvr-central-group nvr-inner nvr-copy">
         <p>A organização da vida não se constrói apenas a partir de horários ou tarefas. Ao aprofundarmos cada uma das áreas que a compõem, podemos compreender o que precisa de atenção, trabalhar o que está a dificultar o seu equilíbrio e promover mudanças na forma como essas áreas são vividas.</p>
         <p class="nvr-statement">É deste trabalho que nasce uma estrutura diária realmente ajustada a ti, às tuas necessidades, prioridades e à vida que queres construir.</p>
       </div>
-    </section>
 
-    <section class="nvr-section nvr-feedback-section">
+    <div class="nvr-central-group nvr-feedback-section">
       <div class="nvr-inner">
         <h2 class="nvr-feedback-intro">Quem já trabalhou comigo descreve-o assim:</h2>
         <div id="vidaRealFeedbackCarousel" class="carousel slide carousel-fade nvr-carousel">
@@ -434,6 +444,7 @@
           </button>
         </div>
       </div>
+    </div>
     </section>
 
     <section class="nvr-section nvr-about">
