@@ -57,7 +57,7 @@
     }
 
     .vida-real .nvr-inner {
-      width: min(100%, 980px);
+      width: min(100%, 1200px);
       margin: 0 auto;
     }
 
@@ -137,6 +137,10 @@
       margin-top: 1rem;
     }
 
+    .vida-real .nvr-topics-block + .nvr-feedback-section {
+      margin-top: 4rem;
+    }
+
     .vida-real .nvr-topics-section .nvr-index2-image,
     .vida-real .nvr-topics-section .nvr-index2-copy {
       float: left;
@@ -174,6 +178,13 @@
       color: #733145 !important;
     }
 
+    .vida-real .nvr-topics-section .nvr-plain-title {
+      color: var(--nvr-wine);
+      font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+      font-weight: 700;
+      margin: 0 0 1.15rem;
+    }
+
     .vida-real .nvr-topics-section .BordauxText {
       color: var(--nvr-ink) !important;
       font-size: clamp(1.13rem, 1.8vw, 1.38rem);
@@ -184,6 +195,15 @@
     .vida-real .nvr-topics-section .nvr-topic {
       display: block;
       margin-bottom: 0.75rem;
+    }
+
+    /* Mirrored variant: copy on the left, image on the right. */
+    .vida-real .nvr-topics-section .nvr-topics-block--mirror .LineTopics {
+      padding-right: 0;
+    }
+
+    .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-topic {
+      text-indent: 30px;
     }
 
     @media (min-width: 701px) {
@@ -218,6 +238,28 @@
 
       .vida-real .nvr-topics-section .BordauxText {
         transform: translateX(3ch);
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .LineTopics {
+        padding-left: 0;
+        gap: 2.5rem;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-index2-copy {
+        transform: none;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .BordauxText {
+        transform: none;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-index2-copy {
+        flex: 0 0 55%;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-index2-image {
+        flex: 0 0 auto;
+        width: calc(45% - 2.5rem);
       }
     }
 
@@ -316,7 +358,6 @@
     }
 
     .vida-real .nvr-about-card {
-      max-width: 780px;
       text-align: center;
     }
 
@@ -379,16 +420,18 @@
     <section class="nvr-section nvr-section--white">
       <div class="nvr-inner">
         <h1 class="nvr-title">Na Vida Real</h1>
-        <p class="nvr-lead">Um olhar sobre as diferentes áreas da tua vida para compreender o que precisa de atenção, trabalhar o que precisa de mudar e construir uma organização que faça realmente sentido para ti.</p>
-        <p class="nvr-tagline">Fazer caber a vida no tempo que realmente tens!</p>
+        <p class="nvr-lead">Um acompanhamento para olhares para as diferentes áreas da tua vida, trabalhares o que não está a funcionar e construíres uma forma de viver mais ajustada a ti.</p>
+        <p class="nvr-tagline">Fazer caber a vida no tempo que realmente tens.</p>
       </div>
     </section>
 
     <section class="nvr-section nvr-section--soft nvr-topics-section">
       <div class="nvr-inner nvr-copy">
-        <p>Juntos/as vamos perceber o que é importante para ti, o que queres priorizar e como organizar as diferentes áreas da tua vida de uma forma possível de manter.</p>
+        <p>Juntos/as vamos olhar para as diferentes áreas da tua vida, perceber o que está a funcionar, o que precisa de mudar e que espaço queres dar a cada uma delas.</p>
+        <p>A organização é construída a partir daí, de uma forma possível de viver e manter.</p>
         <p class="nvr-statement">Começamos por olhar para a vida como um todo.</p>
-        <p>Percebemos o espaço que cada área ocupa, aquilo que exige de ti e o que, neste momento, está a ficar para trás. Olhamos para cada uma destas áreas para perceber o que está a funcionar, o que precisa de ser aprofundado ou transformado e que espaço faz sentido que tenha na tua vida.</p>
+        <p>Percebemos o espaço que cada área ocupa, aquilo que exige de ti e o que, neste momento, está a ficar para trás.</p>
+        <p>Olhamos depois com mais profundidade para aquilo que precisa de atenção, compreensão ou transformação, para que a organização da tua vida não seja construída apenas à volta de obrigações, mas também da forma como queres realmente vivê-la.</p>
       </div>
       <div class="nvr-topics-block">
         <div class="nvr-inner LineTopics">
@@ -396,7 +439,7 @@
             <img src="img/NewSide.png" alt="Imagem decorativa" class="MobileWidthCandle img-responsive" loading="lazy" decoding="async">
           </div>
           <div class="col-lg-8 col-md-12 MobileTopMargin nvr-index2-copy" style="line-height:0.95;padding:0 !important">
-            <p class="MobileCenter PinkTitle MobileTitlePink">Podemos trabalhar, por exemplo:</p>
+            <p class="MobileCenter PinkTitle MobileTitlePink">Algumas das áreas que podemos trabalhar:</p>
             <p class="MobileCenter BordauxText BordauxPadding"><span class="nvr-topic">Gestão do tempo, prioridades e carga mental;</span><span class="nvr-topic">Trabalho, organização profissional e equilíbrio com a vida pessoal;</span><span class="nvr-topic">Casa, responsabilidades e vida prática;</span><span class="nvr-topic">Parentalidade e dinâmica familiar;</span><span class="nvr-topic">Relações, limites e espaço pessoal;</span><span class="nvr-topic">Saúde, descanso, recuperação e autocuidado;</span><span class="nvr-topic">Projetos, interesses pessoais e objetivos;</span><span class="nvr-topic">Organização de horários, ritmos e diferentes fases da vida.</span></p>
           </div>
         </div>
@@ -406,8 +449,25 @@
       </div>
 
       <div class="nvr-central-group nvr-inner nvr-copy">
-        <p>A organização da vida não se constrói apenas a partir de horários ou tarefas. Ao aprofundarmos cada uma das áreas que a compõem, podemos compreender o que precisa de atenção, trabalhar o que está a dificultar o seu equilíbrio e promover mudanças na forma como essas áreas são vividas.</p>
-        <p class="nvr-statement">É deste trabalho que nasce uma estrutura diária realmente ajustada a ti, às tuas necessidades, prioridades e à vida que queres construir.</p>
+        <p>Começa por perceber como estão a ser vividas as diferentes áreas que a compõem.</p>
+        <p>Ao aprofundarmos cada uma delas, conseguimos trabalhar aquilo que está a dificultar o seu equilíbrio, compreender o que precisa de mudar e criar formas diferentes de viver essa parte da vida.</p>
+        <p>É desse trabalho que nasce uma estrutura diária realmente ajustada a ti, às tuas necessidades, prioridades e à vida que queres construir.</p>
+      </div>
+
+      <div class="nvr-topics-block nvr-topics-block--mirror">
+        <div class="nvr-inner LineTopics">
+          <div class="col-lg-8 col-md-12 MobileTopMargin nvr-index2-copy" style="line-height:0.95;padding:0 !important">
+            <p class="MobileCenter nvr-plain-title">Este trabalho pode fazer sentido para ti se:</p>
+            <p class="MobileCenter BordauxText"><span class="nvr-topic">Sentes que a tua vida está cheia, mas não está organizada à volta do que é realmente importante para ti</span><span class="nvr-topic">Há áreas da tua vida que estão constantemente a ficar para trás</span><span class="nvr-topic">Tens dificuldade em conciliar trabalho, casa, família, descanso e espaço pessoal</span><span class="nvr-topic">Sabes que alguma coisa precisa de mudar, mas não consegues perceber como reorganizar o conjunto</span><span class="nvr-topic">Sentes que a forma como estás a viver os teus dias já não faz sentido para ti</span><span class="nvr-topic">Já tentaste agendas, rotinas ou métodos de produtividade, mas eles não se adaptam à vida real</span></p>
+          </div>
+          <div class="col-lg-4 col-md-12 w3-center MobileMarginCandle ImageBottomMargin nvr-index2-image" style="padding:0 !important">
+            <img src="img/Compass.webp" alt="Imagem de uma bússola" class="MobileWidthCandle img-responsive" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="nvr-inner nvr-copy">
+          <p>O objetivo não é encaixar mais coisas no mesmo tempo.</p>
+          <p>É perceber o que faz sentido manter, mudar, aprofundar ou criar para construíres uma vida que funcione melhor para ti.</p>
+        </div>
       </div>
 
     <div class="nvr-central-group nvr-feedback-section">
@@ -450,8 +510,10 @@
     <section class="nvr-section nvr-about">
       <div class="nvr-inner nvr-about-card nvr-copy">
         <h2 class="nvr-about-name">Catarina Mendonça Português</h2>
-        <p>A organização sempre fez parte da forma como penso e resolvo problemas. A minha experiência profissional em organização, administração, estudo do comportamento e acompanhamento individual foi-se cruzando, ao longo dos anos, com esta forma muito prática de olhar para a vida.</p>
-        <p>Fui desenvolvendo uma abordagem personalizável para gerir tempo, prioridades, diferentes ritmos e várias áreas da vida em simultâneo.</p>
+        <p>Ao longo dos anos fui trabalhando em duas áreas que, à partida, pareciam bastante diferentes: por um lado, organização e administração; por outro, acompanhamento individual e trabalho sobre os diferentes temas que compõem a vida de cada pessoa.</p>
+        <p>Com o tempo percebi que estas duas dimensões estavam profundamente ligadas. Ao trabalhar com pessoas, fui percebendo que muitos dos temas que surgiam acabavam por tocar também na forma como viviam os seus ritmos, hábitos e estruturas do dia a dia.</p>
+        <p>E, ao trabalhar com organização, percebi que nenhuma estrutura funciona verdadeiramente se não tiver em conta aquilo que se passa dentro de cada uma das áreas que compõem a vida.</p>
+        <p>Foi desta ligação que nasceu o Na Vida Real: um trabalho que permite aprofundar diferentes áreas da vida e, a partir daí, construir ritmos, estruturas e formas de organização ajustadas à pessoa e à vida que quer viver.</p>
         <a href="Contactos.html" class="nvr-cta">(contactos/marcação)</a>
       </div>
     </section>
