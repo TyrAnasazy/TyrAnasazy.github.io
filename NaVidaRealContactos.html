@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contactos Na Vida Real.">
+  <title>Contactos | Na Vida Real</title>
+  <link rel="stylesheet" href="css/styleLusaka2.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <style>
+    :root {
+      --nvr-cream: #efe6e0;
+      --nvr-sage: #c4ceb6;
+      --nvr-wine: #733145;
+      --nvr-ink: #322b2b;
+      --nvr-white: #ffffff;
+      --nvr-soft: #fcf8f6;
+    }
+
+    body.nvr-contact-page {
+      background: var(--nvr-soft);
+      color: var(--nvr-ink);
+      font-family: "Maleah Regular", sans-serif;
+      margin: 0;
+    }
+
+    .nvr-contact-page * {
+      box-sizing: border-box;
+    }
+
+    .nvr-contact {
+      margin: 0 auto;
+      max-width: 760px;
+      padding: clamp(4rem, 10vw, 7.5rem) 1.5rem;
+    }
+
+    .nvr-contact__back {
+      color: var(--nvr-wine);
+      display: inline-block;
+      font-size: 1.05rem;
+      margin-bottom: clamp(2.5rem, 6vw, 4.5rem);
+      text-decoration: none;
+    }
+
+    .nvr-contact__back:hover,
+    .nvr-contact__back:focus-visible {
+      text-decoration: underline;
+    }
+
+    .nvr-contact h1 {
+      color: var(--nvr-wine);
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 1;
+      margin: 0 0 1.5rem;
+      text-align: center;
+    }
+
+    .nvr-contact__intro {
+      font-size: clamp(1.15rem, 2vw, 1.35rem);
+      line-height: 1.5;
+      margin: 0 auto clamp(2.25rem, 5vw, 3.5rem);
+      max-width: 590px;
+      text-align: center;
+    }
+
+    .nvr-contact form {
+      background: var(--nvr-white);
+      box-shadow: 0 12px 35px rgba(50, 43, 43, 0.08);
+      padding: clamp(1.5rem, 5vw, 3.25rem);
+    }
+
+    .nvr-contact label,
+    .nvr-contact legend {
+      color: var(--nvr-ink);
+      display: block;
+      font-size: 1.12rem;
+      line-height: 1.35;
+    }
+
+    .nvr-contact label {
+      margin-bottom: 1.25rem;
+    }
+
+    .nvr-contact input:not([type="radio"]):not([type="checkbox"]),
+    .nvr-contact textarea {
+      background: var(--nvr-soft);
+      border: 1px solid rgba(50, 43, 43, 0.25);
+      border-radius: 0;
+      color: var(--nvr-ink);
+      display: block;
+      font: inherit;
+      margin-top: 0.5rem;
+      padding: 0.75rem 0.85rem;
+      width: 100%;
+    }
+
+    .nvr-contact textarea {
+      min-height: 8.5rem;
+      resize: vertical;
+    }
+
+    .nvr-contact input:focus,
+    .nvr-contact textarea:focus {
+      border-color: var(--nvr-wine);
+      outline: 2px solid rgba(115, 49, 69, 0.18);
+      outline-offset: 1px;
+    }
+
+    .nvr-contact fieldset {
+      border: 0;
+      margin: 2rem 0;
+      padding: 0;
+    }
+
+    .nvr-contact legend {
+      color: var(--nvr-wine);
+      font-size: 1.25rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .nvr-contact__choices {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.5rem;
+    }
+
+    .nvr-contact__choice {
+      align-items: center;
+      cursor: pointer;
+      display: inline-flex !important;
+      gap: 0.5rem;
+      margin: 0 !important;
+    }
+
+    .nvr-contact__choice input {
+      accent-color: var(--nvr-wine);
+      height: 1rem;
+      margin: 0;
+      width: 1rem;
+    }
+
+    .nvr-contact__flow[hidden] {
+      display: none;
+    }
+
+    .nvr-contact__privacy {
+      align-items: flex-start;
+      display: flex !important;
+      font-size: 0.96rem !important;
+      gap: 0.65rem;
+      margin: 2rem 0 1.5rem !important;
+    }
+
+    .nvr-contact__privacy input {
+      accent-color: var(--nvr-wine);
+      margin-top: 0.25rem;
+    }
+
+    .nvr-contact__privacy a {
+      color: var(--nvr-wine);
+    }
+
+    .nvr-contact button {
+      background: var(--nvr-wine);
+      border: 1px solid var(--nvr-wine);
+      color: var(--nvr-white);
+      cursor: pointer;
+      font: inherit;
+      font-size: 1.12rem;
+      padding: 0.75rem 2.25rem;
+    }
+
+    .nvr-contact button:hover,
+    .nvr-contact button:focus-visible {
+      background: transparent;
+      color: var(--nvr-wine);
+    }
+
+    .nvr-contact__message {
+      line-height: 1.45;
+      margin: 1.5rem 0 0;
+    }
+
+    .nvr-contact__success {
+      color: #36552f;
+    }
+
+    .nvr-contact__error {
+      color: #8c2638;
+    }
+
+    @media (max-width: 600px) {
+      .nvr-contact {
+        padding: 2.5rem 1.25rem 4rem;
+      }
+
+      .nvr-contact h1 {
+        font-size: 35px;
+      }
+
+      .nvr-contact form {
+        padding: 1.5rem 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body class="nvr-contact-page">
+  <main class="nvr-contact">
+    <a class="nvr-contact__back" href="NaVidaReal.html">Voltar a Na Vida Real</a>
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+      <h1>Contactos</h1>
+      <p class="nvr-contact__intro">Se queres marcar uma sessão ou pedir informações, deixa a tua mensagem.</p>
+      <input type="hidden" name="access_key" value="f563c9dc-c7df-45c3-8f4b-738542781bf8">
+      <input type="hidden" name="from_name" value="Website Na Vida Real">
+      <input type="hidden" name="subject" id="subject" value="Pedido: Marcar sessão | Na Vida Real">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+      <label>
+        Nome *
+        <input type="text" name="nome" autocomplete="name" required>
+      </label>
+
+      <label>
+        Email *
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+
+      <label>
+        Telefone (se preferires que te ligue)
+        <input type="tel" name="telefone" autocomplete="tel">
+      </label>
+
+      <fieldset>
+        <legend>Motivo do contacto</legend>
+        <div class="nvr-contact__choices">
+          <label class="nvr-contact__choice">
+            <input type="radio" name="tipo_contacto" value="Marcar sessão" checked>
+            Marcar sessão
+          </label>
+          <label class="nvr-contact__choice">
+            <input type="radio" name="tipo_contacto" value="Informações">
+            Informações
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="nvr-contact__flow" id="marcarSessao">
+        <label>
+          O que te trouxe aqui? *
+          <textarea name="motivo" rows="5" placeholder="Partilha brevemente o que te motivou a procurar acompanhamento" required></textarea>
+        </label>
+        <label>
+          Melhor horário *
+          <input type="text" name="horario" placeholder="Ex.: dias úteis entre as 18h e as 21h" required>
+        </label>
+      </div>
+
+      <div class="nvr-contact__flow" id="informacoes" hidden>
+        <label>
+          Como te posso ajudar? *
+          <textarea name="informacoes_mensagem" rows="5" placeholder="Pergunta o que precisares de saber"></textarea>
+        </label>
+      </div>
+
+      <label class="nvr-contact__privacy">
+        <input type="checkbox" name="gdpr_consent" required>
+        <span>Li e aceito a <a href="NaVidaRealPrivacidade.html">Política de Privacidade</a> e autorizo o tratamento dos meus dados.</span>
+      </label>
+
+      <button type="submit">Enviar</button>
+      <p id="formSuccess" class="nvr-contact__message nvr-contact__success" role="status" aria-live="polite" hidden>Obrigado. A tua mensagem foi enviada com sucesso.</p>
+      <p id="formError" class="nvr-contact__message nvr-contact__error" role="alert" aria-live="assertive" hidden>Não foi possível enviar a mensagem. Tenta novamente ou escreve para <a href="mailto:catarina.atelierdaconsciencia@gmail.com">catarina.atelierdaconsciencia@gmail.com</a>.</p>
+    </form>
+  </main>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const marcarSessao = document.getElementById('marcarSessao');
+    const informacoes = document.getElementById('informacoes');
+    const motivo = form.elements.motivo;
+    const horario = form.elements.horario;
+    const informacoesMensagem = form.elements.informacoes_mensagem;
+    const subject = document.getElementById('subject');
+    const success = document.getElementById('formSuccess');
+    const error = document.getElementById('formError');
+
+    function updateForm() {
+      const tipo = form.querySelector('input[name="tipo_contacto"]:checked').value;
+      const isSession = tipo === 'Marcar sessão';
+
+      marcarSessao.hidden = !isSession;
+      informacoes.hidden = isSession;
+      motivo.required = isSession;
+      horario.required = isSession;
+      informacoesMensagem.required = !isSession;
+      subject.value = `Pedido: ${tipo} | Na Vida Real`;
+    }
+
+    form.querySelectorAll('input[name="tipo_contacto"]').forEach((radio) => {
+      radio.addEventListener('change', updateForm);
+    });
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      success.hidden = true;
+      error.hidden = true;
+
+      try {
+        const response = await fetch(form.action, {
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+          method: 'POST'
+        });
+        const result = await response.json();
+
+        if (!response.ok || !result.success) throw new Error('Submission failed');
+
+        form.reset();
+        updateForm();
+        success.hidden = false;
+      } catch (submissionError) {
+        error.hidden = false;
+      }
+    });
+
+    updateForm();
+  </script>
+</body>
+</html>
