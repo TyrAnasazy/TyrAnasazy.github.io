@@ -47,13 +47,8 @@
     .vida-real .nvr-section {
       isolation: isolate;
       overflow: hidden;
-      padding: clamp(3rem, 6vw, 5rem) 1.5rem;
+      padding: clamp(3.5rem, 7vw, 6.5rem) 1.5rem;
       position: relative;
-    }
-
-    .vida-real main > .nvr-section--white:first-child {
-      padding-bottom: clamp(2.75rem, 5vw, 4.25rem);
-      padding-top: clamp(2.75rem, 5vw, 4.25rem);
     }
 
     .vida-real .nvr-section > * {
@@ -84,9 +79,9 @@
     }
 
     .vida-real .nvr-title {
-      font-size: clamp(2rem, 3.4vw, 2.5rem);
-      line-height: 1.08;
-      margin: 0 0 1.5rem;
+      font-size: 45px;
+      line-height: 1;
+      margin: 0 0 2rem;
     }
 
     .vida-real .nvr-title::after,
@@ -100,9 +95,9 @@
     }
 
     .vida-real .nvr-heading {
-      font-size: clamp(1.55rem, 2.5vw, 2rem);
-      line-height: 1.18;
-      margin: 0 0 1.25rem;
+      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+      line-height: 1.12;
+      margin: 0 0 1.5rem;
     }
 
     .vida-real .nvr-lead,
@@ -110,12 +105,12 @@
     .vida-real .nvr-topics,
     .vida-real .nvr-feedback-copy {
       color: var(--nvr-ink);
-      font-size: clamp(1.05rem, 1.35vw, 1.2rem);
-      line-height: 1.6;
+      font-size: clamp(1.13rem, 1.8vw, 1.38rem);
+      line-height: 1.5;
     }
 
     .vida-real .nvr-lead {
-      font-size: clamp(1.125rem, 1.5vw, 1.3rem);
+      font-size: 24px;
       max-width: 820px;
       margin: 0 auto;
       text-align: center;
@@ -130,7 +125,7 @@
     }
 
     .vida-real .nvr-copy p {
-      margin: 0 0 1.15rem;
+      margin: 0 0 1.35rem;
       text-indent: 30px;
     }
 
@@ -146,23 +141,23 @@
     }
 
     .vida-real .nvr-topics-block {
-      margin-top: clamp(2rem, 3vw, 3rem);
+      margin-top: clamp(2.5rem, 4vw, 4rem);
     }
 
     .vida-real .nvr-topics-block > .nvr-inner.nvr-copy {
-      margin-top: 1.75rem;
+      margin-top: 2rem;
     }
 
     .vida-real .nvr-topics-block:not(.nvr-topics-block--mirror) > .nvr-inner.nvr-copy {
-      margin-top: 2.5rem;
+      margin-top: 4rem;
     }
 
     .vida-real .nvr-topics-block--mirror > .nvr-inner.nvr-copy {
-      margin-top: 2.5rem;
+      margin-top: 4rem;
     }
 
     .vida-real .nvr-central-group {
-      margin-top: 3rem;
+      margin-top: 4rem;
     }
 
     .vida-real .nvr-topics-block + .nvr-central-group {
@@ -170,7 +165,7 @@
     }
 
     .vida-real .nvr-topics-block + .nvr-feedback-section {
-      margin-top: 3rem;
+      margin-top: 4rem;
     }
 
     .vida-real .nvr-topics-block:not(.nvr-topics-block--mirror) .LineTopics {
@@ -204,7 +199,7 @@
       background: var(--nvr-cream);
       color: var(--nvr-wine) !important;
       display: inline-block;
-      font-size: clamp(1.3rem, 2vw, 1.6rem);
+      font-size: clamp(1.4rem, 2.4vw, 1.85rem);
       font-weight: 700;
       margin: 0 0 1.15rem;
       padding: 0.15rem 0.45rem;
@@ -218,21 +213,21 @@
 
     .vida-real .nvr-topics-section .nvr-plain-title {
       color: var(--nvr-wine);
-      font-size: clamp(1.3rem, 2vw, 1.6rem);
+      font-size: clamp(1.4rem, 2.4vw, 1.85rem);
       font-weight: 700;
       margin: 0 0 1.15rem;
     }
 
     .vida-real .nvr-topics-section .BordauxText {
       color: var(--nvr-ink) !important;
-      font-size: clamp(1.05rem, 1.35vw, 1.2rem);
-      line-height: 1.55;
+      font-size: clamp(1.13rem, 1.8vw, 1.38rem);
+      line-height: 1.45;
       margin: 0;
     }
 
     .vida-real .nvr-topics-section .nvr-topic {
       display: block;
-      margin-bottom: 0.65rem;
+      margin-bottom: 0.75rem;
     }
 
     /* Mirrored variant: copy on the left, image on the right. */
@@ -350,15 +345,15 @@
 
     .vida-real .nvr-feedback-section {
       background: var(--nvr-soft);
-      padding: clamp(2.25rem, 4vw, 3.5rem) 0;
+      padding: clamp(2.5rem, 5vw, 4rem) 0;
       position: relative;
     }
 
     .vida-real .nvr-feedback-intro {
       color: var(--nvr-wine);
-      font-size: clamp(1.35rem, 2vw, 1.6rem);
+      font-size: clamp(1.35rem, 2.3vw, 1.75rem);
       font-weight: 700;
-      margin: 0 0 1.25rem;
+      margin: 0 0 1.5rem;
       text-align: center;
     }
 
@@ -387,8 +382,8 @@
 
     .vida-real .nvr-feedback-card p {
       color: var(--nvr-ink);
-      font-size: clamp(1.05rem, 1.3vw, 1.2rem);
-      line-height: 1.55;
+      font-size: clamp(1.08rem, 1.75vw, 1.35rem);
+      line-height: 1.5;
       margin: 0;
     }
 
@@ -435,8 +430,8 @@
 
     .vida-real .nvr-about-name {
       color: var(--nvr-wine);
-      font-size: clamp(1.45rem, 2.4vw, 1.85rem);
-      margin: 0 0 1.25rem;
+      font-size: clamp(1.55rem, 3vw, 2.2rem);
+      margin: 0 0 1.5rem;
     }
 
     .vida-real .nvr-cta {
@@ -456,12 +451,7 @@
 
     @media (max-width: 700px) {
       .vida-real .nvr-section {
-        padding: 2.75rem 1.25rem;
-      }
-
-      .vida-real main > .nvr-section--white:first-child {
-        padding-bottom: 2.5rem;
-        padding-top: 2.5rem;
+        padding: 3.25rem 1.25rem;
       }
 
       .vida-real .nvr-topics-section .nvr-index2-image,
