@@ -45,7 +45,15 @@
     }
 
     .vida-real .nvr-section {
+      isolation: isolate;
+      overflow: hidden;
       padding: clamp(3.5rem, 7vw, 6.5rem) 1.5rem;
+      position: relative;
+    }
+
+    .vida-real .nvr-section > * {
+      position: relative;
+      z-index: 1;
     }
 
     .vida-real .nvr-section--white {
@@ -74,6 +82,16 @@
       font-size: 45px;
       line-height: 1;
       margin: 0 0 2rem;
+    }
+
+    .vida-real .nvr-title::after,
+    .vida-real .nvr-heading::after {
+      background: var(--nvr-sage);
+      content: "";
+      display: block;
+      height: 2px;
+      margin: 1rem auto 0;
+      width: 3.5rem;
     }
 
     .vida-real .nvr-heading {
@@ -327,6 +345,8 @@
 
     .vida-real .nvr-feedback-section {
       background: var(--nvr-soft);
+      padding: clamp(2.5rem, 5vw, 4rem) 0;
+      position: relative;
     }
 
     .vida-real .nvr-feedback-intro {
@@ -405,6 +425,8 @@
     }
 
     .vida-real .nvr-about-card {
+      border-bottom: 3px solid var(--nvr-sage);
+      padding-bottom: 2rem;
       text-align: center;
     }
 

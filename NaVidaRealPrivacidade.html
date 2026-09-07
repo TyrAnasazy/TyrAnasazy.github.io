@@ -32,15 +32,30 @@
     }
 
     .nvr-privacy__back {
+      align-items: center;
+      border: 1px solid rgba(115, 49, 69, 0.45);
       color: var(--nvr-wine);
-      display: inline-block;
-      font-size: 1.05rem;
+      display: inline-flex;
+      font-size: 1rem;
+      gap: 0.5rem;
       margin-bottom: clamp(2.5rem, 6vw, 4.5rem);
+      padding: 0.55rem 0.8rem;
       text-decoration: none;
+      transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+    }
+
+    .nvr-privacy__back::before {
+      content: "\2190";
+      font-size: 1.1em;
+      line-height: 1;
     }
 
     .nvr-privacy__back:hover,
-    .nvr-privacy__back:focus-visible { text-decoration: underline; }
+    .nvr-privacy__back:focus-visible {
+      background: var(--nvr-cream);
+      color: var(--nvr-ink);
+      transform: translateX(-0.2rem);
+    }
 
     .nvr-privacy__card {
       background: var(--nvr-white);
@@ -107,9 +122,7 @@
 
       <p>Esta Política de Privacidade explica como são tratados os dados pessoais enviados através do formulário de contacto do Na Vida Real, em conformidade com o Regulamento Geral sobre a Proteção de Dados (RGPD).</p>
 
-      <div class="nvr-privacy__summary">
-        <p><strong>Em resumo:</strong> os dados enviados no formulário são usados apenas para responder ao teu pedido de informações ou marcação de sessão.</p>
-      </div>
+      <p><strong>Em resumo:</strong> os dados enviados no formulário são usados apenas para responder ao teu pedido de informações ou marcação de sessão.</p>
 
       <section>
         <h2>1. Responsável pelo tratamento</h2>
