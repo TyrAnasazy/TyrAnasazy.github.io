@@ -239,7 +239,46 @@
       text-indent: 30px;
     }
 
-    @media (min-width: 701px) {
+    @media (max-width: 1128px) {
+      .vida-real .nvr-topics-section .LineTopics {
+        padding: 0;
+      }
+
+      .vida-real .nvr-topics-section .nvr-index2-image,
+      .vida-real .nvr-topics-section .nvr-index2-copy {
+        float: none;
+        width: 100%;
+      }
+
+      .vida-real .nvr-topics-section .nvr-index2-image {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block:not(.nvr-topics-block--mirror) .nvr-index2-image {
+        margin-bottom: 2rem;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-index2-image {
+        margin-top: 2rem;
+      }
+
+      .vida-real .nvr-topics-section .MobileWidthCandle {
+        height: auto;
+        margin: 0 auto;
+        width: min(70vw, 400px);
+      }
+
+      .vida-real .nvr-topics-section .nvr-index2-copy > .PinkTitle,
+      .vida-real .nvr-topics-section .nvr-index2-copy > .nvr-plain-title {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 1129px) {
       .vida-real .nvr-desktop-justify {
         text-align: justify;
       }
@@ -331,6 +370,13 @@
         position: static;
         transform: none;
         white-space: normal;
+      }
+    }
+
+    /* Prevent the Atelier's 1200px mobile helper from centering desktop topics early. */
+    @media (min-width: 1129px) and (max-width: 1200px) {
+      .vida-real .nvr-topics-section .MobileCenter {
+        text-align: left;
       }
     }
 
@@ -458,12 +504,6 @@
     @media (max-width: 700px) {
       .vida-real .nvr-section {
         padding: 3.25rem 1.25rem;
-      }
-
-      .vida-real .nvr-topics-section .nvr-index2-image,
-      .vida-real .nvr-topics-section .nvr-index2-copy {
-        float: none;
-        width: 100%;
       }
 
       .vida-real .nvr-topics-section .MobileWidthCandle {
