@@ -133,6 +133,10 @@
       margin-bottom: 0;
     }
 
+    .vida-real .nvr-desktop-justify {
+      text-align: justify;
+    }
+
     /* Ported from index2.html: candle on the left, topics on the right. */
     .vida-real .nvr-topics-section .LineTopics::after {
       clear: both;
@@ -515,6 +519,16 @@
     @media (max-width: 700px) {
       .vida-real .nvr-section {
         padding: 3.25rem 1.25rem;
+      }
+
+      .vida-real .nvr-lead,
+      .vida-real .nvr-tagline,
+      .vida-real .nvr-feedback-card p,
+      .vida-real .nvr-about-card.nvr-copy p,
+      .vida-real .MobileCenter,
+      .vida-real .nvr-topics-section .MobileCenter .nvr-topic {
+        padding-left: 0;
+        text-indent: 0;
       }
 
       .vida-real .nvr-topics-section .MobileWidthCandle {
