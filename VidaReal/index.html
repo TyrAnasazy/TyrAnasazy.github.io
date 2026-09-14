@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Na Vida Real - organização da vida pessoal, gestão do tempo e prioridades.">
+  <title>Na Vida Real</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styleLusaka2.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <style>
+    :root {
+      --nvr-cream: #efe6e0;
+      --nvr-sage: #c4ceb6;
+      --nvr-wine: #733145;
+      --nvr-ink: #322b2b;
+      --nvr-white: #ffffff;
+      --nvr-soft: #fcf8f6;
+    }
+
+    .vida-real {
+      background: var(--nvr-white);
+      color: var(--nvr-ink);
+      font-family: "Maleah Regular", sans-serif;
+      text-align: left;
+    }
+
+    .vida-real * {
+      box-sizing: border-box;
+    }
+
+    .vida-real .nvr-hero-image {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      width: 100%;
+    }
+
+    .vida-real .nvr-hero {
+      aspect-ratio: 1920 / 509;
+      overflow: hidden;
+    }
+
+    .vida-real .nvr-section {
+      isolation: isolate;
+      overflow: hidden;
+      padding: clamp(3.5rem, 7vw, 6.5rem) 1.5rem;
+      position: relative;
+    }
+
+    .vida-real .nvr-section > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .vida-real .nvr-section--white {
+      background: var(--nvr-white);
+    }
+
+    .vida-real .nvr-section--soft {
+      background: var(--nvr-soft);
+    }
+
+    .vida-real .nvr-inner {
+      width: min(100%, 980px);
+      margin: 0 auto;
+    }
+
+    .vida-real .nvr-title,
+    .vida-real .nvr-heading {
+      color: var(--nvr-wine);
+      font-family: "Maleah Regular", sans-serif;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    .vida-real .nvr-title {
+      font-size: 45px;
+      line-height: 1;
+      margin: 0 0 2rem;
+    }
+
+    .vida-real .nvr-heading::after {
+      background: var(--nvr-sage);
+      content: "";
+      display: block;
+      height: 2px;
+      margin: 1rem auto 0;
+      width: 3.5rem;
+    }
+
+    .vida-real .nvr-heading {
+      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+      line-height: 1.12;
+      margin: 0 0 1.5rem;
+    }
+
+    .vida-real .nvr-lead,
+    .vida-real .nvr-copy,
+    .vida-real .nvr-topics,
+    .vida-real .nvr-feedback-copy {
+      color: var(--nvr-ink);
+      font-size: clamp(1.13rem, 1.8vw, 1.38rem);
+      line-height: 1.5;
+    }
+
+    .vida-real .nvr-lead {
+      font-size: 24px;
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .vida-real .nvr-tagline {
+      color: var(--nvr-wine);
+      font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+      font-weight: 700;
+      margin: 2rem 0 0;
+      text-align: center;
+    }
+
+    .vida-real .nvr-copy p {
+      margin: 0 0 1.35rem;
+      text-indent: 30px;
+    }
+
+    .vida-real .nvr-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .vida-real p {
+      text-align: justify;
+    }
+
+    .vida-real .PinkTitle {
+      text-align: center;
+    }
+
+    .vida-real .nvr-about-card p {
+      text-align: center;
+    }
+
+    /* Ported from index2.html: candle on the left, topics on the right. */
+    .vida-real .nvr-topics-section .LineTopics::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+
+    .vida-real .nvr-topics-block {
+      margin-top: clamp(2.5rem, 4vw, 4rem);
+    }
+
+    .vida-real .nvr-topics-block > .nvr-inner.nvr-copy {
+      margin-top: 2rem;
+    }
+
+    .vida-real .nvr-topics-block:not(.nvr-topics-block--mirror) > .nvr-inner.nvr-copy {
+      margin-top: 4rem;
+    }
+
+    .vida-real .nvr-topics-block--mirror > .nvr-inner.nvr-copy {
+      margin-top: 4rem;
+    }
+
+    .vida-real .nvr-central-group {
+      margin-top: 4rem;
+    }
+
+    .vida-real .nvr-topics-block + .nvr-central-group {
+      margin-top: 1rem;
+    }
+
+    .vida-real .nvr-topics-block + .nvr-feedback-section {
+      margin-top: 4rem;
+    }
+
+    .vida-real .nvr-topics-block:not(.nvr-topics-block--mirror) .LineTopics {
+      margin-left: max(0px, calc((100% - 980px) / 2));
+      margin-right: auto;
+      width: min(100%, 1200px);
+    }
+
+    .vida-real .nvr-topics-section .nvr-index2-image,
+    .vida-real .nvr-topics-section .nvr-index2-copy {
+      float: left;
+    }
+
+    .vida-real .nvr-topics-section .nvr-index2-image {
+      width: 33.333333%;
+    }
+
+    .vida-real .nvr-topics-section .nvr-index2-copy {
+      width: 66.666667%;
+    }
+
+    .vida-real .nvr-topics-section .MobileWidthCandle {
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      max-width: 100%;
+      width: 30em;
+    }
+
+    .vida-real .nvr-topics-section .PinkTitle {
+      background: var(--nvr-cream);
+      color: var(--nvr-wine) !important;
+      display: inline-block;
+      font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+      font-weight: 700;
+      margin: 0 0 1.15rem;
+      padding: 0.15rem 0.45rem;
+    }
+
+    .vida-real .nvr-topics-section .PinkTitle.MobileTitlePink {
+      background-color: var(--nvr-cream) !important;
+      box-shadow: none !important;
+      color: #733145 !important;
+    }
+
+    .vida-real .nvr-topics-section .nvr-plain-title {
+      color: var(--nvr-wine);
+      font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+      font-weight: 700;
+      margin: 0 0 1.15rem;
+    }
+
+    .vida-real .nvr-topics-section .BordauxText {
+      color: var(--nvr-ink) !important;
+      font-size: clamp(1.13rem, 1.8vw, 1.38rem);
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    .vida-real .nvr-topics-section .nvr-topic {
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Mirrored variant: copy on the left, image on the right. */
+    .vida-real .nvr-topics-section .nvr-topics-block--mirror .LineTopics {
+      padding-right: 0;
+    }
+
+    .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-topic {
+      text-indent: 30px;
+    }
+
+    @media (max-width: 1128px) {
+      .vida-real .nvr-topics-section .LineTopics {
+        padding: 0;
+      }
+
+      .vida-real .nvr-topics-section .nvr-index2-image,
+      .vida-real .nvr-topics-section .nvr-index2-copy {
+        float: none;
+        width: 100%;
+      }
+
+      .vida-real .nvr-topics-section .nvr-index2-image {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block:not(.nvr-topics-block--mirror) .nvr-index2-image {
+        margin-bottom: 2rem;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-index2-image {
+        margin-bottom: 2rem;
+        margin-top: 0;
+        order: 1;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .LineTopics {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-index2-copy {
+        order: 2;
+      }
+
+      .vida-real .nvr-topics-section .MobileWidthCandle {
+        height: auto;
+        margin: 0 auto;
+        width: min(70vw, 400px);
+      }
+
+      .vida-real .nvr-topics-section .nvr-index2-copy > .PinkTitle,
+      .vida-real .nvr-topics-section .nvr-index2-copy > .nvr-plain-title {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 1129px) {
+      .vida-real .nvr-desktop-justify {
+        text-align: justify;
+      }
+
+      .vida-real .nvr-topics-section .LineTopics {
+        align-items: stretch;
+        display: flex;
+        padding-right: 3ch;
+      }
+
+      .vida-real .nvr-topics-section .nvr-index2-image,
+      .vida-real .nvr-topics-section .nvr-index2-copy {
+        float: none;
+      }
+
+      .vida-real .nvr-topics-section .nvr-index2-image {
+        align-items: stretch;
+        display: flex;
+      }
+
+      .vida-real .nvr-topics-section .MobileWidthCandle {
+        height: 100%;
+        margin: 0;
+        object-fit: cover;
+        object-position: 75% center;
+        width: 100%;
+      }
+
+      .vida-real .nvr-topics-section .nvr-people-image {
+        object-position: 50% 70%;
+      }
+
+      .vida-real .nvr-topics-section .nvr-index2-copy {
+        position: relative;
+        transform: translate(-2.5rem, 0.65rem);
+        z-index: 1;
+      }
+
+      .vida-real .nvr-topics-section .BordauxText {
+        transform: translateX(3ch);
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .LineTopics {
+        padding-left: 0;
+        gap: 1.25rem;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-index2-copy {
+        padding-top: 0 !important;
+        transform: none;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .BordauxText {
+        transform: none;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-topic {
+        font-size: inherit !important;
+        letter-spacing: inherit;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-index2-copy {
+        flex: 0 0 60%;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-index2-image {
+        flex: 0 0 auto;
+        min-height: 0;
+        overflow: hidden;
+        position: relative;
+        width: calc(40% - 1.25rem);
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-people-image {
+        align-self: stretch;
+        height: 100%;
+        object-fit: cover;
+        object-position: 72% 65%;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+      }
+
+      .vida-real .nvr-topics-section .nvr-topics-block--mirror .nvr-plain-title {
+        background: transparent;
+        display: block;
+        margin: 0 0 1.15rem;
+        padding: 0;
+        position: static;
+        transform: none;
+        white-space: normal;
+      }
+    }
+
+    /* Prevent the Atelier's 1200px mobile helper from centering desktop topics early. */
+    @media (min-width: 1129px) and (max-width: 1200px) {
+      .vida-real .nvr-topics-section .MobileCenter {
+        text-align: left;
+      }
+    }
+
+    .vida-real .nvr-statement {
+      border-left: 3px solid var(--nvr-sage);
+      color: var(--nvr-ink);
+      font-size: clamp(1.18rem, 2vw, 1.45rem);
+      font-weight: 500;
+      line-height: 1.45;
+      margin: 1.75rem 0 1.35rem;
+      padding: 0.2rem 0 0.2rem 1rem;
+      text-indent: 0;
+    }
+
+    .vida-real .nvr-copy p.nvr-statement {
+      text-indent: 0;
+    }
+
+    .vida-real .nvr-feedback-section {
+      background: var(--nvr-soft);
+      padding: clamp(2.5rem, 5vw, 4rem) 0;
+      position: relative;
+    }
+
+    .vida-real .nvr-feedback-intro {
+      color: var(--nvr-wine);
+      font-size: clamp(1.35rem, 2.3vw, 1.75rem);
+      font-weight: 700;
+      margin: 0 0 1.5rem;
+      text-align: center;
+    }
+
+    .vida-real .nvr-carousel {
+      min-height: 360px;
+      padding: 0 3rem;
+    }
+
+    .vida-real .nvr-carousel .carousel-item {
+      min-height: 360px;
+    }
+
+    .vida-real .nvr-feedback-card {
+      align-items: center;
+      background: var(--nvr-white);
+      border-top: 4px solid var(--nvr-sage);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 800px;
+      min-height: 340px;
+      padding: clamp(1.75rem, 4vw, 3.25rem);
+      text-align: center;
+    }
+
+    .vida-real .nvr-feedback-card p {
+      color: var(--nvr-ink);
+      font-size: clamp(1.08rem, 1.75vw, 1.35rem);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .vida-real .nvr-feedback-card small {
+      color: var(--nvr-wine);
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-top: 1.25rem;
+    }
+
+    .vida-real .nvr-carousel .carousel-control-prev,
+    .vida-real .nvr-carousel .carousel-control-next {
+      opacity: 1;
+      width: 2.5rem;
+    }
+
+    .vida-real .nvr-carousel .carousel-control-prev-icon,
+    .vida-real .nvr-carousel .carousel-control-next-icon {
+      background-image: none;
+      height: 1.2rem;
+      width: 1.2rem;
+    }
+
+    .vida-real .nvr-carousel .carousel-control-prev-icon {
+      border-bottom: 3px solid var(--nvr-wine);
+      border-left: 3px solid var(--nvr-wine);
+      transform: rotate(45deg);
+    }
+
+    .vida-real .nvr-carousel .carousel-control-next-icon {
+      border-right: 3px solid var(--nvr-wine);
+      border-top: 3px solid var(--nvr-wine);
+      transform: rotate(45deg);
+    }
+
+    .vida-real .nvr-about {
+      background: var(--nvr-white);
+    }
+
+    .vida-real .nvr-about-card {
+      text-align: center;
+    }
+
+    .vida-real .nvr-about-name {
+      color: var(--nvr-wine);
+      font-size: clamp(1.55rem, 3vw, 2.2rem);
+      margin: 0 0 1.5rem;
+    }
+
+    .vida-real .nvr-cta {
+      background: transparent;
+      border: 0;
+      color: var(--nvr-wine);
+      display: inline-block;
+      font-size: inherit;
+      font-weight: 700;
+      margin-top: 1.5rem;
+      padding: 0;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+      transition: color 160ms ease;
+    }
+
+    .vida-real .nvr-cta:hover,
+    .vida-real .nvr-cta:focus {
+      color: var(--nvr-ink);
+    }
+
+    .vida-real .nvr-cta:visited,
+    .vida-real .nvr-cta:active {
+      color: var(--nvr-wine);
+    }
+
+    .vida-real .nvr-about-card .nvr-disclaimer {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 1.5rem auto 0;
+      max-width: 760px;
+      text-indent: 0;
+    }
+
+    @media (max-width: 700px) {
+      .vida-real .nvr-section {
+        padding: 3.25rem 1.25rem;
+      }
+
+      .vida-real .nvr-about-card .nvr-disclaimer {
+        font-size: 13px;
+      }
+
+      .vida-real .nvr-title {
+        font-size: 34px;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+      }
+
+      .vida-real .nvr-lead {
+        font-size: 19px;
+        line-height: 1.55;
+      }
+
+      .vida-real .nvr-copy,
+      .vida-real .nvr-copy p {
+        font-size: 17.5px;
+        line-height: 1.6;
+      }
+
+      .vida-real .nvr-topics-section .PinkTitle,
+      .vida-real .nvr-topics-section .nvr-plain-title {
+        font-size: 21px !important;
+        line-height: 1.3;
+      }
+
+      .vida-real .nvr-topics-section .PinkTitle.MobileTitlePink {
+        background: transparent !important;
+        box-shadow: none !important;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .vida-real .nvr-topics-section .BordauxText,
+      .vida-real .nvr-topics-section .BordauxText .nvr-topic {
+        font-size: 17px !important;
+        line-height: 1.55;
+      }
+
+      .vida-real .nvr-feedback-intro {
+        font-size: 22px;
+        line-height: 1.3;
+      }
+
+      .vida-real .nvr-feedback-card p {
+        font-size: 17px;
+        line-height: 1.6;
+      }
+
+      .vida-real .nvr-feedback-card small {
+        font-size: 16px;
+      }
+
+      .vida-real .nvr-about-name {
+        font-size: 25px;
+      }
+
+      .vida-real .nvr-lead,
+      .vida-real .nvr-tagline,
+      .vida-real .nvr-feedback-card p,
+      .vida-real .nvr-about-card.nvr-copy p,
+      .vida-real .MobileCenter,
+      .vida-real .nvr-topics-section .MobileCenter .nvr-topic {
+        padding-left: 0;
+        text-indent: 0;
+      }
+
+      .vida-real .nvr-topics-section .MobileWidthCandle {
+        width: min(78vw, 290px);
+      }
+
+      .vida-real .nvr-carousel {
+        min-height: 0;
+        padding: 0 1.85rem;
+      }
+
+      .vida-real .nvr-carousel .carousel-item,
+      .vida-real .nvr-feedback-card {
+        min-height: 0;
+      }
+    }
+  </style>
+</head>
+<body class="vida-real">
+  <header class="nvr-hero">
+    <picture>
+    <img src="img/Hero.png" alt="Na Vida Real" class="nvr-hero-image" fetchpriority="high">
+    </picture>
+  </header>
+
+  <main>
+    <section class="nvr-section nvr-section--white">
+      <div class="nvr-inner">
+        <h1 class="nvr-title">Na Vida Real</h1>
+        <p class="nvr-lead">Vamos olhar para as diferentes áreas da tua vida, perceber o que está a funcionar, o que precisa de mudar e construir uma forma de viver que faça mais sentido para ti.</p>
+      </div>
+    </section>
+
+    <section class="nvr-section nvr-section--soft nvr-topics-section">
+      <div class="nvr-inner nvr-copy">
+        <p class="nvr-desktop-justify">A forma como vivemos resulta da forma como as diferentes áreas da nossa vida se organizam, se relacionam e ocupam espaço no dia a dia. Aqui encontras um acompanhamento onde olhamos para a vida como um todo, percebemos como estão a ser vividas as diferentes áreas que a compõem, o que cada uma exige de ti e o que está a ficar para trás. A partir daí, aprofundamos o que precisa de mais atenção, compreendemos o que está a tornar essa parte da vida difícil, pesada ou insatisfatória e trabalhamos as mudanças necessárias na forma como é vivida. É deste trabalho que nasce uma organização diária construída a partir das tuas necessidades, prioridades e da vida que queres construir.</p>
+      </div>
+      <div class="nvr-topics-block">
+        <div class="nvr-inner LineTopics">
+          <div class="col-lg-4 col-md-12 w3-center MobileMarginCandle ImageBottomMargin nvr-index2-image" style="padding:0 !important">
+            <img src="img/SofaCaneca.webp" alt="Sofá e caneca" class="MobileWidthCandle img-responsive" loading="lazy" decoding="async">
+          </div>
+          <div class="col-lg-8 col-md-12 MobileTopMargin nvr-index2-copy" style="line-height:0.95;padding:0 !important">
+            <p class="MobileCenter PinkTitle MobileTitlePink">Algumas das áreas que podemos trabalhar:</p>
+            <p class="MobileCenter BordauxText BordauxPadding"><span class="nvr-topic">Gestão do tempo, prioridades e carga mental;</span><span class="nvr-topic">Trabalho, organização profissional e equilíbrio com a vida pessoal;</span><span class="nvr-topic">Casa, responsabilidades e vida prática;</span><span class="nvr-topic">Parentalidade, maternidade e dinâmica familiar;</span><span class="nvr-topic">Relações, limites e espaço pessoal;</span><span class="nvr-topic">Bem-estar, descanso, recuperação e autocuidado;</span><span class="nvr-topic">Finanças pessoais e organização do dinheiro;</span><span class="nvr-topic">Emoções, padrões e formas de reagir;</span><span class="nvr-topic">Autoconhecimento, necessidades e funcionamento individual;</span><span class="nvr-topic">Decisões, mudanças e definição de direção;</span><span class="nvr-topic">Projetos, interesses pessoais e objetivos;</span><span class="nvr-topic">Neurodivergência e adaptação da vida às tuas necessidades individuais.</span></p>
+          </div>
+        </div>
+        <div class="nvr-inner nvr-copy">
+          <p>Podemos organizar o tempo semana a semana, acompanhar as variações do teu ciclo menstrual quando aplicável e considerar também os ritmos mensais ou anuais.</p>
+        </div>
+      </div>
+
+
+      <div class="nvr-topics-block nvr-topics-block--mirror">
+        <div class="nvr-inner LineTopics">
+          <div class="col-lg-8 col-md-12 MobileTopMargin nvr-index2-copy" style="line-height:0.95">
+            <p class="nvr-plain-title">Este trabalho pode fazer sentido para ti se:</p>
+            <p class="MobileCenter BordauxText"><span class="nvr-topic">Sentes que a tua vida está cheia, mesmo quando aparentemente está organizada;</span><span class="nvr-topic">Estás cansado/a de viver num esforço constante para conseguir dar resposta a tudo;</span><span class="nvr-topic">Há áreas da tua vida que estão constantemente a ficar para trás;</span><span class="nvr-topic">Tens dificuldade em conciliar trabalho, casa, família, descanso e espaço pessoal;</span><span class="nvr-topic">Há partes da tua vida que funcionam, mas à custa de demasiado esforço;</span><span class="nvr-topic">Sabes que alguma coisa precisa de mudar, mas não consegues perceber onde mexer sem desequilibrar o resto;</span><span class="nvr-topic">Sentes que a forma como estás a viver os teus dias já não faz sentido para ti;</span></p>
+          </div>
+          <div class="col-lg-4 col-md-12 w3-center MobileMarginCandle ImageBottomMargin nvr-index2-image" style="padding:0 !important">
+            <img src="img/2pessoasMaior.webp" alt="Duas pessoas" class="MobileWidthCandle nvr-people-image img-responsive" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="nvr-inner nvr-copy">
+          <p>O objetivo não é fazer mais, nem conseguir suportar melhor uma vida que já te exige demasiado. E se já tentaste agendas, rotinas ou métodos de produtividade, este trabalho parte precisamente da ideia de que organizar melhor o tempo, por si só, nem sempre resolve o problema. Vamos perceber o que faz sentido manter, mudar ou criar para construíres uma vida que funcione melhor para ti.</p>
+        </div>
+      </div>
+
+    <div class="nvr-central-group nvr-feedback-section">
+      <div class="nvr-inner">
+        <h2 class="nvr-feedback-intro">Quem já trabalhou comigo descreve-o assim:</h2>
+        <div id="vidaRealFeedbackCarousel" class="carousel slide carousel-fade nvr-carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <article class="nvr-feedback-card">
+                <p>“A Catarina traz às suas sessões uma clareza invejável que nos ajuda a desconstruir, reavaliar e simplificar a forma como vemos e pensamos o nosso quotidiano. Um pouco de ordem no caos. Recorri à sua ajuda numa época em que a minha vida e da minha família estava em fluxo e eu estava com dificuldade em reservar tempo para mim e para as coisas que me eram importantes. Ela ajudou-me a prioritizar, organizar e repensar onde estava a investir o meu tempo e energia, fosse a trabalhar ou nas pessoas e projetos à minha volta.”</p>
+                <small>Peter</small>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="nvr-feedback-card">
+                <p>“Fazer a consultoria terapêutica com a Catarina Português foi embarcar numa viagem rumo a MIM. Num momento particularmente difícil a Catarina pegou-me pela mão e, com gentileza e cuidado, mas de forma objetiva, clara e firme, caminhou ao meu lado, pelos meus dias, lançando luz sobre cada gesto, rotina e padrão de pensamento que me levaram até àquela situação, em todas as áreas da minha vida, ao mesmo tempo que me ajudou a desenvolver as ferramentas para transformar cada um deles a pouco e pouco. O resultado: uma vida mais consciente e alinhada com a minha essência. No fundo, uma vida mais VIVIDA.”</p>
+                <small>Daniela</small>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="nvr-feedback-card">
+                <p>“Com um filho cheio de energia e várias brincadeiras a acontecer ao mesmo tempo, manter a casa organizada nem sempre era fácil. A Catarina percebeu rapidamente o que não estava a funcionar e ajudou-me a reorganizar as divisões mais desafiantes de uma forma simples e prática, adaptada à nossa rotina. Hoje, os brinquedos têm lugares definidos e estão organizados por categorias, o que tornou muito mais fácil arrumar e manter a casa funcional no dia a dia.”</p>
+                <small>João</small>
+              </article>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#vidaRealFeedbackCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#vidaRealFeedbackCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Seguinte</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="nvr-section nvr-about">
+      <div class="nvr-inner nvr-about-card nvr-copy">
+        <h2 class="nvr-about-name">Catarina S. M. Português</h2>
+        <p>Ao longo dos anos fui trabalhando em duas áreas que, à partida, pareciam bastante diferentes: por um lado, organização e administração; por outro, acompanhamento individual e trabalho sobre os diferentes temas que compõem a nossa vida. Com o tempo percebi que afinal estas duas dimensões estavam profundamente ligadas. Ao trabalhar com pessoas, fui percebendo que muitos dos temas que surgiam acabavam por tocar também na forma como viviam os seus ritmos, hábitos e estruturas do dia a dia. E, ao trabalhar com organização, percebi que nenhuma estrutura funciona verdadeiramente se não tiver em conta aquilo que se passa dentro de cada uma das áreas a compõem. Foi da integração destas duas áreas que nasceu o Na Vida Real. </p>
+        <a href="NaVidaRealContactos.html" class="nvr-cta">Contactos</a>
+        <p class="nvr-disclaimer">O trabalho desenvolvido no Na Vida Real enquadra-se na área do desenvolvimento pessoal e da organização da vida, não substituindo acompanhamento médico, psicológico ou outro acompanhamento clínico quando necessário.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
