@@ -1808,6 +1808,39 @@ textarea::placeholder {
   }
 }
 
+/* Keep the animal-reading introduction as one vertically centered text group. */
+@media (min-width: 1129px){
+  .mediaRow--animalsIntro{
+    align-items: center;
+    display: flex;
+  }
+
+  .mediaRow--animalsIntro .imageTerapias{
+    flex: 0 0 282px;
+    float: none;
+    margin: 0 18px 0 0;
+    width: 282px;
+  }
+
+  .mediaRow--animalsIntro .animal-aura-intro-copy{
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .mediaRow--animalsIntro .plan-break{
+    margin: 0;
+    width: auto;
+  }
+
+  .mediaRow--animalsIntro .plan-break p{
+    margin: 0 0 1rem;
+  }
+
+  .mediaRow--animalsIntro .plan-break:last-child p{
+    margin-bottom: 0;
+  }
+}
+
 /* Mobile: stack, center image, text full width below */
 @media (max-width: 772px){
   .mediaRow .imageTerapias,

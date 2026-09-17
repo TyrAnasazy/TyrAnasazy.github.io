@@ -9,8 +9,21 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styleLusaka2.css">
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+  <link rel="icon" href="img/favicon_io/favicon.ico">
+  <link rel="manifest" href="img/favicon_io/site.webmanifest">
+  <meta name="theme-color" content="#fcf8f6">
   <style>
+    @font-face {
+      font-family: "The Youngest Display";
+      src: url("css/fonts/The Youngest Serif-D.woff2") format("woff2");
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+    }
+
     :root {
       --nvr-cream: #efe6e0;
       --nvr-sage: #c4ceb6;
@@ -79,6 +92,7 @@
     }
 
     .vida-real .nvr-title {
+      font-family: "The Youngest Display", serif !important;
       font-size: 45px;
       line-height: 1;
       margin: 0 0 2rem;
@@ -157,6 +171,10 @@
 
     .vida-real .nvr-topics-block > .nvr-inner.nvr-copy {
       margin-top: 2rem;
+    }
+
+    .vida-real .nvr-topics-block > .nvr-inner.nvr-copy.nvr-topics-follow-up {
+      margin-top: 4rem;
     }
 
     .vida-real .nvr-topics-block:not(.nvr-topics-block--mirror) > .nvr-inner.nvr-copy {
@@ -530,12 +548,17 @@
 
     .vida-real .nvr-cta:hover,
     .vida-real .nvr-cta:focus {
-      color: var(--nvr-ink);
+      color: var(--nvr-wine);
     }
 
     .vida-real .nvr-cta:visited,
     .vida-real .nvr-cta:active {
       color: var(--nvr-wine);
+    }
+
+    .vida-real .nvr-instagram-link {
+      display: block;
+      margin-top: 0.75rem;
     }
 
     .vida-real .nvr-about-card .nvr-disclaimer {
@@ -664,7 +687,7 @@
             <p class="MobileCenter BordauxText BordauxPadding"><span class="nvr-topic">Gestão do tempo, prioridades e carga mental;</span><span class="nvr-topic">Trabalho, organização profissional e equilíbrio com a vida pessoal;</span><span class="nvr-topic">Casa, responsabilidades e vida prática;</span><span class="nvr-topic">Parentalidade, maternidade e dinâmica familiar;</span><span class="nvr-topic">Relações, limites e espaço pessoal;</span><span class="nvr-topic">Bem-estar, descanso, recuperação e autocuidado;</span><span class="nvr-topic">Finanças pessoais e organização do dinheiro;</span><span class="nvr-topic">Emoções, padrões e formas de reagir;</span><span class="nvr-topic">Autoconhecimento, necessidades e funcionamento individual;</span><span class="nvr-topic">Decisões, mudanças e definição de direção;</span><span class="nvr-topic">Projetos, interesses pessoais e objetivos;</span><span class="nvr-topic">Neurodivergência e adaptação da vida às tuas necessidades individuais.</span></p>
           </div>
         </div>
-        <div class="nvr-inner nvr-copy">
+        <div class="nvr-inner nvr-copy nvr-topics-follow-up">
           <p>Podemos organizar o tempo semana a semana, acompanhar as variações do teu ciclo menstrual quando aplicável e considerar também os ritmos mensais ou anuais.</p>
         </div>
       </div>
@@ -682,6 +705,7 @@
         </div>
         <div class="nvr-inner nvr-copy">
           <p>O objetivo não é fazer mais, nem conseguir suportar melhor uma vida que já te exige demasiado. E se já tentaste agendas, rotinas ou métodos de produtividade, este trabalho parte precisamente da ideia de que organizar melhor o tempo, por si só, nem sempre resolve o problema. Vamos perceber o que faz sentido manter, mudar ou criar para construíres uma vida que funcione melhor para ti.</p>
+          <p>As sessões são individuais, online ou presenciais, e a frequência é definida de acordo com aquilo que precisas e com o que consegues ir integrando no teu dia a dia. Cada sessão tem a duração de 1h30 e o valor de 85€.</p>
         </div>
       </div>
 
@@ -725,8 +749,13 @@
     <section class="nvr-section nvr-about">
       <div class="nvr-inner nvr-about-card nvr-copy">
         <h2 class="nvr-about-name">Catarina S. M. Português</h2>
-        <p>Ao longo dos anos fui trabalhando em duas áreas que, à partida, pareciam bastante diferentes: por um lado, organização e administração; por outro, acompanhamento individual e trabalho sobre os diferentes temas que compõem a nossa vida. Com o tempo percebi que afinal estas duas dimensões estavam profundamente ligadas. Ao trabalhar com pessoas, fui percebendo que muitos dos temas que surgiam acabavam por tocar também na forma como viviam os seus ritmos, hábitos e estruturas do dia a dia. E, ao trabalhar com organização, percebi que nenhuma estrutura funciona verdadeiramente se não tiver em conta aquilo que se passa dentro de cada uma das áreas a compõem. Foi da integração destas duas áreas que nasceu o Na Vida Real. </p>
+        <p>Ao longo dos anos fui trabalhando em áreas que, à partida, pareciam bastante diferentes: organização e administração, por um lado, e acompanhamento individual, por outro.</p>
+        <p>Foi no trabalho com pessoas que comecei a perceber que muitos dos temas que surgiam: cansaço, relações, parentalidade, trabalho, falta de espaço pessoal, dificuldade em cuidar de si, acabavam quase sempre por estar relacionados com a forma como o ritmo dos dias era vivido.</p>
+        <p>E percebi o contrário também: não basta organizar melhor o tempo se continuamos a viver cada uma dessas áreas da mesma forma.</p>
+        <p>Foi aí que estas duas partes do meu percurso se encontraram. Hoje trabalho precisamente nessa ligação: aprofundar o que está a acontecer nas diferentes áreas da vida e, a partir daí, transformar também a forma como elas ocupam espaço e tempo no dia a dia.</p>
+        <p>Foi desta integração que nasceu o Na Vida Real.</p>
         <a href="NaVidaRealContactos.html" class="nvr-cta">Contactos</a>
+        <a href="https://www.instagram.com/navidareal.pt/" class="nvr-cta nvr-instagram-link" target="_blank" rel="noopener noreferrer">Instagram</a>
         <p class="nvr-disclaimer">O trabalho desenvolvido no Na Vida Real enquadra-se na área do desenvolvimento pessoal e da organização da vida, não substituindo acompanhamento médico, psicológico ou outro acompanhamento clínico quando necessário.</p>
       </div>
     </section>
