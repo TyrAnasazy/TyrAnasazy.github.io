@@ -1766,7 +1766,7 @@ textarea::placeholder {
 
 .caminho-page-title{
   margin-top: 2.5rem !important;
-  margin-bottom: -2.5rem !important;
+  margin-bottom: -1rem !important;
 }
 
 @media (max-width: 772px){
@@ -1797,6 +1797,7 @@ textarea::placeholder {
   .mediaRow--caminhoIntro .caminho-intro-copy{
     flex: 1 1 0;
     min-width: 0;
+    transform: translateY(1rem);
   }
 
   .mediaRow--caminhoIntro .caminho-intro-copy p{
@@ -1805,6 +1806,10 @@ textarea::placeholder {
 
   .mediaRow--caminhoIntro .caminho-intro-copy p:last-child{
     margin-bottom: 0;
+  }
+
+  .caminho-page-title{
+    transform: translateY(1rem);
   }
 }
 
@@ -1839,6 +1844,11 @@ textarea::placeholder {
   .mediaRow--animalsIntro .plan-break:last-child p{
     margin-bottom: 0;
   }
+}
+
+/* Separate the animal-reading introduction from the next section heading. */
+.animal-aura-section-heading{
+  margin-top: 3rem !important;
 }
 
 /* Mobile: stack, center image, text full width below */
@@ -1954,7 +1964,7 @@ textarea::placeholder {
 
   @media (max-width: 1220px) {
     .caminho-page-title{
-      margin-bottom: 1.5rem !important;
+      margin-bottom: 2rem !important;
     }
 
     .mediaRow--consultoriaIntro .imageTerapias2{
