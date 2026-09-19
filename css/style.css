@@ -1758,6 +1758,14 @@ textarea::placeholder {
   text-align: left;
 }
 
+.na-vida-real-link,
+.na-vida-real-link:visited,
+.na-vida-real-link:hover,
+.na-vida-real-link:focus,
+.na-vida-real-link:active{
+  color: #733145;
+}
+
 @media (max-width: 768px){
   .path-topic-title{
     word-spacing: -0.04em;
