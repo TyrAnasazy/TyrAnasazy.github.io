@@ -2059,6 +2059,7 @@ textarea::placeholder {
     float: none;
     margin: 0 0 0 24px;
     order: 2;
+    transform: translateY(0.5rem);
     width: 282px;
   }
 
