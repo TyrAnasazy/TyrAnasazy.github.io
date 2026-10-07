@@ -2047,6 +2047,26 @@ textarea::placeholder {
     max-width: none !important;
     margin-left: 0 !important;   /* if offset classes were creating visual offset */
   }
+
+  /* Keep the Percursos copy vertically balanced beside its image. */
+  .mediaRow--percursosIntro{
+    align-items: center;
+    display: flex;
+  }
+
+  .mediaRow--percursosIntro .imageLuaNova{
+    flex: 0 0 282px;
+    float: none;
+    margin: 0 0 0 24px;
+    order: 2;
+    width: 282px;
+  }
+
+  .mediaRow--percursosIntro .percursos-intro-copy{
+    flex: 1 1 0;
+    min-width: 0;
+    order: 1;
+  }
 }
 @media (max-width: 928px) {
   /* stop W3CSS column float behavior for the image column in these rows */
