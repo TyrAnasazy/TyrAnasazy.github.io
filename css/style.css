@@ -2074,9 +2074,18 @@ textarea::placeholder {
   margin: 0;
 }
 
+.lua-nova-details p{
+  margin: 0;
+}
+
 @media (min-width: 1129px){
   .percursos-details{
     width: calc(100% - 288px);
+  }
+
+  /* Keep Lua Nova's details in the text column after the floated image ends. */
+  .lua-nova-details{
+    width: calc(100% - 306px);
   }
 }
 
@@ -2087,6 +2096,21 @@ textarea::placeholder {
 
 .percursos-details .percursos-details__price{
   margin-top: 1.5rem;
+}
+
+.lua-nova-details .lua-nova-details__price{
+  margin-top: 1.5rem;
+}
+
+.lua-nova-details .lua-nova-details__link{
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.lua-nova-details .lua-nova-details__link .link-accent{
+  display: inline-block;
+  float: none;
+  margin-left: 0;
 }
 @media (max-width: 928px) {
   /* stop W3CSS column float behavior for the image column in these rows */
