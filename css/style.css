@@ -2055,12 +2055,12 @@ textarea::placeholder {
   }
 
   .mediaRow--percursosIntro .imageLuaNova{
-    flex: 0 0 240px;
+    flex: 0 0 264px;
     float: none;
     margin: 0 0 0 24px;
     order: 2;
     transform: translateY(0.75rem);
-    width: 240px;
+    width: 264px;
   }
 
   .mediaRow--percursosIntro .percursos-intro-copy{
@@ -2076,7 +2076,7 @@ textarea::placeholder {
 
 @media (min-width: 1129px){
   .percursos-details{
-    width: calc(100% - 264px);
+    width: calc(100% - 288px);
   }
 }
 
