@@ -2084,6 +2084,10 @@ textarea::placeholder {
   margin-top: 0;
   margin-bottom: 25px;
 }
+
+.percursos-details .percursos-details__price{
+  margin-top: 1.5rem;
+}
 @media (max-width: 928px) {
   /* stop W3CSS column float behavior for the image column in these rows */
   .mediaRow .imageLuaNova{
