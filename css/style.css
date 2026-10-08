@@ -2054,13 +2054,11 @@ textarea::placeholder {
   }
 }
 
-.percursos-details p,
-.lua-nova-details p{
+.percursos-details p{
   margin: 0;
 }
 
-.percursos-details .percursos-details__link,
-.lua-nova-details .lua-nova-details__link{
+.percursos-details .percursos-details__link{
   margin-top: 1.5rem;
   margin-bottom: 25px;
 }
