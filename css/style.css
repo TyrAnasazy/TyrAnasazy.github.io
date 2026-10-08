@@ -2048,26 +2048,21 @@ textarea::placeholder {
     margin-left: 0 !important;   /* if offset classes were creating visual offset */
   }
 
-  /* Keep the Percursos copy vertically balanced beside its image. */
-  .mediaRow--percursosIntro{
-    align-items: center;
-    display: flex;
-  }
-
+  /* Lower the Percursos image slightly within the Lua Nova-style layout. */
   .mediaRow--percursosIntro .imageLuaNova{
-    flex: 0 0 282px;
-    float: none;
-    margin: 0 0 0 24px;
-    order: 2;
-    transform: translateY(0.5rem);
-    width: 282px;
+    margin-top: 1rem;
   }
+}
 
-  .mediaRow--percursosIntro .percursos-intro-copy{
-    flex: 1 1 0;
-    min-width: 0;
-    order: 1;
-  }
+.percursos-details p,
+.lua-nova-details p{
+  margin: 0;
+}
+
+.percursos-details .percursos-details__link,
+.lua-nova-details .lua-nova-details__link{
+  margin-top: 1.5rem;
+  margin-bottom: 25px;
 }
 @media (max-width: 928px) {
   /* stop W3CSS column float behavior for the image column in these rows */
