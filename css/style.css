@@ -2048,9 +2048,25 @@ textarea::placeholder {
     margin-left: 0 !important;   /* if offset classes were creating visual offset */
   }
 
-  /* Lower the Percursos image slightly within the Lua Nova-style layout. */
+  /* Align the image only with the Percursos introduction, not the details below. */
+  .mediaRow--percursosIntro{
+    align-items: center;
+    display: flex;
+  }
+
   .mediaRow--percursosIntro .imageLuaNova{
-    margin-top: 1rem;
+    flex: 0 0 240px;
+    float: none;
+    margin: 0 0 0 24px;
+    order: 2;
+    transform: translateY(0.75rem);
+    width: 240px;
+  }
+
+  .mediaRow--percursosIntro .percursos-intro-copy{
+    flex: 1 1 0;
+    min-width: 0;
+    order: 1;
   }
 }
 
@@ -2058,8 +2074,14 @@ textarea::placeholder {
   margin: 0;
 }
 
+@media (min-width: 1129px){
+  .percursos-details{
+    width: calc(100% - 264px);
+  }
+}
+
 .percursos-details .percursos-details__link{
-  margin-top: 1.5rem;
+  margin-top: 0;
   margin-bottom: 25px;
 }
 @media (max-width: 928px) {
