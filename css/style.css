@@ -2148,7 +2148,7 @@ textarea::placeholder {
 .agenda-month__title{
   color: #C18787;
   font-size: var(--ts-h2) !important;
-  margin: 0 0 1.4rem !important;
+  margin: 0 0 2.5rem !important;
   text-align: left;
   text-transform: uppercase;
 }
