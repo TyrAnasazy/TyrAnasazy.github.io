@@ -2154,7 +2154,7 @@ textarea::placeholder {
 }
 
 .agenda-event{
-  margin-top: 2.4rem;
+  margin: 2.4rem 0 4rem;
 }
 
 .agenda-month__title + .agenda-event{
@@ -2173,7 +2173,8 @@ textarea::placeholder {
 .agenda-event__copy,
 .agenda-event__theme,
 .agenda-event__note,
-.agenda-event__dates{
+.agenda-event__dates,
+.agenda-event__actions{
   font-size: var(--ts-body);
   line-height: var(--lh-body);
   text-align: left;
@@ -2197,6 +2198,17 @@ textarea::placeholder {
 
 .agenda-event__dates li + li{
   margin-top: 0.25rem;
+}
+
+.agenda-event__actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  margin: 1.4rem 0 0;
+}
+
+.agenda-event__actions a{
+  display: inline-block;
 }
 
 .agenda-event--workshop{

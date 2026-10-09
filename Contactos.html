@@ -392,6 +392,30 @@ document.querySelectorAll('input[name="tipo_contacto"]').forEach(radio => {
 terapiaSelect.addEventListener("change", updateForm);
 eventoSelect.addEventListener("change", updateForm);
 
+// Agenda links can open the form already set up for a specific event.
+const contactParams = new URLSearchParams(window.location.search);
+if (contactParams.get("tipo") === "evento") {
+  const requestedEvent = contactParams.get("evento");
+  const matchingEvent = Array.from(eventoSelect.options).find(
+    (option) => option.value === requestedEvent
+  );
+
+  if (matchingEvent) {
+    eventoSelect.value = matchingEvent.value;
+    document.querySelector('input[name="tipo_contacto"][value="Inscrição evento"]').checked = true;
+  }
+} else if (contactParams.get("tipo") === "terapia") {
+  const requestedTherapy = contactParams.get("terapia");
+  const matchingTherapy = Array.from(terapiaSelect.options).find(
+    (option) => option.value === requestedTherapy
+  );
+
+  if (matchingTherapy) {
+    terapiaSelect.value = matchingTherapy.value;
+    document.querySelector('input[name="tipo_contacto"][value="Marcar uma terapia"]').checked = true;
+  }
+}
+
 updateForm();
 </script>
 
