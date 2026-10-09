@@ -3,7 +3,7 @@
 <head>
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atelier da Consciência</title>
+    <title>Agenda | Atelier da Consciência</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/style.css">
@@ -30,19 +30,11 @@
       <ul>
         <li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;"></a></li>
         <li><a href="./ConsultoriaTerapeutica.html">Consultoria Terapêutica</a></li>
+        <li><a href="./Caminho.html">O Caminho</a></li>
         <li><a href="./Terapias.html">Técnicas Terapêuticas</a></li>
-
-        <!-- <li class="dropdown"> -->
-          <!-- <a href="#">Trabalhos em Grupo</a> -->
-          <!-- <ul class="dropdown-content"> -->
-			<!-- <li><a href="./Reiki.html">Iniciações de Reiki Essencial</a></li> -->
-			<!-- <li><a href="./MeditacaoDasRosas.html">Curso de Meditação das Rosas</a></li> -->
-            <!-- <li><a href="./MeditacaoLuaNova.html">Meditação da Lua Nova</a></li> -->
-            <!-- <li><a href="./CirculoMulheres.html">Círculo de Meditação para Mulheres</a></li> -->
-			<!-- <li><a href="./Constelacoes.html">Constelações</a></li> -->
-          <!-- </ul> -->
-        <!-- </li> -->
-        <!-- <li><a href="./Agenda.html">Agenda</a></li> -->
+        <li><a href="./MeditacaoLuaNova.html">Meditação da Lua Nova</a></li>
+        <li><a href="./Percursos.html">Percursos</a></li>
+        <li><a href="./Agenda.html" aria-current="page">Agenda</a></li>
         <li><a href="./Perguntas.html">Perguntas Frequentes</a></li>
         <li><a href="./Contactos.html">Contacta-me</a></li>
       </ul>
@@ -66,20 +58,12 @@
 
         <ul>
           <li><a href="./index.html"><img src="./img/Header.webp" style="height: 180px; margin-bottom: -20px;" alt="" /></a></li>
-          <!-- <li><a href="./index.html"><img  src="./img/Untitled.png" style="height: 19px;margin-top: -5px;"></a></li> -->
           <li><a href="./ConsultoriaTerapeutica.html" class="BurgerText">Consultoria Terapêutica</a></li>
+          <li><a href="./Caminho.html" class="BurgerText">O Caminho</a></li>
           <li><a href="./Terapias.html" class="BurgerText">Técnicas Terapêuticas</a></li>
-          <!-- <li class="mobile-dropdown"> -->
-            <!-- <a href="#" class="mobile-dropdown-toggle BurgerText">Trabalhos em Grupo <span class="chevron"></span></a> -->
-            <!-- <ul class="mobile-dropdown-content"> -->
-				<!-- <li><a href="./Reiki.html" class="BurgerText">Iniciações de Reiki Essencial</a></li> -->
-				 <!-- <li><a href="./MeditacaoDasRosas.html" class="BurgerText">Curso de Meditação das Rosas</a></li> -->
-              <!-- <li><a href="./MeditacaoLuaNova.html" class="BurgerText">Meditação da Lua Nova</a></li> -->
-              <!-- <li><a href="./CirculoMulheres.html" class="BurgerText">Círculo de Meditação para Mulheres</a></li> -->
-              <!-- <li><a href="./Constelacoes.html" class="BurgerText">Constelações</a></li> -->
-            <!-- </ul> -->
-          <!-- </li> -->
-          <!-- <li><a href="./Agenda.html" class="BurgerText">Agenda</a></li> -->
+          <li><a href="./MeditacaoLuaNova.html" class="BurgerText">Meditação da Lua Nova</a></li>
+          <li><a href="./Percursos.html" class="BurgerText">Percursos</a></li>
+          <li><a href="./Agenda.html" class="BurgerText" aria-current="page">Agenda</a></li>
           <li><a href="./Perguntas.html" class="BurgerText">Perguntas Frequentes</a></li>
           <li><a href="./Contactos.html" class="BurgerText">Contacta-me</a></li>
         </ul>
@@ -92,15 +76,57 @@
     max-width: 950px !important;
 ">
 
-<h1 class="w3-center t-h1 mb-2 text-accent" style="text-align:center;">Agenda</h1>
-     
-	  <div class="w3-row mediaRow">
-	    <div class="col-12 col-lg-12 ">
- <p class="my-justify t-body" style="text-align:center;">
-            Novidades brevemente!
-          </p>
-	</div>
-  </div>
+      <article class="agenda-page">
+        <h1 class="w3-center t-h1 text-accent agenda-page__title">Agenda</h1>
+
+        <section class="agenda-month" aria-labelledby="agenda-novembro">
+          <h2 id="agenda-novembro" class="agenda-month__title">Novembro</h2>
+
+          <div class="agenda-event">
+            <h3 class="agenda-event__title">Percurso · Onde estou agora?</h3>
+            <p class="agenda-event__meta">Quintas-feiras · 18h–21h · Online</p>
+            <p class="agenda-event__copy">Há momentos em que, antes de percebermos para onde queremos ir, precisamos de reconhecer onde estamos.</p>
+            <ul class="agenda-event__dates">
+              <li><strong>5 nov. · Como chego aqui?</strong></li>
+              <li><strong>12 nov. · O que tem preenchido os meus dias?</strong></li>
+              <li><strong>19 nov. · O que está a pedir a minha atenção?</strong></li>
+              <li><strong>26 nov. · Do que preciso neste momento?</strong></li>
+            </ul>
+            <p class="agenda-event__copy">Um percurso para sair um pouco do automático e aproximarmo-nos do nosso ponto de partida real.</p>
+          </div>
+
+          <div class="agenda-event">
+            <h3 class="agenda-event__title">Meditação de Lua Nova</h3>
+            <p class="agenda-event__meta"><strong>14 de novembro · sábado · 11h–14h · Online</strong></p>
+            <p class="agenda-event__theme"><strong>Tema do mês:</strong><br><em>[inserir tema / energia do Anjo deste ciclo]</em></p>
+            <p class="agenda-event__copy">Um encontro independente, dedicado à energia do Anjo que acompanha esta Lua Nova.</p>
+          </div>
+        </section>
+
+        <section class="agenda-month" aria-labelledby="agenda-dezembro">
+          <h2 id="agenda-dezembro" class="agenda-month__title">Dezembro</h2>
+
+          <div class="agenda-event">
+            <h3 class="agenda-event__title">Percurso · Quando o Ruído Abranda</h3>
+            <p class="agenda-event__meta">18h–21h · Online</p>
+            <p class="agenda-event__note"><em>Os três primeiros encontros são à quinta-feira. O último realiza-se excecionalmente na terça-feira, dia 22.</em></p>
+            <p class="agenda-event__copy">Dezembro acontece muitas vezes entre movimento, tarefas, encontros e expectativas. Neste Percurso fazemos o movimento contrário: abrandar, deixar algum espaço por preencher e reparar no que começa a tornar-se mais audível quando existe menos ruído.</p>
+            <ul class="agenda-event__dates">
+              <li><strong>3 dez. · Abrandar</strong></li>
+              <li><strong>10 dez. · Ficar sem preencher</strong></li>
+              <li><strong>17 dez. · O que se torna audível quando há espaço?</strong></li>
+              <li><strong>22 dez. · Preparar o terreno</strong></li>
+            </ul>
+          </div>
+
+          <div class="agenda-event">
+            <h3 class="agenda-event__title">Meditação de Lua Nova</h3>
+            <p class="agenda-event__meta"><strong>12 de dezembro · sábado · 11h–14h · Online</strong></p>
+            <p class="agenda-event__theme"><strong>Tema do mês:</strong><br><em>[inserir tema / energia do Anjo deste ciclo]</em></p>
+            <p class="agenda-event__copy">Um encontro independente, dedicado à energia do Anjo que acompanha esta Lua Nova.</p>
+          </div>
+        </section>
+      </article>
   </div>
   </div>
     </main>

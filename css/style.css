@@ -273,6 +273,17 @@ header.scrolled {
     transform: translateY(0);
 }
 
+/* The expanded navigation no longer fits comfortably below this width. */
+@media screen and (max-width: 1539px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+}
+
 .mobile-menu-content {
     display: flex;
     flex-direction: column;
@@ -2111,6 +2122,104 @@ textarea::placeholder {
   display: inline-block;
   float: none;
   margin-left: 0;
+}
+
+/* Agenda */
+.agenda-page{
+  max-width: 760px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.agenda-page__title{
+  margin-bottom: 1.4em !important;
+}
+
+.agenda-month{
+  padding: 2.5rem 0 2.75rem;
+  border-top: 1px solid rgba(193, 135, 135, 0.45);
+}
+
+.agenda-month:first-of-type{
+  border-top: 0;
+  padding-top: 0;
+}
+
+.agenda-month__title{
+  color: #C18787;
+  font-size: var(--ts-h2) !important;
+  margin: 0 0 1.4rem !important;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.agenda-event{
+  margin-top: 2.4rem;
+}
+
+.agenda-month__title + .agenda-event{
+  margin-top: 0;
+}
+
+.agenda-event__title{
+  color: #472410;
+  font-size: var(--ts-h3) !important;
+  margin: 0 0 0.2rem !important;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.agenda-event__meta,
+.agenda-event__copy,
+.agenda-event__theme,
+.agenda-event__note,
+.agenda-event__dates{
+  font-size: var(--ts-body);
+  line-height: var(--lh-body);
+  text-align: left;
+}
+
+.agenda-event__meta{
+  margin: 0;
+}
+
+.agenda-event__copy,
+.agenda-event__theme,
+.agenda-event__note{
+  margin: 1.15rem 0 0;
+}
+
+.agenda-event__dates{
+  list-style: none;
+  margin: 1.15rem 0 0;
+  padding: 0;
+}
+
+.agenda-event__dates li + li{
+  margin-top: 0.25rem;
+}
+
+.agenda-event--workshop{
+  padding-top: 1.6rem;
+  border-top: 1px solid rgba(71, 36, 16, 0.18);
+}
+
+@media (max-width: 768px){
+  .agenda-page{
+    padding-bottom: 1rem;
+  }
+
+  .agenda-page__title{
+    margin-bottom: 1.2em !important;
+  }
+
+  .agenda-month{
+    padding: 2rem 0;
+  }
+
+  .agenda-event{
+    margin-top: 2rem;
+  }
 }
 @media (max-width: 928px) {
   /* stop W3CSS column float behavior for the image column in these rows */
