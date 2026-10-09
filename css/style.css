@@ -2126,7 +2126,7 @@ textarea::placeholder {
 
 /* Agenda */
 .agenda-page{
-  max-width: 760px;
+  max-width: none;
   margin: 0 auto;
   padding-bottom: 2rem;
 }
@@ -2166,7 +2166,7 @@ textarea::placeholder {
   font-size: var(--ts-h3) !important;
   margin: 0 0 0.2rem !important;
   text-align: left;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .agenda-event__meta,
@@ -2188,6 +2188,22 @@ textarea::placeholder {
 .agenda-event__theme,
 .agenda-event__note{
   margin: 1.15rem 0 0;
+}
+
+.agenda-event__theme{
+  font-size: var(--ts-small);
+  line-height: var(--lh-small);
+}
+
+.agenda-event__theme-label{
+  font-weight: 400;
+}
+
+.agenda-event__theme-value{
+  display: inline-block;
+  font-size: var(--ts-h3);
+  line-height: var(--lh-h3);
+  margin-top: 0.35rem;
 }
 
 .agenda-event__dates{
