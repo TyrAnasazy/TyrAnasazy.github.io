@@ -274,13 +274,32 @@ header.scrolled {
 }
 
 /* The expanded navigation no longer fits comfortably below this width. */
-@media screen and (max-width: 1539px) {
+@media screen and (max-width: 1600px) {
     .desktop-nav {
         display: none;
     }
 
     .mobile-header {
         display: block;
+    }
+}
+
+/* Keep a labelled compact menu while the page itself still uses desktop layout. */
+@media screen and (min-width: 769px) and (max-width: 1600px) {
+    .hamburger {
+        min-height: 44px;
+        padding-left: 76px;
+    }
+
+    .hamburger::before {
+        content: "Menu";
+        color: #472410;
+        font-size: var(--ts-nav);
+        font-weight: 600;
+        left: 14px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -2225,6 +2244,26 @@ textarea::placeholder {
 
 .agenda-event__actions a{
   display: inline-block;
+}
+
+/* Passos */
+.passos-page{
+  padding: 0 0 7rem;
+  text-align: center;
+}
+
+.passos-page__title{
+  margin-bottom: 0.45em !important;
+}
+
+.passos-page__subtitle{
+  margin: 0;
+}
+
+.passos-page__announcement{
+  margin: 3rem auto 0;
+  max-width: 38rem;
+  text-align: center;
 }
 
 .agenda-event--workshop{
