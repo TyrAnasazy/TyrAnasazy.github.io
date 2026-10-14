@@ -434,6 +434,8 @@ if (contactParams.get("tipo") === "evento") {
     terapiaSelect.value = matchingTherapy.value;
     document.querySelector('input[name="tipo_contacto"][value="Marcar uma terapia"]').checked = true;
   }
+} else if (contactParams.get("tipo") === "mailing-list") {
+  document.querySelector('input[name="tipo_contacto"][value="Aderir à mailing list"]').checked = true;
 }
 
 updateForm();
