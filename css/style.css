@@ -1141,6 +1141,10 @@ label.gdpr{
   text-align: left;
 }
 
+#mailingListOptIn[hidden]{
+  display: none !important;
+}
+
 /* Undo any global rules that make inputs full width/block inside labels */
 label.gdpr > input[type="checkbox"]{
   display: inline-block !important;

@@ -123,6 +123,11 @@
     </label>
 
     <label>
+      <input type="radio" name="tipo_contacto" value="Aderir à mailing list" />
+      Aderir à mailing list
+    </label>
+
+    <label>
       <input type="radio" name="tipo_contacto" value="Informações" />
       Informações
     </label>
@@ -233,9 +238,9 @@
 
   <!-- GDPR consent -->
 <!-- Mailing list (optional) -->
-<label class="gdpr">
+<label id="mailingListOptIn" class="gdpr">
   <input class="contact-box" type="checkbox" name="mailing_list" value="Sim"  style="margin:0px;" />
-  <span>Aderir à mailing list do Atelier da Consciência</span>
+  <span>Quero receber por email a energia da Lua Nova e novidades do Atelier da Consciência</span>
 </label>
 
 <!-- GDPR consent (required) -->
@@ -286,9 +291,12 @@ const auraAnimal = document.getElementById("auraAnimal");
 
 const motivo = document.querySelector('[name="motivo"]');
 const horario = document.querySelector('[name="horario"]');
+const telefone = document.querySelector('[name="telefone"]');
 const eventoSelect = document.querySelector('[name="evento"]');
 const terapiaSelect = document.querySelector('[name="terapia"]');
 const informacoesMensagem = document.querySelector('[name="informacoes_mensagem"]');
+const mailingList = document.querySelector('[name="mailing_list"]');
+const mailingListOptIn = document.getElementById("mailingListOptIn");
 
 const animalNome = document.querySelector('[name="animal_nome"]');
 const animalEspecie = document.querySelector('[name="animal_especie"]');
@@ -327,12 +335,21 @@ function clearAuraAnimal(){
 
 function updateForm() {
   const tipo = document.querySelector('input[name="tipo_contacto"]:checked').value;
+  const isMailingList = (tipo === "Aderir à mailing list");
 
   // Show/hide main sections
   primeiraSessao.hidden = (tipo !== "Primeira sessão");
   evento.hidden = (tipo !== "Inscrição evento");
   informacoes.hidden = (tipo !== "Informações");
   terapia.hidden = (tipo !== "Marcar uma terapia");
+  telefone.closest("label").hidden = isMailingList;
+  mailingListOptIn.hidden = isMailingList;
+
+  if (isMailingList) {
+    mailingList.checked = true;
+  } else {
+    mailingList.checked = false;
+  }
 
   // Base required fields per flow
   motivo.required = (tipo === "Primeira sessão");
@@ -382,6 +399,8 @@ function updateForm() {
     subject.value = "Pedido: Leitura de Aura Animal";
   } else if (tipo === "Informações") {
     subject.value = "Pedido: Informações";
+  } else if (isMailingList) {
+    subject.value = "Pedido: Aderir à mailing list";
   } else {
     subject.value = "Pedido: Terapia";
   }
