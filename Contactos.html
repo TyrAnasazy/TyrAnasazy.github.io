@@ -355,6 +355,7 @@ function updateForm() {
   motivo.required = (tipo === "Primeira sessão");
   horario.required = (tipo === "Primeira sessão");
   eventoSelect.required = (tipo === "Inscrição evento");
+  eventoSelect.disabled = (tipo !== "Inscrição evento");
   informacoesMensagem.required = (tipo === "Informações");
   terapiaSelect.required = (tipo === "Marcar uma terapia");
 
