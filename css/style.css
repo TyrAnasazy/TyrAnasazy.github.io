@@ -2197,7 +2197,8 @@ textarea::placeholder {
 .agenda-event__theme,
 .agenda-event__note,
 .agenda-event__dates,
-.agenda-event__actions{
+.agenda-event__actions,
+.agenda-event__dates-heading{
   font-size: var(--ts-body);
   line-height: var(--lh-body);
   text-align: left;
@@ -2209,8 +2210,13 @@ textarea::placeholder {
 
 .agenda-event__copy,
 .agenda-event__theme,
-.agenda-event__note{
+.agenda-event__note,
+.agenda-event__dates-heading{
   margin: 1.15rem 0 0;
+}
+
+.agenda-event__copy{
+  text-indent: 30px;
 }
 
 .agenda-event__theme{
